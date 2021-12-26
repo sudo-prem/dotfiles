@@ -17,9 +17,15 @@ call plug#end()
 :set mouse=a
 :set updatetime=50
 :set encoding=UTF-8
+:set ruler
+:set title
+:set cursorline
+:set shortmess=atI
 
 :syntax on
 :colorscheme gruvbox
 
-hi Normal guibg=NONE ctermbg=NONE
+:hi Normal guibg=NONE ctermbg=NONE
+:hi CursorLine cterm=NONE ctermbg=Black
+
 nnoremap <C-b> :NERDTreeToggle<CR>
