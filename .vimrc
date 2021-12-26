@@ -1,3 +1,12 @@
+call plug#begin()
+Plug 'http://github.com/tpope/vim-surround' " Surrounding ysw)
+Plug 'https://github.com/preservim/nerdtree' " NerdTree
+Plug 'https://github.com/tpope/vim-commentary' " For Commenting gcc & gc
+Plug 'https://github.com/vim-airline/vim-airline' " Status bar
+Plug 'https://github.com/ryanoasis/vim-devicons' " Developer Icons
+Plug 'gruvbox-community/gruvbox' " Gruvbox Color Scheme
+call plug#end()
+
 :set number
 :set relativenumber
 :set autoindent
@@ -6,19 +15,11 @@
 :set smarttab
 :set softtabstop=4
 :set mouse=a
+:set updatetime=50
+:set encoding=UTF-8
 
+:syntax on
+:colorscheme gruvbox
 
-call plug#begin()
-
-Plug 'http://github.com/tpope/vim-surround' " Surrounding ysw)
-Plug 'https://github.com/preservim/nerdtree' " NerdTree
-Plug 'https://github.com/tpope/vim-commentary' " For Commenting gcc & gc
-Plug 'https://github.com/vim-airline/vim-airline' " Status bar
-Plug 'https://github.com/ryanoasis/vim-devicons' " Developer Icons
-Plug 'dracula/vim' " Dracula Color Scheme
-set encoding=UTF-8
-
-call plug#end()
-
-
+hi Normal guibg=NONE ctermbg=NONE
 nnoremap <C-b> :NERDTreeToggle<CR>
