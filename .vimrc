@@ -24,9 +24,6 @@ colorscheme gruvbox
 
 hi Normal guibg=NONE ctermbg=NONE
 hi CursorLine cterm=NONE ctermbg=Black
+hi LineNr ctermfg=7
 
-let &t_SI = "\e[4 q"
-let &t_EI = "\e[2 q"
-
-nnoremap <C-b> :NERDTreeToggle<CR>
-
+nnoremap <C-t> :NERDTreeToggle<CR>
