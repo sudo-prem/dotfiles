@@ -1,2 +1,3 @@
 # dotfiles
-MacOS config files for iTerm2, omz, and VIM
+
+Config files for iTerm2, tmux, and VIM
