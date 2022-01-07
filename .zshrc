@@ -9,4 +9,4 @@ PS1="%{$fg[yellow]%}%2~ %{$fg[blue]%}➜ "
 alias home="cd ~"
 alias work="cd ~/Work"
 alias oj="cd ~/Work/OJ/"
-alias cpp='f() { g++ $1 -DONPC && ./a.out };f'
+alias cpp='f() { g++-11 $1.cpp -DONPC && ./a.out };f'
