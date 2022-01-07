@@ -1,10 +1,12 @@
-call plug#begin()
+call plug#begin('~/.vim/plugged')
 
-Plug 'https://github.com/preservim/nerdtree' " NerdTree
-Plug 'https://github.com/vim-airline/vim-airline' " Status bar
-Plug 'gruvbox-community/gruvbox' " Gruvbox Color Scheme
-Plug 'https://github.com/ryanoasis/vim-devicons' " Developer Icons
-Plug 'tpope/vim-commentary' " Vim Comments gcc
+Plug 'https://github.com/preservim/nerdtree'
+Plug 'https://github.com/vim-airline/vim-airline'
+Plug 'gruvbox-community/gruvbox'
+Plug 'https://github.com/ryanoasis/vim-devicons'
+Plug 'tpope/vim-commentary' 
+Plug 'sirver/ultisnips'
+Plug 'jiangmiao/auto-pairs'
 
 call plug#end()
 
@@ -19,6 +21,7 @@ set mouse=a
 set encoding=UTF-8
 set title
 set shortmess=atI
+set backspace=indent,eol,start
 
 syntax on
 colorscheme gruvbox
@@ -31,3 +34,16 @@ let &t_SI = "\e[4 q"
 let &t_EI = "\e[2 q"
 
 nnoremap <C-t> :NERDTreeToggle<CR>
+
+let g:UltiSnipsExpandTrigger = '<tab>'
+let g:UltiSnipsJumpForwardTrigger = '<tab>'
+let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
+
+let &t_SI .= "\<Esc>[?2004h"
+let &t_EI .= "\<Esc>[?2004l"
+inoremap <special> <expr> <Esc>[200~ XTermPasteBegin()
+function! XTermPasteBegin()
+	set pastetoggle=<Esc>[201~
+	set paste
+	return ""
+endfunction
