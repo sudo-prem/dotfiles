@@ -6,7 +6,13 @@ source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 autoload -U colors && colors
 PS1="%{$fg[yellow]%}%2~ %{$fg[blue]%}➜ "
 
-alias home="cd ~"
-alias work="cd ~/Work"
+alias vc="cd ~/Work/VC/"
 alias oj="cd ~/Work/OJ/"
+
 alias cpp='f() { g++-11 $1.cpp -DONPC && ./a.out };f'
+alias diskhealth='smartctl -a disk0'
+
+alias g='s -p google'
+alias gm='s -p gmail'
+alias yt='s -p youtube'
+alias stov='s -p stackoverflow'
