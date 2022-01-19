@@ -7,6 +7,7 @@ Plug 'https://github.com/ryanoasis/vim-devicons'
 Plug 'tpope/vim-commentary' 
 Plug 'sirver/ultisnips'
 Plug 'jiangmiao/auto-pairs'
+Plug 'tpope/vim-surround'
 
 call plug#end()
 
@@ -22,6 +23,7 @@ set encoding=UTF-8
 set title
 set shortmess=atI
 set backspace=indent,eol,start
+set whichwrap+=<,>,h,l,[,]
 
 syntax on
 colorscheme gruvbox
@@ -34,6 +36,8 @@ let &t_SI = "\e[4 q"
 let &t_EI = "\e[2 q"
 
 nnoremap <C-t> :NERDTreeToggle<CR>
+imap jk <Esc>
+vnoremap <C-c> "*y
 
 let g:UltiSnipsExpandTrigger = '<tab>'
 let g:UltiSnipsJumpForwardTrigger = '<tab>'
