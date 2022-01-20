@@ -24,6 +24,7 @@ set title
 set shortmess=atI
 set backspace=indent,eol,start
 set whichwrap+=<,>,h,l,[,]
+set scrolloff=4
 
 syntax on
 colorscheme gruvbox
@@ -38,6 +39,11 @@ let &t_EI = "\e[2 q"
 nnoremap <C-t> :NERDTreeToggle<CR>
 imap jk <Esc>
 vnoremap <C-c> "*y
+
+nnoremap <S-Up> :m .-2<CR>==
+nnoremap <S-Down> :m .+1<CR>==
+vnoremap <S-Up> :m '<-2<CR>gv=gv
+vnoremap <S-Down> :m '>+1<CR>gv=gv
 
 let g:UltiSnipsExpandTrigger = '<tab>'
 let g:UltiSnipsJumpForwardTrigger = '<tab>'
