@@ -9,7 +9,7 @@ PS1="%{$fg[yellow]%}%2~ %{$fg[blue]%}➜ "
 alias vc="cd ~/Work/VC/"
 alias oj="cd ~/Work/OJ/"
 
-alias cpp='f() { g++-11 $1.cpp -DONPC && ./a.out };f'
+alias cpp='f() { g++-11 $1 -DONPC && ./a.out };f'
 alias diskhealth='smartctl -a disk0'
 
 alias g='s -p google'
