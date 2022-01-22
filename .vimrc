@@ -8,6 +8,7 @@ Plug 'tpope/vim-commentary'
 Plug 'sirver/ultisnips'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
+Plug 'Chiel92/vim-autoformat'
 call plug#end()
 
 " Theming
@@ -49,7 +50,7 @@ let g:UltiSnipsExpandTrigger = '<tab>'
 let g:UltiSnipsJumpForwardTrigger = '<tab>'
 let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
 
-" Copy Paste
+" Copy Paste 
 vnoremap <C-c> "*y
 let &t_SI .= "\<Esc>[?2004h"
 let &t_EI .= "\<Esc>[?2004l"
@@ -67,3 +68,7 @@ if &term =~ '^screen'
     execute "set <xRight>=\e[1;*C"
     execute "set <xLeft>=\e[1;*D"
 endif
+
+" Integrate clang-format
+let g:formatterpath = ['/opt/homebrew/bin/clang-format']
+noremap <F3> :Autoformat<CR>
