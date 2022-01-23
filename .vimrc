@@ -9,6 +9,7 @@ Plug 'sirver/ultisnips'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
 Plug 'Chiel92/vim-autoformat'
+Plug 'terryma/vim-multiple-cursors'
 call plug#end()
 
 " Theming
@@ -50,7 +51,7 @@ let g:UltiSnipsExpandTrigger = '<tab>'
 let g:UltiSnipsJumpForwardTrigger = '<tab>'
 let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
 
-" Copy Paste 
+" Copy Paste
 vnoremap <C-c> "*y
 let &t_SI .= "\<Esc>[?2004h"
 let &t_EI .= "\<Esc>[?2004l"
@@ -63,12 +64,18 @@ endfunction
 
 " Vim Bindings on tmux
 if &term =~ '^screen'
-    execute "set <xUp>=\e[1;*A"
-    execute "set <xDown>=\e[1;*B"
-    execute "set <xRight>=\e[1;*C"
-    execute "set <xLeft>=\e[1;*D"
+	execute "set <xUp>=\e[1;*A"
+	execute "set <xDown>=\e[1;*B"
+	execute "set <xLeft>=\e[1;*D"
+	execute "set <xRight>=\e[1;*C"
 endif
 
 " Integrate clang-format
 let g:formatterpath = ['/opt/homebrew/bin/clang-format']
 noremap <F3> :Autoformat<CR>
+
+" Other Keybindings
+inoremap kj <Esc>
+nnoremap <S-Tab> <<
+inoremap <S-Tab> <C-d>
+
