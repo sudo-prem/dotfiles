@@ -10,6 +10,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
 Plug 'Chiel92/vim-autoformat'
 Plug 'terryma/vim-multiple-cursors'
+Plug 'octol/vim-cpp-enhanced-highlight'
 call plug#end()
 
 " Theming
@@ -51,6 +52,10 @@ let g:UltiSnipsExpandTrigger = '<tab>'
 let g:UltiSnipsJumpForwardTrigger = '<tab>'
 let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
 
+" Multiple Cursor Exit
+let g:multi_cursor_exit_from_visual_mode = 1
+let g:multi_cursor_exit_from_insert_mode = 1
+
 " Copy Paste
 vnoremap <C-c> "*y
 let &t_SI .= "\<Esc>[?2004h"
@@ -71,11 +76,8 @@ if &term =~ '^screen'
 endif
 
 " Integrate clang-format
-let g:formatterpath = ['/opt/homebrew/bin/clang-format']
 noremap <F3> :Autoformat<CR>
 
 " Other Keybindings
-inoremap kj <Esc>
 nnoremap <S-Tab> <<
 inoremap <S-Tab> <C-d>
-
