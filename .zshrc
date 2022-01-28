@@ -1,9 +1,9 @@
 # Source
 export PATH=/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin
 
-source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-
+source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $(brew --prefix)/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 
 # Prompt
 autoload -Uz vcs_info
@@ -27,3 +27,4 @@ alias g='s -p google'
 alias gm='s -p gmail'
 alias yt='s -p youtube'
 alias stov='s -p stackoverflow'
+
