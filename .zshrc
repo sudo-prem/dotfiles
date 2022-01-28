@@ -4,6 +4,7 @@ export PATH=/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Libr
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
+
 # Alias
 alias vc="cd ~/Work/VC/"
 alias oj="cd ~/Work/OJ/"
@@ -15,6 +16,10 @@ alias g='s -p google'
 alias gm='s -p gmail'
 alias yt='s -p youtube'
 alias stov='s -p stackoverflow'
+
+alias lats='tmux list-sessions'
+alias kts='tmux kill-session -t'
+alias kats='tmux kill-session -a'
 
 
 # Prompt
