@@ -27,4 +27,5 @@ alias g='s -p google'
 alias gm='s -p gmail'
 alias yt='s -p youtube'
 alias stov='s -p stackoverflow'
+alias github='open "https://github.com/premnaaath?tab=repositories"'
 
