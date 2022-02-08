@@ -3,7 +3,6 @@ export PATH=/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Libr
 
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source $(brew --prefix)/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 
 # Prompt
 autoload -Uz vcs_info
@@ -29,3 +28,10 @@ alias yt='s -p youtube'
 alias stov='s -p stackoverflow'
 alias github='open "https://github.com/premnaaath?tab=repositories"'
 
+alias cpdir='pwd|pbcopy'
+
+# Functions
+function vcdot() {
+	cp ~/{.vimrc,.zshrc,.tmux.conf,Brewfile} ~/Work/VC/dotfiles/;
+	cp ~/.vim/UltiSnips/cpp.snippets ~/Work/VC/dotfiles/.vim/UltiSnips/;
+}

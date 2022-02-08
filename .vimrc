@@ -57,15 +57,10 @@ let g:multi_cursor_exit_from_visual_mode = 1
 let g:multi_cursor_exit_from_insert_mode = 1
 
 " Copy Paste
-vnoremap <C-c> "*y
-let &t_SI .= "\<Esc>[?2004h"
-let &t_EI .= "\<Esc>[?2004l"
-inoremap <special> <expr> <Esc>[200~ XTermPasteBegin()
-function! XTermPasteBegin()
-	set pastetoggle=<Esc>[201~
-	set paste
-	return ""
-endfunction
+vmap <C-c> "*y
+vmap <C-x> "*c
+vmap <C-v> c<ESC>"*P
+imap <C-v> <ESC>"*Pa
 
 " Vim Bindings on tmux
 if &term =~ '^screen'
@@ -81,4 +76,8 @@ noremap <F3> :Autoformat<CR>
 " Other Keybindings
 nnoremap <S-Tab> <<
 inoremap <S-Tab> <C-d>
+
+" Use W,Q as w,q
+command! -bang -range=% -complete=file -nargs=* W <line1>,<line2>write<bang> <args>
+command! -bang Q quit<bang>
 
