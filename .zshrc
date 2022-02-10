@@ -35,3 +35,7 @@ function vcdot() {
 	cp ~/{.vimrc,.zshrc,.tmux.conf,Brewfile} ~/Work/VC/dotfiles/;
 	cp ~/.vim/UltiSnips/cpp.snippets ~/Work/VC/dotfiles/.vim/UltiSnips/;
 }
+
+function reduce() {
+	magick $1 -strip -interlace Plane -gaussian-blur 0.0005 -quality 75% $2
+}

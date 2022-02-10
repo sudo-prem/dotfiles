@@ -6,9 +6,10 @@ tap "homebrew/services"
 brew "astyle"
 brew "gcc"
 brew "git"
-brew "htop"
-brew "mysql", restart_service: true
 brew "python@3.9"
+brew "htop"
+brew "imagemagick"
+brew "mysql", restart_service: true
 brew "s-search"
 brew "smartmontools"
 brew "speedtest-cli"

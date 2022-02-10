@@ -13,7 +13,7 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'octol/vim-cpp-enhanced-highlight'
 call plug#end()
 
-" Theming
+" Settings
 set number
 set relativenumber
 set autoindent
@@ -28,7 +28,9 @@ set shortmess=atI
 set backspace=indent,eol,start
 set whichwrap+=<,>,h,l,[,]
 set scrolloff=4
+set display+=lastline
 
+" Theme
 syntax on
 colorscheme gruvbox
 hi Normal guibg=NONE ctermbg=NONE
