@@ -21,7 +21,6 @@ set tabstop=4
 set shiftwidth=4
 set smarttab
 set softtabstop=4
-set mouse=a
 set encoding=UTF-8
 set title
 set shortmess=atI
@@ -29,6 +28,7 @@ set backspace=indent,eol,start
 set whichwrap+=<,>,h,l,[,]
 set scrolloff=4
 set display+=lastline
+set mouse=a
 
 " Theme
 syntax on
