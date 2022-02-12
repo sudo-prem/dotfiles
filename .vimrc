@@ -28,7 +28,6 @@ set backspace=indent,eol,start
 set whichwrap+=<,>,h,l,[,]
 set scrolloff=4
 set display+=lastline
-set mouse=a
 
 " Theme
 syntax on
