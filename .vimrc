@@ -37,7 +37,7 @@ hi Normal guibg=NONE ctermbg=NONE
 hi LineNr ctermfg=7
 
 " Cursor Style
-let &t_SI = "\e[4 q"
+let &t_SI = "\e[5 q"
 let &t_EI = "\e[2 q"
 
 " Nerd Tree
