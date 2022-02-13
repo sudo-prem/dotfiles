@@ -23,7 +23,7 @@ hi LineNr ctermfg=7
 set number
 set relativenumber
 set autoindent
-set tabstop=2
+set tabstop=4
 set shiftwidth=4
 set smarttab
 set softtabstop=4
