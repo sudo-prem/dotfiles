@@ -14,10 +14,11 @@ RPROMPT=\$vcs_info_msg_0_
 autoload -U colors && colors
 PS1="%{$fg[yellow]%}%2~ %{$fg[blue]%}➜ %{$fg[red]%}"
 
-
 # Alias
 alias vc="cd ~/Work/VC/"
 alias oj="cd ~/Work/OJ/"
+alias c="clear"
+alias Q="exit"
 
 alias cpp='f() { g++-11 $1 -DONPC && ./a.out };f'
 alias diskhealth='smartctl -a disk0'
@@ -36,6 +37,11 @@ function vcdot() {
 	cp ~/.vim/UltiSnips/cpp.snippets ~/Work/VC/dotfiles/.vim/UltiSnips/;
 }
 
+function cursorChange() {
+   echo -ne '\e[6 q'
+}
+precmd_functions+=(cursorChange)
+
 function reduce() {
-	magick $1 -strip -interlace Plane -gaussian-blur 0.0005 -quality 75% $2
+		magick $1 -strip -interlace Plane -gaussian-blur 0.0005 -quality 75% $2
 }

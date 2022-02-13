@@ -75,7 +75,7 @@
     "Red Component" : 0.90032327175140381
   },
   "Working Directory" : "\/Users\/premnaath",
-  "Blinking Cursor" : true,
+  "Blinking Cursor" : false,
   "Disable Window Resizing" : true,
   "Sync Title" : false,
   "Prompt Before Closing 2" : false,
@@ -329,7 +329,7 @@
   },
   "Window Type" : 12,
   "Blur Radius" : 3.1000000000000001,
-  "Cursor Type" : 2,
+  "Cursor Type" : 1,
   "Background Image Location" : "",
   "Blur" : true,
   "Badge Color" : {

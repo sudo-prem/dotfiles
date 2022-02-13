@@ -13,11 +13,17 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'octol/vim-cpp-enhanced-highlight'
 call plug#end()
 
+" Theme
+syntax on
+colorscheme gruvbox
+hi Normal guibg=NONE ctermbg=NONE
+hi LineNr ctermfg=7
+
 " Settings
 set number
 set relativenumber
 set autoindent
-set tabstop=4
+set tabstop=2
 set shiftwidth=4
 set smarttab
 set softtabstop=4
@@ -28,15 +34,14 @@ set backspace=indent,eol,start
 set whichwrap+=<,>,h,l,[,]
 set scrolloff=4
 set display+=lastline
-
-" Theme
-syntax on
-colorscheme gruvbox
-hi Normal guibg=NONE ctermbg=NONE
-hi LineNr ctermfg=7
+set cursorline
+set ttimeout
+set ttimeoutlen=1
+set ttyfast
 
 " Cursor Style
-let &t_SI = "\e[5 q"
+autocmd VimEnter * call system('printf "\e[2 q" > $TTY')
+let &t_SI = "\e[6 q"
 let &t_EI = "\e[2 q"
 
 " Nerd Tree
@@ -71,7 +76,7 @@ if &term =~ '^screen'
 	execute "set <xRight>=\e[1;*C"
 endif
 
-" Integrate clang-format
+" Integrate Autoformat
 noremap <F3> :Autoformat<CR>
 
 " Other Keybindings
