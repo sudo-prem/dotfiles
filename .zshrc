@@ -17,7 +17,7 @@ PS1="%{$fg[yellow]%}%2~ %{$fg[blue]%}➜ %{$fg[red]%}"
 # Alias
 alias vc="cd ~/Work/VC/"
 alias oj="cd ~/Work/OJ/"
-alias c="clear"
+alias C="clear"
 alias Q="exit"
 
 alias cpp='f() { g++-11 $1 -DONPC && ./a.out };f'
