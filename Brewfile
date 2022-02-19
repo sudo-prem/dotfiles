@@ -9,6 +9,7 @@ brew "git"
 brew "python@3.9"
 brew "htop"
 brew "imagemagick"
+brew "jupyterlab"
 brew "mysql", restart_service: true
 brew "s-search"
 brew "smartmontools"
