@@ -1,5 +1,6 @@
 # Source
-export PATH=/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin
+export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:"
+export PATH="/opt/homebrew/opt/python@3.9/libexec/bin:$PATH"
 
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -29,12 +30,9 @@ alias yt='s -p youtube'
 alias stov='s -p stackoverflow'
 alias github='open "https://github.com/premnaaath?tab=repositories"'
 
-# Python
-alias python='python3'
-alias pip='pip3'
-alias req='pip3 freeze > requirements.txt'
-alias ireq='pip3 install -r requirements.txt'
-alias cvenv='python3 -m venv ./venv'
+alias req='pip freeze > requirements.txt'
+alias ireq='pip install -r requirements.txt'
+alias cvenv='python -m venv ./venv'
 alias avenv='source ./venv/bin/activate'
 alias dvenv='deactivate'
 
