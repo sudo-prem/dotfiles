@@ -19,7 +19,7 @@ alias vc="cd ~/Work/VC/"
 alias oj="cd ~/Work/OJ/"
 alias C="clear"
 alias Q="exit"
-
+alias cpdir='pwd|pbcopy'
 alias cpp='f() { g++-11 $1 -DONPC && ./a.out };f'
 alias diskhealth='smartctl -a disk0'
 
@@ -29,7 +29,14 @@ alias yt='s -p youtube'
 alias stov='s -p stackoverflow'
 alias github='open "https://github.com/premnaaath?tab=repositories"'
 
-alias cpdir='pwd|pbcopy'
+# Python
+alias python='python3'
+alias pip='pip3'
+alias req='pip3 freeze > requirements.txt'
+alias ireq='pip3 install -r requirements.txt'
+alias cvenv='python3 -m venv ./venv'
+alias avenv='source ./venv/bin/activate'
+alias dvenv='deactivate'
 
 # Functions
 function vcdot() {
