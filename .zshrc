@@ -30,11 +30,14 @@ alias yt='s -p youtube'
 alias stov='s -p stackoverflow'
 alias github='open "https://github.com/premnaaath?tab=repositories"'
 
+# Python
 alias req='pip freeze > requirements.txt'
 alias ireq='pip install -r requirements.txt'
 alias cvenv='python -m venv ./venv'
 alias avenv='source ./venv/bin/activate'
 alias dvenv='deactivate'
+alias jl='jupyter-lab'
+alias jllk='jupyter kernelspec list'
 
 # Functions
 function vcdot() {
@@ -48,5 +51,15 @@ function cursorChange() {
 precmd_functions+=(cursorChange)
 
 function reduce() {
-		magick $1 -strip -interlace Plane -gaussian-blur 0.0005 -quality 75% $2
+	magick $1 -strip -interlace Plane -gaussian-blur 0.0005 -quality 75% $2
 }
+
+function jlik() {
+	pip install ipykernel;
+	python -m ipykernel install --user --name $1;
+}
+
+function jluk() {
+	jupyter kernelspec uninstall $1;
+}
+
