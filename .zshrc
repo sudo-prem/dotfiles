@@ -41,7 +41,7 @@ alias jllk='jupyter kernelspec list'
 
 # Functions
 function vcdot() {
-	cp ~/{.vimrc,.zshrc,.tmux.conf,Brewfile} ~/Work/VC/dotfiles/;
+	cp ~/{.vimrc,.zshrc,.tmux.conf,Brewfile,.gitconfig,.gitignore_global} ~/Work/VC/dotfiles/;
 	cp ~/.vim/UltiSnips/cpp.snippets ~/Work/VC/dotfiles/.vim/UltiSnips/;
 }
 
