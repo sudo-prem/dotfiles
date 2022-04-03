@@ -28,7 +28,7 @@ alias g='s -p google'
 alias gm='s -p gmail'
 alias yt='s -p youtube'
 alias stov='s -p stackoverflow'
-alias github='open "https://github.com/premnaaath?tab=repositories"'
+alias github='open "https://github.com/sudo-prem?tab=repositories"'
 
 # Python
 alias req='pip freeze > requirements.txt'
