@@ -67,3 +67,5 @@ function jluk() {
 	jupyter kernelspec uninstall $1;
 }
 
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
