@@ -12,6 +12,7 @@ brew "htop"
 brew "imagemagick"
 brew "jupyterlab"
 brew "mysql", restart_service: true
+brew "ripgrep"
 brew "rpcgen"
 brew "s-search"
 brew "smartmontools"

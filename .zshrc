@@ -5,6 +5,8 @@ export PATH="/opt/homebrew/opt/python@3.9/libexec/bin:$PATH"
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
 # Prompt
 autoload -Uz vcs_info
 precmd() { vcs_info }
@@ -67,5 +69,3 @@ function jluk() {
 	jupyter kernelspec uninstall $1;
 }
 
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

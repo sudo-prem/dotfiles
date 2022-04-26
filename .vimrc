@@ -11,6 +11,8 @@ Plug 'tpope/vim-surround'
 Plug 'Chiel92/vim-autoformat'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'octol/vim-cpp-enhanced-highlight'
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
 call plug#end()
 
 " Theme
@@ -52,6 +54,10 @@ nnoremap <S-Up> :m .-2<CR>==
 nnoremap <S-Down> :m .+1<CR>==
 vnoremap <S-Up> :m '<-2<CR>gv=gv
 vnoremap <S-Down> :m '>+1<CR>gv=gv
+
+" FZF
+nnoremap <silent> <C-f> :Files<CR>
+nnoremap <silent> <Leader>f :Rg<CR>
 
 " Snippets Trigger
 let g:UltiSnipsExpandTrigger = '<tab>'
