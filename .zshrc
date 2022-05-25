@@ -5,6 +5,11 @@ export PATH="/opt/homebrew/opt/python@3.9/libexec/bin:$PATH"
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# For Java 8
+# export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_331.jdk/Contents/Home"
+# For Java 17
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk-17.0.1.jdk/Contents/Home"
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 bindkey '^f' fzf-file-widget
 
@@ -37,6 +42,10 @@ alias github='open "https://github.com/sudo-prem?tab=repositories"'
 alias cp='cp -i'
 alias mv='mv -i'
 alias rm='rm -i'
+
+alias hdir='cd /opt/homebrew/Cellar/hadoop/3.3.3/libexec/etc/hadoop'
+alias hstart="/usr/local/Cellar/hadoop/3.1.0_1/sbin/start-all.sh"
+alias hstop="/usr/local/Cellar/hadoop/3.1.0_1/sbin/stop-all.sh"
 
 # Python
 alias req='pip freeze > requirements.txt'
