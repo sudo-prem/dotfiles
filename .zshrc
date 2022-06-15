@@ -32,6 +32,7 @@ alias cpdir='pwd|pbcopy'
 alias cpp='f() { g++-11 $1 -DONPC && ./a.out };f'
 alias diskhealth='smartctl -a disk0'
 alias ll='ls -alF'
+alias ..='cd ..'
 
 alias g='s -p google'
 alias gm='s -p gmail'
