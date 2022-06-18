@@ -60,8 +60,8 @@ alias jllk='jupyter kernelspec list'
 
 # Functions
 function vcdot() {
-	cp -f ~/{.vimrc,.zshrc,.tmux.conf,Brewfile,.gitconfig,.gitignore_global} ~/Work/VC/dotfiles/;
-	cp -f ~/.vim/UltiSnips/cpp.snippets ~/Work/VC/dotfiles/.vim/UltiSnips/;
+	cp ~/{.vimrc,.zshrc,.tmux.conf,Brewfile,.gitconfig,.gitignore_global} ~/Work/VC/dotfiles/;
+	cp ~/.vim/UltiSnips/cpp.snippets ~/Work/VC/dotfiles/.vim/UltiSnips/;
 }
 
 function cursorChange() {
