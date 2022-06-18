@@ -33,6 +33,7 @@ alias cpp='f() { g++-11 $1 -DONPC && ./a.out };f'
 alias diskhealth='smartctl -a disk0'
 alias ll='ls -alF'
 alias ..='cd ..'
+alias greset='git reset HEAD~1'
 
 alias g='s -p google'
 alias gm='s -p gmail'
@@ -59,8 +60,8 @@ alias jllk='jupyter kernelspec list'
 
 # Functions
 function vcdot() {
-	cp ~/{.vimrc,.zshrc,.tmux.conf,Brewfile,.gitconfig,.gitignore_global} ~/Work/VC/dotfiles/;
-	cp ~/.vim/UltiSnips/cpp.snippets ~/Work/VC/dotfiles/.vim/UltiSnips/;
+	cp -f ~/{.vimrc,.zshrc,.tmux.conf,Brewfile,.gitconfig,.gitignore_global} ~/Work/VC/dotfiles/;
+	cp -f ~/.vim/UltiSnips/cpp.snippets ~/Work/VC/dotfiles/.vim/UltiSnips/;
 }
 
 function cursorChange() {
