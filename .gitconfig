@@ -1,5 +1,14 @@
 [user]
 	name = premnaaath
 	email = premnaathvaradharajan@gmail.com
+
 [core]
 	excludesfile = /Users/premnaath/.gitignore_global
+
+[merge]
+	tool = vimdiff
+	conflictstyle = diff3
+
+[mergetool]
+	keepBackup = false
+	prompt = false
