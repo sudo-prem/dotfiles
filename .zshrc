@@ -41,7 +41,6 @@ alias yt='s -p youtube'
 alias stov='s -p stackoverflow'
 alias github='open "https://github.com/sudo-prem?tab=repositories"'
 
-alias cp='cp -i'
 alias mv='mv -i'
 alias rm='rm -i'
 
