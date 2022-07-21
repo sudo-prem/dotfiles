@@ -58,6 +58,7 @@ vnoremap <S-Down> :m '>+1<CR>gv=gv
 " FZF
 nnoremap <silent> <C-f> :Files<CR>
 nnoremap <silent> <Leader>f :Rg<CR>
+nnoremap <silent> <C-e> :E <CR>
 
 " Snippets Trigger
 let g:UltiSnipsExpandTrigger = '<tab>'

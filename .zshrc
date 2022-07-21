@@ -41,15 +41,13 @@ alias yt='s -p youtube'
 alias stov='s -p stackoverflow'
 alias github='open "https://github.com/sudo-prem?tab=repositories"'
 
+alias killsus='kill -KILL %'
+
 alias mv='mv -i'
 alias rm='rm -i'
 
-alias hdir='cd /opt/homebrew/Cellar/hadoop/3.3.3/libexec/etc/hadoop'
-alias hstart="/usr/local/Cellar/hadoop/3.1.0_1/sbin/start-all.sh"
-alias hstop="/usr/local/Cellar/hadoop/3.1.0_1/sbin/stop-all.sh"
-
 # Python
-alias req='pip freeze > requirements.txt'
+alias breq='pip freeze > requirements.txt'
 alias ireq='pip install -r requirements.txt'
 alias cvenv='python -m venv ./venv'
 alias avenv='source ./venv/bin/activate'

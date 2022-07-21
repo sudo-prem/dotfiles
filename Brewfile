@@ -7,10 +7,10 @@ brew "astyle"
 brew "fzf"
 brew "gcc"
 brew "git"
-brew "python@3.9"
 brew "htop"
+brew "python@3.9"
 brew "imagemagick"
-brew "jupyterlab"
+brew "jupyterlab", link: false
 brew "mysql", restart_service: true
 brew "ripgrep"
 brew "rpcgen"
