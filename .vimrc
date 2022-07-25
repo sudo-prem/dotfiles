@@ -75,6 +75,9 @@ vmap <C-x> "*c
 vmap <C-v> c<ESC>"*P
 imap <C-v> <ESC>"*Pa
 
+" Space in Normal Mode
+nnoremap <Space> i<Space><Right><ESC>
+
 " Vim Bindings on tmux
 if &term =~ '^screen'
 	execute "set <xUp>=\e[1;*A"
