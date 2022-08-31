@@ -29,11 +29,13 @@ alias oj="cd ~/Work/OJ/"
 alias C="clear"
 alias Q="exit"
 alias cpdir='pwd|pbcopy'
-alias cpp='f() { g++-11 $1 -DONPC && ./a.out };f'
+alias cpp='f() { g++-12 $1 -DONPC && ./a.out };f'
 alias diskhealth='smartctl -a disk0'
 alias ll='ls -alF'
 alias ..='cd ..'
 alias greset='git reset HEAD~1'
+
+alias ytdl='youtube-dl'
 
 alias g='s -p google'
 alias gm='s -p gmail'
@@ -54,6 +56,9 @@ alias avenv='source ./venv/bin/activate'
 alias dvenv='deactivate'
 alias jl='jupyter-lab'
 alias jllk='jupyter kernelspec list'
+
+# Eclipse Fix
+alias eFix='sudo codesign --force --deep --sign - /Applications/Eclipse\ Java.app'
 
 # Functions
 function vcdot() {
