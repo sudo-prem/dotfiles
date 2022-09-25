@@ -34,6 +34,7 @@ alias diskhealth='smartctl -a disk0'
 alias ll='ls -alF'
 alias ..='cd ..'
 alias greset='git reset HEAD~1'
+alias ejw="sudo codesign --force --deep --sign - /Applications/Eclipse\ Java.app"
 
 alias ytdl='youtube-dl'
 
@@ -67,7 +68,7 @@ function vcdot() {
 }
 
 function cursorChange() {
-   echo -ne '\e[6 q'
+	echo -ne '\e[6 q'
 }
 precmd_functions+=(cursorChange)
 
