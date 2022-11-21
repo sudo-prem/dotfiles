@@ -40,6 +40,7 @@ set cursorline
 set ttimeout
 set ttimeoutlen=1
 set ttyfast
+set rtp+=/opt/homebrew/opt/fzf
 
 " Cursor Style
 autocmd VimEnter * call system('printf "\e[2 q" > $TTY')
