@@ -1,6 +1,6 @@
 # Source
 export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:"
-export PATH="/opt/homebrew/opt/python@3.9/libexec/bin:$PATH"
+export PATH="/opt/homebrew/opt/python@3.10/libexec/bin:$PATH"
 
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -85,3 +85,8 @@ function jluk() {
 	jupyter kernelspec uninstall $1;
 }
 
+export LDFLAGS="-L/usr/local/opt/tcl-tk/lib"
+export CPPFLAGS="-I/usr/local/opt/tcl-tk/include"
+export PATH=$PATH:/usr/local/opt/tcl-tk/bin
+
+export PATH="/usr/local/opt/tcl-tk/bin:$PATH"
