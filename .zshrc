@@ -5,10 +5,7 @@ export PATH="/opt/homebrew/opt/python@3.10/libexec/bin:$PATH"
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# For Java 8
-# export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_331.jdk/Contents/Home"
-# For Java 17
-export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk-17.0.1.jdk/Contents/Home"
+# export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk-17.0.1.jdk/Contents/Home"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 bindkey '^f' fzf-file-widget
@@ -34,9 +31,6 @@ alias diskhealth='smartctl -a disk0'
 alias ll='ls -alF'
 alias ..='cd ..'
 alias greset='git reset HEAD~1'
-alias ejw="sudo codesign --force --deep --sign - /Applications/Eclipse\ Java.app"
-
-alias ytdl='youtube-dl'
 
 alias g='s -p google'
 alias gm='s -p gmail'
@@ -50,16 +44,11 @@ alias mv='mv -i'
 alias rm='rm -i'
 
 # Python
-alias breq='pip freeze > requirements.txt'
+alias greq='pip freeze > requirements.txt'
 alias ireq='pip install -r requirements.txt'
 alias cvenv='python -m venv ./venv'
 alias avenv='source ./venv/bin/activate'
 alias dvenv='deactivate'
-alias jl='jupyter-lab'
-alias jllk='jupyter kernelspec list'
-
-# Eclipse Fix
-alias eFix='sudo codesign --force --deep --sign - /Applications/Eclipse\ Java.app'
 
 # Functions
 function vcdot() {
@@ -85,8 +74,3 @@ function jluk() {
 	jupyter kernelspec uninstall $1;
 }
 
-export LDFLAGS="-L/usr/local/opt/tcl-tk/lib"
-export CPPFLAGS="-I/usr/local/opt/tcl-tk/include"
-export PATH=$PATH:/usr/local/opt/tcl-tk/bin
-
-export PATH="/usr/local/opt/tcl-tk/bin:$PATH"
