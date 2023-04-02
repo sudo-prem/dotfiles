@@ -21,8 +21,8 @@ autoload -U colors && colors
 PS1="%{$fg[yellow]%}%2~ %{$fg[blue]%}➜ %{$fg[red]%}"
 
 # Alias
-alias vc="cd ~/Work/VC/"
-alias oj="cd ~/Work/OJ/"
+alias vc="cd ~/Developer/VC/"
+alias oj="cd ~/Developer/OJ/"
 alias C="clear"
 alias Q="exit"
 alias cpdir='pwd|pbcopy'
@@ -52,8 +52,8 @@ alias dvenv='deactivate'
 
 # Functions
 function vcdot() {
-	cp ~/{.vimrc,.zshrc,.tmux.conf,Brewfile,.gitconfig,.gitignore_global} ~/Work/VC/dotfiles/;
-	cp ~/.vim/UltiSnips/cpp.snippets ~/Work/VC/dotfiles/.vim/UltiSnips/;
+	cp ~/{.vimrc,.zshrc,.tmux.conf,Brewfile,.gitconfig,.gitignore_global} ~/Developer/VC/dotfiles/;
+	cp ~/.vim/UltiSnips/cpp.snippets ~/Developer/VC/dotfiles/.vim/UltiSnips/;
 }
 
 function cursorChange() {
