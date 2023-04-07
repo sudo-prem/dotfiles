@@ -65,17 +65,10 @@ function reduce() {
 	magick $1 -strip -interlace Plane -gaussian-blur 0.0005 -quality 75% $2
 }
 
-function jlik() {
-	pip install ipykernel;
-	python -m ipykernel install --user --name $1;
-}
-
-function jluk() {
-	jupyter kernelspec uninstall $1;
-}
-
-# Node Version Manager
+# nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
 [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
+# pyenv
+eval "$(pyenv init -)"
