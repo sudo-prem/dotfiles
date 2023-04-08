@@ -1,12 +1,10 @@
 # Source
 export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:"
 export PATH="/opt/homebrew/opt/python@3.10/libexec/bin:$PATH"
-
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk-17.0.1.jdk/Contents/Home"
-
+# Fuzzy Search
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 bindkey '^f' fzf-file-widget
 
@@ -16,9 +14,16 @@ precmd() { vcs_info }
 zstyle ':vcs_info:git:*' formats '(%b)'
 setopt PROMPT_SUBST
 RPROMPT=\$vcs_info_msg_0_
-
 autoload -U colors && colors
 PS1="%{$fg[yellow]%}%2~ %{$fg[blue]%}➜ %{$fg[red]%}"
+
+# nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+# pyenv
+eval "$(pyenv init -)"
 
 # Alias
 alias vc="cd ~/Developer/VC/"
@@ -27,28 +32,15 @@ alias C="clear"
 alias Q="exit"
 alias cpdir='pwd|pbcopy'
 alias cpp='f() { g++-12 $1 -DONPC && ./a.out };f'
-alias diskhealth='smartctl -a disk0'
 alias ll='ls -alF'
 alias ..='cd ..'
-alias greset='git reset HEAD~1'
 
 alias g='s -p google'
-alias gm='s -p gmail'
 alias yt='s -p youtube'
-alias stov='s -p stackoverflow'
-alias github='open "https://github.com/sudo-prem?tab=repositories"'
-
-alias killsus='kill -KILL %'
+alias gh='open "https://github.com/sudo-prem?tab=repositories"'
 
 alias mv='mv -i'
 alias rm='rm -i'
-
-# Python
-alias greq='pip freeze > requirements.txt'
-alias ireq='pip install -r requirements.txt'
-alias cvenv='python -m venv ./venv'
-alias avenv='source ./venv/bin/activate'
-alias dvenv='deactivate'
 
 # Functions
 function vcdot() {
@@ -61,14 +53,3 @@ function cursorChange() {
 }
 precmd_functions+=(cursorChange)
 
-function reduce() {
-	magick $1 -strip -interlace Plane -gaussian-blur 0.0005 -quality 75% $2
-}
-
-# nvm
-export NVM_DIR="$HOME/.nvm"
-[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
-
-# pyenv
-eval "$(pyenv init -)"
