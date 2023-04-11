@@ -26,6 +26,7 @@ export NVM_DIR="$HOME/.nvm"
 eval "$(pyenv init -)"
 
 # Alias
+alias dev="cd ~/Developer/"
 alias vc="cd ~/Developer/VC/"
 alias oj="cd ~/Developer/OJ/"
 alias C="clear"
