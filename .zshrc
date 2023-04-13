@@ -38,7 +38,9 @@ alias ..='cd ..'
 
 alias g='s -p google'
 alias yt='s -p youtube'
+
 alias gh='open "https://github.com/sudo-prem?tab=repositories"'
+alias git-log='git log --oneline --decorate --graph --all'
 
 alias mv='mv -i'
 alias rm='rm -i'
