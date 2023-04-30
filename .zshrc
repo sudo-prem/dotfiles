@@ -45,17 +45,17 @@ alias git-log='git log --oneline --decorate --graph --all'
 alias mv='mv -i'
 alias rm='rm -i'
 
-alias vsc-ie='cat vs_code_extensions | xargs -n 1 code --install-extension'
+alias vsce-i='cat vs_code_extensions | xargs -n 1 code --install-extension'
+alias brew-i=''
 
 # Functions
 function vcdot() {
-	rm -rf Brewfile
-	rm -rf vs_code_extensions
+	rm -rf ~/Developer/VC/dotfiles/Brewfile ~/Developer/VC/dotfiles/code/extensions
 
-	brew bundle dump
-	code --list-extensions >> vs_code_extensions
+	brew bundle dump --file=~/Developer/VC/dotfiles/Brewfile
+	code --list-extensions >> ~/Developer/VC/dotfiles/code/extensions
 
-	cp ~/{.vimrc,.zshrc,.tmux.conf,Brewfile,.gitconfig,.gitignore_global} ~/Developer/VC/dotfiles/;
+	cp ~/{.vimrc,.zshrc,.tmux.conf,.gitconfig,.gitignore_global} ~/Developer/VC/dotfiles/;
 	cp ~/.vim/UltiSnips/cpp.snippets ~/Developer/VC/dotfiles/.vim/UltiSnips/;
 }
 
