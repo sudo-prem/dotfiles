@@ -8,7 +8,6 @@ Plug 'tpope/vim-commentary'
 Plug 'sirver/ultisnips'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
-Plug 'Chiel92/vim-autoformat'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'junegunn/fzf'
@@ -86,9 +85,6 @@ if &term =~ '^screen'
 	execute "set <xLeft>=\e[1;*D"
 	execute "set <xRight>=\e[1;*C"
 endif
-
-" Integrate Autoformat
-noremap <F3> :Autoformat<CR>
 
 " Other Keybindings
 nnoremap <S-Tab> <<

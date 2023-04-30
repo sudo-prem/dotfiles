@@ -32,21 +32,29 @@ alias oj="cd ~/Developer/OJ/"
 alias C="clear"
 alias Q="exit"
 alias cpdir='pwd|pbcopy'
-alias cpp='f() { g++-12 $1 -DONPC && ./a.out };f'
+alias cpp='f() { g++-11 $1 -DONPC && ./a.out };f'
 alias ll='ls -alF'
 alias ..='cd ..'
 
-alias g='s -p google'
-alias yt='s -p youtube'
+alias google='s -p google'
+alias youtube='s -p youtube'
 
-alias gh='open "https://github.com/sudo-prem?tab=repositories"'
+alias github='open "https://github.com/sudo-prem?tab=repositories"'
 alias git-log='git log --oneline --decorate --graph --all'
 
 alias mv='mv -i'
 alias rm='rm -i'
 
+alias vsc-ie='cat vs_code_extensions | xargs -n 1 code --install-extension'
+
 # Functions
 function vcdot() {
+	rm -rf Brewfile
+	rm -rf vs_code_extensions
+
+	brew bundle dump
+	code --list-extensions >> vs_code_extensions
+
 	cp ~/{.vimrc,.zshrc,.tmux.conf,Brewfile,.gitconfig,.gitignore_global} ~/Developer/VC/dotfiles/;
 	cp ~/.vim/UltiSnips/cpp.snippets ~/Developer/VC/dotfiles/.vim/UltiSnips/;
 }
