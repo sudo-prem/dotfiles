@@ -25,6 +25,9 @@ export NVM_DIR="$HOME/.nvm"
 # pyenv
 eval "$(pyenv init -)"
 
+# ssh
+# eval `ssh-agent -s`
+
 # Alias
 alias dev="cd ~/Developer/"
 alias vc="cd ~/Developer/VC/"
@@ -35,6 +38,7 @@ alias cpdir='pwd|pbcopy'
 alias cpp='f() { g++-11 $1 -DONPC && ./a.out };f'
 alias ll='ls -alF'
 alias ..='cd ..'
+alias count='ls -1 | wc -l'
 
 alias google='s -p google'
 alias youtube='s -p youtube'
