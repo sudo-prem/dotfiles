@@ -34,11 +34,12 @@ alias vc="cd ~/Developer/VC/"
 alias oj="cd ~/Developer/OJ/"
 alias C="clear"
 alias Q="exit"
-alias cpdir='pwd|pbcopy'
+alias cp-dir='pwd|pbcopy'
 alias cpp='f() { g++-11 $1 -DONPC && ./a.out };f'
 alias ll='ls -alF'
 alias ..='cd ..'
 alias count='ls -1 | wc -l'
+alias prop='stat -x'
 
 alias google='s -p google'
 alias youtube='s -p youtube'
