@@ -91,6 +91,7 @@ nnoremap <S-Tab> <<
 inoremap <S-Tab> <C-d>
 
 " Use W,Q as w,q
-command! -bang -range=% -complete=file -nargs=* W <line1>,<line2>write<bang> <args>
-command! -bang Q quit<bang>
-
+cnoreabbrev W w
+cnoreabbrev Q q
+cnoreabbrev Wq wq
+cnoreabbrev WQ wq
