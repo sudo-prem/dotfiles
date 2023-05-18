@@ -53,7 +53,6 @@ alias mv='mv -i'
 alias rm='rm -i'
 
 alias vsce-i='cat vs_code_extensions | xargs -n 1 code --install-extension'
-alias brew-i=''
 
 # Functions
 function vcdot() {
