@@ -54,8 +54,9 @@ alias rm='rm -i'
 
 alias vsce-i='cat vs_code_extensions | xargs -n 1 code --install-extension'
 
-alias start-postgres='brew services start postgresql@15'
-alias stop-postgres='brew services stop postgresql@15'
+alias start-pg='brew services start postgresql@15'
+alias stop-pg='brew services stop postgresql@15'
+alias create-pg-user='/opt/homebrew/opt/postgresql@15/bin/createuser -s postgres'
 
 # Functions
 function vcdot() {
