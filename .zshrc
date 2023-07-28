@@ -1,21 +1,11 @@
 # Source
 export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:"
-export PATH="/opt/homebrew/opt/python@3.10/libexec/bin:$PATH"
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Fuzzy Search
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f $HOME/.fzf.zsh ] && source $HOME/.fzf.zsh
 bindkey '^f' fzf-file-widget
-
-# Prompt
-autoload -Uz vcs_info
-precmd() { vcs_info }
-zstyle ':vcs_info:git:*' formats '(%b)'
-setopt PROMPT_SUBST
-RPROMPT=\$vcs_info_msg_0_
-autoload -U colors && colors
-PS1="%{$fg[yellow]%}%2~ %{$fg[blue]%}➜ %{$fg[red]%}"
 
 # Node Version Manager
 export NVM_DIR="$HOME/.nvm"
@@ -29,12 +19,13 @@ eval "$(pyenv init -)"
 # eval `ssh-agent -s`
 
 # Alias
-alias ls="ls --color=auto"
-alias dev="cd ~/Developer/"
-alias vc="cd ~/Developer/VC/"
-alias oj="cd ~/Developer/OJ/"
-alias C="clear"
-alias Q="exit"
+alias vim='nvim'
+alias ls='ls --color=auto'
+alias dev='cd $HOME/Developer/'
+alias vc='cd $HOME/Developer/VC/'
+alias oj='cd $HOME/Developer/OJ/'
+alias C='clear'
+alias Q='exit'
 alias cp-dir='pwd|pbcopy'
 alias cp-file='pbcopy <'
 alias cp-man='f() { man $1|pbcopy }; f'
@@ -47,7 +38,7 @@ alias prop='stat -x'
 alias google='s -p google'
 alias youtube='s -p youtube'
 
-alias github='open "https://github.com/sudo-prem?tab=repositories"'
+alias github='open "https://github.com/sudo-prem"'
 alias git-log='git log --oneline --decorate --graph --all'
 
 alias mv='mv -i'
@@ -60,16 +51,40 @@ alias stop-pg='brew services stop postgresql@15'
 alias create-pg-user='/opt/homebrew/opt/postgresql@15/bin/createuser -s postgres'
 
 # Functions
-function vcdot() {
-	rm -rf ~/Developer/VC/dotfiles/Brewfile ~/Developer/VC/dotfiles/code/extensions
+# Setup Command Prompt
+function setup_prompt() {
+  autoload -Uz vcs_info
+  precmd() { vcs_info }
+  zstyle ':vcs_info:git:*' formats '(%b)'
+  setopt PROMPT_SUBST
+  RPROMPT=\$vcs_info_msg_0_
+  autoload -U colors && colors
+  PS1='%{$fg[yellow]%}%2~ %{$fg[blue]%}➜ %{$fg[red]%}'
+}
+setup_prompt
 
-	brew bundle dump --file=~/Developer/VC/dotfiles/Brewfile
-	code --list-extensions >> ~/Developer/VC/dotfiles/code/extensions
+# Backup Python Packages
+function backup_python_packages() {
+  local output_directory="${HOME}/Developer/VC/dotfiles"
+  local output_file="${output_directory}/requirements.txt"
 
-	cp ~/{.vimrc,.zshrc,.tmux.conf,.gitconfig,.gitignore_global} ~/Developer/VC/dotfiles/;
-	cp ~/.vim/UltiSnips/cpp.snippets ~/Developer/VC/dotfiles/.vim/UltiSnips/;
+  pip3 list > "$output_file"
 }
 
+# VC Config
+function vcdot() {
+	rm -rf $HOME/Developer/VC/dotfiles/Brewfile 
+
+	brew bundle dump --file=$HOME/Developer/VC/dotfiles/Brewfile
+	code --list-extensions >> $HOME/Developer/VC/dotfiles/.code/extensions
+
+	backup_python_packages
+
+	cp $HOME/{.zshrc,.tmux.conf,.gitconfig,.gitignore_global} $HOME/Developer/VC/dotfiles/;
+	cp -a $HOME/.config/nvim/. $HOME/Developer/VC/dotfiles/nvim
+}
+
+# Change Cursor Style
 function cursorChange() {
 	echo -ne '\e[6 q'
 }

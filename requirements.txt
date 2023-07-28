@@ -1,0 +1,7 @@
+Package    Version
+---------- -------
+greenlet   2.0.2
+msgpack    1.0.5
+pip        23.2.1
+pynvim     0.4.3
+setuptools 65.5.0
