@@ -73,10 +73,10 @@ function backup_python_packages() {
 
 # VC Config
 function vcdot() {
-	rm -rf $HOME/Developer/VC/dotfiles/Brewfile 
+	rm -rf $HOME/Developer/VC/dotfiles/Brewfile $HOME/Developer/VC/dotfiles/code/extensions
 
 	brew bundle dump --file=$HOME/Developer/VC/dotfiles/Brewfile
-	code --list-extensions >> $HOME/Developer/VC/dotfiles/.code/extensions
+	code --list-extensions >> $HOME/Developer/VC/dotfiles/code/extensions
 
 	backup_python_packages
 
