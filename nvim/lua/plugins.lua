@@ -43,6 +43,8 @@ return require('packer').startup(function(use)
 
 	use 'sirver/ultisnips'
 
+	use 'vim-autoformat/vim-autoformat'
+
 	if packer_bootstrap then
 		require('packer').sync()
 	end

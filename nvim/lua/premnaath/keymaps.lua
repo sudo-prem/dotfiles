@@ -48,9 +48,12 @@ vim.cmd('cnoreabbrev WQ wq')
 
 -- Change cursor style
 vim.cmd([[
-  augroup RestoreCursorShape
-    autocmd!
-    autocmd VimLeave * lua vim.cmd("set guicursor=a:block-blinkon0")
-  augroup END
+augroup RestoreCursorShape
+autocmd!
+autocmd VimLeave * lua vim.cmd("set guicursor=a:block-blinkon0")
+augroup END
 ]])
+
+-- Use clang-format for c, cpp
+vim.api.nvim_set_keymap('n', '<F3>', ':Autoformat()<CR>', { noremap = true, silent = true })
 

@@ -114,6 +114,11 @@ _G.packer_plugins = {
     path = "/Users/premnaath/.local/share/nvim/site/pack/packer/start/vim-airline",
     url = "https://github.com/vim-airline/vim-airline"
   },
+  ["vim-autoformat"] = {
+    loaded = true,
+    path = "/Users/premnaath/.local/share/nvim/site/pack/packer/start/vim-autoformat",
+    url = "https://github.com/vim-autoformat/vim-autoformat"
+  },
   ["vim-commentary"] = {
     loaded = true,
     path = "/Users/premnaath/.local/share/nvim/site/pack/packer/start/vim-commentary",
