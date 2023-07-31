@@ -1,3 +1,3 @@
 # dotfiles
 
-Config files for iTerm2, tmux, git and VIM
+Config files for iTerm2, tmux, git and neovim
