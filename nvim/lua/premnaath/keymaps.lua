@@ -14,11 +14,11 @@ end)
 -- Open file explorer
 vim.api.nvim_set_keymap('n', '<leader>e', ':Ex<CR>', { noremap = true, silent = true })
 
--- Move lines
-vim.api.nvim_set_keymap('n', '<S-Up>', ':m .-2<CR>==', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<S-Down>', ':m .+1<CR>==', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('v', '<S-Up>', ":m '<-2<CR>gv=gv", { noremap = true, silent = true })
-vim.api.nvim_set_keymap('v', '<S-Down>', ":m '>+1<CR>gv=gv", { noremap = true, silent = true })
+-- Move lUines
+vim.api.nvim_set_keymap('n', '<Leader><Up>', ':m .-2<CR>==', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<Leader><Down>', ':m .+1<CR>==', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('v', '<Leader><Up>', ":m '<-2<CR>gv=gv", { noremap = true, silent = true })
+vim.api.nvim_set_keymap('v', '<Leader><Down>', ":m '>+1<CR>gv=gv", { noremap = true, silent = true })
 
 -- Add/Remove indentation
 vim.api.nvim_set_keymap('n', '<S-Tab>', '<<', { noremap = true })
