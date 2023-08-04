@@ -50,6 +50,13 @@ alias start-pg='brew services start postgresql@15'
 alias stop-pg='brew services stop postgresql@15'
 alias create-pg-user='/opt/homebrew/opt/postgresql@15/bin/createuser -s postgres'
 
+# Rename current session - Ctrl + A + $
+# Detach current session - Ctrl + A + D
+# Preview all sessions - Ctrl + A + S
+alias tmux-use='tmux attach -t '
+alias tmux-new='tmux new -s '
+alias tmux-kill='tmux kill-session '
+
 # Functions
 # Setup Command Prompt
 function setup_prompt() {
