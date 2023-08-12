@@ -32,3 +32,12 @@ vim.opt.hlsearch = false
 -- Incremental search for search matches as you type
 vim.opt.incsearch = true
 
+-- Enable line wrapping and line breaking
+vim.wo.wrap = true
+vim.wo.linebreak = true
+
+-- Map arrow keys to move within wrapped lines
+vim.api.nvim_set_keymap('n', '<Down>', 'g<Down>', { noremap = true })
+vim.api.nvim_set_keymap('n', '<Up>', 'g<Up>', { noremap = true })
+vim.api.nvim_set_keymap('n', '<Left>', 'g<Left>', { noremap = true })
+vim.api.nvim_set_keymap('n', '<Right>', 'g<Right>', { noremap = true })
