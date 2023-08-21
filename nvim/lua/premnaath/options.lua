@@ -39,3 +39,7 @@ vim.wo.linebreak = true
 -- Map arrow keys to move within wrapped lines
 vim.api.nvim_set_keymap('n', '<Down>', 'g<Down>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<Up>', 'g<Up>', { noremap = true })
+
+-- Scroll using mouse
+vim.o.mouse = "a"
+
