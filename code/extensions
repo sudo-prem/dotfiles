@@ -1,7 +1,8 @@
 Equinusocio.vsc-material-theme
 esbenp.prettier-vscode
-GitHub.copilot
+ms-python.autopep8
 ms-python.python
+ms-vscode-remote.remote-containers
 ms-vscode.cpptools
 naumovs.color-highlight
 oderwat.indent-rainbow

@@ -38,6 +38,12 @@ alias prop='stat -x'
 alias google='s -p google'
 alias youtube='s -p youtube'
 
+alias cvenv='python -m venv venv'
+alias avenv='source venv/bin/activate'
+alias jl-ls='jupyter kernelspec list'
+alias jl-add='python -m ipykernel install --user --name=venv'
+alias jl-delete='jupyter kernelspec uninstall venv'
+
 alias github='open "https://github.com/sudo-prem"'
 alias git-log='git log --oneline --decorate --graph --all'
 
@@ -49,6 +55,7 @@ alias vsce-i='cat vs_code_extensions | xargs -n 1 code --install-extension'
 alias start-pg='brew services start postgresql@15'
 alias stop-pg='brew services stop postgresql@15'
 alias create-pg-user='/opt/homebrew/opt/postgresql@15/bin/createuser -s postgres'
+alias check-port='function _check-port(){ lsof -i :$1 }; _check-port'
 
 # Rename current session - Ctrl + A + $
 # Detach current session - Ctrl + A + D
