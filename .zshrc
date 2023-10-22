@@ -16,7 +16,7 @@ export NVM_DIR="$HOME/.nvm"
 eval "$(pyenv init -)"
 
 # ssh
-eval `ssh-agent -s`
+# eval `ssh-agent -s`
 
 # Alias
 alias vim='nvim'
