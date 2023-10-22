@@ -16,7 +16,7 @@ export NVM_DIR="$HOME/.nvm"
 eval "$(pyenv init -)"
 
 # ssh
-# eval `ssh-agent -s`
+eval `ssh-agent -s`
 
 # Alias
 alias vim='nvim'
@@ -79,10 +79,9 @@ setup_prompt
 
 # Backup Python Packages
 function backup_python_packages() {
-  local output_directory="${HOME}/Developer/VC/dotfiles"
-  local output_file="${output_directory}/requirements.txt"
+  local output_file="${HOME}/Developer/VC/dotfiles/requirements.txt"
 
-  pip3 list > "$output_file"
+  pip freeze > "$output_file"
 }
 
 # VC Config
