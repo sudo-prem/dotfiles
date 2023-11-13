@@ -50,11 +50,13 @@ alias git-log='git log --oneline --decorate --graph --all'
 alias mv='mv -i'
 alias rm='rm -i'
 
+alias brew-upgrade='brew list --cask | xargs brew upgrade --cask'
 alias vsce-i='cat vs_code_extensions | xargs -n 1 code --install-extension'
 
 alias start-pg='brew services start postgresql@15'
 alias stop-pg='brew services stop postgresql@15'
 alias create-pg-user='/opt/homebrew/opt/postgresql@15/bin/createuser -s postgres'
+
 alias check-port='function _check-port(){ lsof -i :$1 }; _check-port'
 
 # Rename current session - Ctrl + A + $
@@ -102,4 +104,7 @@ function cursorChange() {
 	echo -ne '\e[6 q'
 }
 precmd_functions+=(cursorChange)
+
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
