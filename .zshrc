@@ -19,6 +19,7 @@ eval "$(pyenv init -)"
 # eval `ssh-agent -s`
 
 # Alias
+alias cat='cat -n'
 alias vim='nvim'
 alias ls='ls --color=auto'
 alias dev='cd $HOME/Developer/'
@@ -40,6 +41,8 @@ alias youtube='s -p youtube'
 
 alias cvenv='python -m venv venv'
 alias avenv='source venv/bin/activate'
+alias jl='jupyter lab'
+alias jl-i='pip install jupyterlab ipykernel'
 alias jl-ls='jupyter kernelspec list'
 alias jl-add='python -m ipykernel install --user --name=venv'
 alias jl-delete='jupyter kernelspec uninstall venv'
