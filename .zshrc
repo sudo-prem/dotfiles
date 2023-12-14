@@ -61,6 +61,7 @@ alias stop-pg='brew services stop postgresql@15'
 alias create-pg-user='/opt/homebrew/opt/postgresql@15/bin/createuser -s postgres'
 
 alias check-port='function _check-port(){ lsof -i :$1 }; _check-port'
+alias kill-port='sudo kill -9'
 
 # Rename current session - Ctrl + A + $
 # Detach current session - Ctrl + A + D
