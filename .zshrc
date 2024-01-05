@@ -109,6 +109,7 @@ function cursorChange() {
 }
 precmd_functions+=(cursorChange)
 
-
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+# Set Symlink to gcc
+# sudo ln -s $(which gcc-11) /usr/local/bin/gcc
