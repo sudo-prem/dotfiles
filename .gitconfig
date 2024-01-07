@@ -1,23 +1,38 @@
 [user]
-	name = Premnaath
-	email = premnaathvaradharajan@gmail.com
+  name = Premnaath
+  email = premnaathvaradharajan@gmail.com
 
 [core]
-	excludesfile = /Users/premnaath/.gitignore_global
+  excludesfile = /Users/premnaath/.gitignore_global
+  pager = delta
 
 [merge]
-	tool = vimdiff
-	conflictstyle = diff3
+  tool = vimdiff
+  conflictstyle = diff3
 
 [mergetool]
-	keepBackup = false
-	prompt = false
+  keepBackup = false
+  prompt = false
+
 [filter "lfs"]
-	required = true
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
+  required = true
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+
 [pull]
-	rebase = true
+  rebase = true
+
 [credential]
-	helper = cache
+  helper = cache
+
+[interactive]
+  diffFilter = delta --color-only
+
+[delta]
+  navigate = true
+  light = false
+  side-by-side = true
+
+[diff]
+  colorMoved = default

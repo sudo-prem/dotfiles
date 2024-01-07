@@ -1,11 +1,6 @@
 -- Set the mapleader
 vim.g.mapleader = ' '
 
--- Snippets Trigger
-vim.g.UltiSnipsExpandTrigger = '<Tab>'
-vim.g.UltiSnipsJumpForwardTrigger = '<Tab>'
-vim.g.UltiSnipsJumpBackwardTrigger = '<S-Tab>'
-
 -- Source current file
 vim.keymap.set("n", "<leader><leader>", function()
 	vim.cmd("so")

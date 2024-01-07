@@ -50,6 +50,7 @@ alias jl-delete='jupyter kernelspec uninstall venv'
 
 alias github='open "https://github.com/sudo-prem"'
 alias git-log='git log --oneline --decorate --graph --all'
+alias git-branch='git branch --sort=-committerdate | fzf --header "Checkout Recent Branch" --preview "git -c color.diff=always diff {1} | delta" --pointer="" | xargs git checkout'
 
 alias mv='mv -i'
 alias rm='rm -i'
