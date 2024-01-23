@@ -15,6 +15,9 @@ export NVM_DIR="$HOME/.nvm"
 # pyenv
 eval "$(pyenv init -)"
 
+# Set Symlink to gcc
+# sudo ln -s $(which gcc-11) /usr/local/bin/gcc
+
 # ssh
 # eval `ssh-agent -s`
 
@@ -25,13 +28,13 @@ alias ls='ls --color=auto'
 alias dev='cd $HOME/Developer/'
 alias vc='cd $HOME/Developer/VC/'
 alias oj='cd $HOME/Developer/OJ/'
+alias config='cd $HOME/.config/'
 alias C='clear'
 alias Q='exit'
 alias cp-dir='pwd|pbcopy'
 alias cp-file='pbcopy <'
 alias cp-man='f() { man $1|pbcopy }; f'
 alias cpp='f() { g++-11 $1 -DONPC && ./a.out }; f'
-alias ll='ls -alF'
 alias ..='cd ..'
 alias count='ls -1 | wc -l'
 alias prop='stat -x'
@@ -57,10 +60,6 @@ alias rm='rm -i'
 
 alias brew-upgrade='brew list --cask | xargs brew upgrade --cask'
 alias vsce-i='cat vs_code_extensions | xargs -n 1 code --install-extension'
-
-alias start-pg='brew services start postgresql@15'
-alias stop-pg='brew services stop postgresql@15'
-alias create-pg-user='/opt/homebrew/opt/postgresql@15/bin/createuser -s postgres'
 
 alias check-port='function _check-port(){ lsof -i :$1 }; _check-port'
 alias kill-port='sudo kill -9'
@@ -105,13 +104,3 @@ function vcdot() {
 	cp -a $HOME/.config/nvim/. $HOME/Developer/VC/dotfiles/nvim
 }
 
-# Change Cursor Style
-function cursorChange() {
-	echo -ne '\e[6 q'
-}
-precmd_functions+=(cursorChange)
-
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
-# Set Symlink to gcc
-# sudo ln -s $(which gcc-11) /usr/local/bin/gcc
