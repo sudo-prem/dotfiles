@@ -10,12 +10,13 @@ local M = {
       floats = "transparent",
     },
   },
-  config = function(_, opts)
-    vim.cmd.colorscheme "tokyonight"
-    local tokyonight = require("tokyonight")
-    tokyonight.setup(opts)
-    tokyonight.load()
-  end,
 }
+
+M.config = function(_, opts)
+  vim.cmd.colorscheme "tokyonight"
+  local tokyonight = require("tokyonight")
+  tokyonight.setup(opts)
+  tokyonight.load()
+end
 
 return M

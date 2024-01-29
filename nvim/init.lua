@@ -1,32 +1,47 @@
-require "premnaath.core.launch"
-require "premnaath.core.options"
-require "premnaath.core.keymaps"
-require "premnaath.core.autocmds"
-spec "premnaath.plugins.colorscheme"
-spec "premnaath.plugins.devicons"
-spec "premnaath.plugins.treesitter"
-spec "premnaath.plugins.mason"
-spec "premnaath.plugins.schemastore"
-spec "premnaath.plugins.lspconfig"
-spec "premnaath.plugins.cmp"
-spec "premnaath.plugins.telescope"
-spec "premnaath.plugins.none-ls"
-spec "premnaath.plugins.illuminate"
-spec "premnaath.plugins.gitsigns"
-spec "premnaath.plugins.whichkey"
-spec "premnaath.plugins.nvimtree"
-spec "premnaath.plugins.commentary"
-spec "premnaath.plugins.lualine"
-spec "premnaath.plugins.navic"
-spec "premnaath.plugins.breadcrumbs"
-spec "premnaath.plugins.harpoon"
-spec "premnaath.plugins.neotest"
-spec "premnaath.plugins.autopairs"
-spec "premnaath.plugins.neogit"
-spec "premnaath.plugins.alpha"
-spec "premnaath.plugins.project"
-spec "premnaath.plugins.indentline"
-spec "premnaath.plugins.surround"
-spec "premnaath.plugins.vim-multiple-cursors"
-spec "premnaath.plugins.vim-autoformat"
-require "premnaath.core.lazy"
+require("premnaath.core.launch")
+require("premnaath.core.abbreviations")
+require("premnaath.core.autocmds")
+require("premnaath.core.keymaps")
+require("premnaath.core.options")
+require("premnaath.core.utils")
+
+spec("premnaath.plugins.nvim-lspconfig.nvim-lspconfig")
+spec("premnaath.plugins.which-key.which-key")
+
+spec("premnaath.plugins.alpha-nvim")
+spec("premnaath.plugins.breadcrumbs")
+spec("premnaath.plugins.bufdelete")
+spec("premnaath.plugins.colorscheme")
+spec("premnaath.plugins.comment")
+spec("premnaath.plugins.dressing")
+spec("premnaath.plugins.editorconfig-vim")
+spec("premnaath.plugins.fidget")
+spec("premnaath.plugins.filt")
+spec("premnaath.plugins.gitsigns")
+spec("premnaath.plugins.indent-blankline")
+spec("premnaath.plugins.leap")
+spec("premnaath.plugins.lorem")
+spec("premnaath.plugins.lualine")
+spec("premnaath.plugins.neo-tree")
+spec("premnaath.plugins.neodev")
+spec("premnaath.plugins.neoscroll")
+spec("premnaath.plugins.neotest")
+spec("premnaath.plugins.noice")
+spec("premnaath.plugins.nonels")
+spec("premnaath.plugins.nvim-autopairs")
+spec("premnaath.plugins.nvim-cmp")
+spec("premnaath.plugins.nvim-dap")
+spec("premnaath.plugins.nvim-navic")
+spec("premnaath.plugins.nvim-spectre")
+spec("premnaath.plugins.nvim-surround")
+spec("premnaath.plugins.nvim-treesitter")
+spec("premnaath.plugins.nvim-ts-autotag")
+spec("premnaath.plugins.nvim-ts-context-commentstring")
+spec("premnaath.plugins.persistence")
+spec("premnaath.plugins.refactoring")
+spec("premnaath.plugins.telescope")
+spec("premnaath.plugins.todo-comments")
+spec("premnaath.plugins.trouble")
+spec("premnaath.plugins.vim-sleuth")
+
+require("premnaath.core.lazy")

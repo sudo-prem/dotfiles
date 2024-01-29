@@ -13,7 +13,9 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 # pyenv
-eval "$(pyenv init -)"
+if which pyenv &>/dev/null ; then
+    eval "$(pyenv init -)"
+fi
 
 # Set Symlink to gcc
 # sudo ln -s $(which gcc-11) /usr/local/bin/gcc
@@ -24,11 +26,11 @@ eval "$(pyenv init -)"
 # Alias
 alias cat='cat -n'
 alias vim='nvim'
-alias ls='ls --color=auto'
+alias ls='lsd'
+alias ll='lsd -alF'
 alias dev='cd $HOME/Developer/'
 alias vc='cd $HOME/Developer/VC/'
 alias oj='cd $HOME/Developer/OJ/'
-alias config='cd $HOME/.config/'
 alias C='clear'
 alias Q='exit'
 alias cp-dir='pwd|pbcopy'
@@ -40,9 +42,6 @@ alias count='ls -1 | wc -l'
 alias prop='stat -x'
 alias bak='f() { mv "$1" "$1.bak" }; f'
 
-alias google='s -p google'
-alias youtube='s -p youtube'
-
 alias cvenv='python -m venv venv'
 alias avenv='source venv/bin/activate'
 alias jl='jupyter lab'
@@ -52,55 +51,47 @@ alias jl-add='python -m ipykernel install --user --name=venv'
 alias jl-delete='jupyter kernelspec uninstall venv'
 
 alias github='open "https://github.com/sudo-prem"'
-alias git-log='git log --oneline --decorate --graph --all'
-alias git-branch='git branch --sort=-committerdate | fzf --header "Checkout Recent Branch" --preview "git -c color.diff=always diff {1} | delta" --pointer="" | xargs git checkout'
 
 alias mv='mv -i'
 alias rm='rm -i'
 
 alias brew-upgrade='brew list --cask | xargs brew upgrade --cask'
+alias brew-dep='brew uses --recursive --installed'
 alias vsce-i='cat vs_code_extensions | xargs -n 1 code --install-extension'
 
 alias check-port='function _check-port(){ lsof -i :$1 }; _check-port'
 alias kill-port='sudo kill -9'
 
-# Rename current session - Ctrl + A + $
-# Detach current session - Ctrl + A + D
-# Preview all sessions - Ctrl + A + S
-alias tmux-use='tmux attach -t '
-alias tmux-new='tmux new -s '
-alias tmux-kill='tmux kill-session '
-
 # Functions
 # Setup Command Prompt
 function setup_prompt() {
-  autoload -Uz vcs_info
-  precmd() { vcs_info }
-  zstyle ':vcs_info:git:*' formats '(%b)'
-  setopt PROMPT_SUBST
-  RPROMPT=\$vcs_info_msg_0_
-  autoload -U colors && colors
-  PS1='%{$fg[yellow]%}%2~ %{$fg[blue]%}➜ %{$fg[red]%}'
+    autoload -Uz vcs_info
+    precmd() { vcs_info }
+    zstyle ':vcs_info:git:*' formats '(%b)'
+    setopt PROMPT_SUBST
+    RPROMPT=\$vcs_info_msg_0_
+    autoload -U colors && colors
+    PS1='%{$fg[yellow]%}%2~ %{$fg[blue]%}➜ %{$fg[red]%}'
 }
 setup_prompt
 
 # Backup Python Packages
 function backup_python_packages() {
-  local output_file="${HOME}/Developer/VC/dotfiles/requirements.txt"
+    local output_file="${HOME}/Developer/VC/dotfiles/requirements.txt"
 
-  pip freeze > "$output_file"
+    pip freeze > "$output_file"
 }
 
 # VC Config
 function vcdot() {
-	rm -rf $HOME/Developer/VC/dotfiles/Brewfile $HOME/Developer/VC/dotfiles/code/extensions
+    rm -rf $HOME/Developer/VC/dotfiles/Brewfile $HOME/Developer/VC/dotfiles/code/extensions
 
-	brew bundle dump --file=$HOME/Developer/VC/dotfiles/Brewfile
-	code --list-extensions >> $HOME/Developer/VC/dotfiles/code/extensions
+    brew bundle dump --file=$HOME/Developer/VC/dotfiles/Brewfile
+    code --list-extensions >> $HOME/Developer/VC/dotfiles/code/extensions
 
-	backup_python_packages
+    backup_python_packages
 
-	cp $HOME/{.zshrc,.tmux.conf,.gitconfig,.gitignore_global} $HOME/Developer/VC/dotfiles/;
-	cp -a $HOME/.config/nvim/. $HOME/Developer/VC/dotfiles/nvim
+    cp $HOME/{.zshrc,.gitconfig,.gitignore_global} $HOME/Developer/VC/dotfiles/;
+    cp -a $HOME/.config/nvim/. $HOME/Developer/VC/dotfiles/nvim
+    cp -a $HOME/.config/wezterm/wezterm.lua $HOME/Developer/VC/dotfiles/wezterm.lua
 }
-
