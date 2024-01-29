@@ -1,6 +1,5 @@
 local M = {
   "derektata/lorem.nvim",
-  
 }
 
 M.config = function()

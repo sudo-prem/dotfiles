@@ -23,7 +23,7 @@ return {
         },
         indent = { enable = true },
         -- context_commentstring = { enable = true, enable_autocmd = false },
-        auto_install = true,
+        auto_install = false,
         ensure_installed = {
           "bash",
           "c",
