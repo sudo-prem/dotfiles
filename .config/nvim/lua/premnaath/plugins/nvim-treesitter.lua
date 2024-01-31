@@ -49,7 +49,7 @@ return {
           keymaps = {
             init_selection = "<leader>vv",
             node_incremental = "+",
-            scope_incremental = false,
+            scope_incremental = "<leader>vn",
             node_decremental = "_",
           },
         },

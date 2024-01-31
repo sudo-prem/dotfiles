@@ -1,5 +1,5 @@
-vim.g.loaded_netrw = 1                              -- disable netrw
-vim.g.loaded_netrwPlugin = 1                        -- disable netrwPlugin
+-- vim.g.loaded_netrw = 1                              -- disable netrw
+-- vim.g.loaded_netrwPlugin = 1                        -- disable netrwPlugin
 
 vim.opt.incsearch = true                            -- make search act like search in modern browsers
 vim.opt.backup = false                              -- creates a backup file
@@ -28,7 +28,7 @@ vim.opt.shiftwidth = 2                              -- the number of spaces inse
 vim.opt.tabstop = 2                                 -- insert 2 spaces for a tab
 vim.opt.cursorline = true                           -- highlight the current line
 vim.opt.number = true                               -- set numbered lines
-vim.opt.laststatus = 3
+vim.opt.laststatus = 3															-- have a common status line
 vim.opt.showcmd = false
 vim.opt.ruler = false
 vim.opt.relativenumber = true                       -- set relative numbered lines
