@@ -4,7 +4,6 @@
 
 [core]
   excludesfile = /Users/premnaath/.gitignore_global
-  pager = delta
 
 [merge]
   tool = vimdiff

@@ -52,6 +52,8 @@ alias jl-delete='jupyter kernelspec uninstall venv'
 
 alias github='open "https://github.com/sudo-prem"'
 
+alias git-log="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)' -20"
+
 alias mv='mv -i'
 alias rm='rm -i'
 
