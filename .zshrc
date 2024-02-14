@@ -92,6 +92,5 @@ function vcdot() {
     backup_python_packages
 
     cp $HOME/{.zshrc,.gitconfig,.gitignore_global} $HOME/Developer/VC/dotfiles/;
-    cp -a $HOME/.config/nvim/. $HOME/Developer/VC/dotfiles/nvim
-    cp -a $HOME/.config/wezterm/wezterm.lua $HOME/Developer/VC/dotfiles/wezterm.lua
+    cp -a $HOME/.config/. $HOME/Developer/VC/dotfiles/config;
 }
