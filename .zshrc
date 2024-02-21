@@ -7,6 +7,9 @@ source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 [ -f $HOME/.fzf.zsh ] && source $HOME/.fzf.zsh
 bindkey '^f' fzf-file-widget
 
+# Zoxide
+eval "$(zoxide init --cmd cd zsh)"
+
 # Node Version Manager
 export NVM_DIR="$HOME/.nvm"
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
@@ -16,9 +19,6 @@ export NVM_DIR="$HOME/.nvm"
 if which pyenv &>/dev/null ; then
     eval "$(pyenv init -)"
 fi
-
-# Set Symlink to gcc
-# sudo ln -s $(which gcc-11) /usr/local/bin/gcc
 
 # ssh
 # eval `ssh-agent -s`
@@ -35,7 +35,6 @@ alias C='clear'
 alias Q='exit'
 alias cp-dir='pwd|pbcopy'
 alias cp-file='pbcopy <'
-alias cp-man='f() { man $1|pbcopy }; f'
 alias cpp='f() { g++-11 $1 -DONPC && ./a.out }; f'
 alias ..='cd ..'
 alias count='ls -1 | wc -l'
