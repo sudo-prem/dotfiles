@@ -1,3 +1,3 @@
 # dotfiles
 
-Config files for iTerm2, tmux, git and neovim
+Config files for htop, lsd, neovim, wezterm, git, and zshell
