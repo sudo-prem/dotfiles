@@ -1,6 +1,3 @@
-// Identify where all other libraries are located by revealing one header in
-// finder and add below content to bits/stdc++.h in that directory
-
 // C++ includes used for precompiling -*- C++ -*-
 
 // Copyright (C) 2003-2013 Free Software Foundation, Inc.
