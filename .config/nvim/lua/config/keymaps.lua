@@ -42,3 +42,6 @@ keymap("n", "<Left>", ":bprevious<CR>", opts)
 
 -- Split line with X
 keymap("n", "X", ":keeppatterns substitute/\\s*\\%#\\s*/\\r/e <bar> normal! ==^<cr>", { silent = true })
+
+-- Open buffer's location
+keymap("n", "<C-p>", ":echo expand('%:p')<CR>")
