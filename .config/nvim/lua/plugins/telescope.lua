@@ -20,22 +20,16 @@ local M = {
 			},
 		},
 	},
-}
-
-M.config = function()
-	local telescope = require("telescope")
-	local actions = require("telescope.actions")
-
-	telescope.setup({
+	opts = {
 		defaults = {
 			mappings = {
 				i = {
-					["<C-j>"] = actions.move_selection_next,
-					["<C-k>"] = actions.move_selection_previous,
+					["<C-j>"] = require("telescope.actions").move_selection_next,
+					["<C-k>"] = require("telescope.actions").move_selection_previous,
 				},
 			},
 		},
-	})
-end
+	},
+}
 
 return M
