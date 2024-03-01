@@ -26,7 +26,9 @@ fi
 alias cat='cat -n'
 alias vim='nvim'
 alias ls='lsd'
-alias ll='lsd -alF'
+alias la='ls -a'
+alias ll='ls -alF'
+alias lt='ls --tree'
 alias dev='cd $HOME/Developer/'
 alias vc='cd $HOME/Developer/VC/'
 alias oj='cd $HOME/Developer/OJ/'
@@ -49,7 +51,7 @@ alias jl-add='python -m ipykernel install --user --name=venv'
 alias jl-delete='jupyter kernelspec uninstall venv'
 
 alias github='open "https://github.com/sudo-prem"'
-
+alias lg='lazygit'
 alias git-log="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)' -20"
 
 alias mv='mv -i'
