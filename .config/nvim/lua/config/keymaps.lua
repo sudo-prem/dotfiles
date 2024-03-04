@@ -1,16 +1,20 @@
 local keymap = vim.keymap.set
 local opts = { noremap = true, silent = true }
 
--- Paste in visual: do not copy text back
-keymap("x", "p", [["_dP]])
-
--- Indent in visual mode
-keymap("v", "<", "<gv", opts)
-keymap("v", ">", ">gv", opts)
+local util = require("lazyvim.util")
+local whichkey = util.safe_keymap_set
+local cmp_enabled = true
 
 -- Move lines in visual
 keymap("v", "J", ":m '>+1<CR>gv=gv", opts)
 keymap("v", "K", ":m '<-2<CR>gv=gv", opts)
+
+-- Move to start/end of line
+keymap("n", "H", "0", opts)
+keymap("n", "L", "$", opts)
+
+-- Paste in visual: do not copy text back
+keymap("x", "p", [["_dP]])
 
 -- Copy to clipboard only when yanked
 keymap("n", "y", '"*y', opts)
@@ -26,22 +30,30 @@ keymap("n", "<Down>", "<Nop>", opts)
 keymap("n", "<Left>", "<Nop>", opts)
 keymap("n", "<Right>", "<Nop>", opts)
 
+-- Indent in visual mode
+keymap("v", "<", "<gv", opts)
+keymap("v", ">", ">gv", opts)
+
 -- Enter Normal mode on jk
 keymap("i", "jk", "<ESC>", opts)
 
--- Move to start/end of line
-keymap("n", "H", "0", opts)
-keymap("n", "L", "$", opts)
-
--- Copy everything between { and }
-keymap("n", "YY", "va{Vy", opts)
-
 -- Navigate buffers
-keymap("n", "<Right>", ":bnext<CR>", opts)
-keymap("n", "<Left>", ":bprevious<CR>", opts)
+whichkey("n", "<Right>", ":bnext<CR>", { desc = "Next buffer" })
+whichkey("n", "<Left>", ":bprevious<CR>", { desc = "Prev buffer" })
 
 -- Split line with X
-keymap("n", "X", ":keeppatterns substitute/\\s*\\%#\\s*/\\r/e <bar> normal! ==^<cr>", { silent = true })
+whichkey("n", "X", ":keeppatterns substitute/\\s*\\%#\\s*/\\r/e <bar> normal! ==^<cr>", { desc = "Split line" })
 
--- Open buffer's location
-keymap("n", "<C-p>", ":echo expand('%:p')<CR>")
+-- Current buffer's location
+whichkey("n", "<C-p>", ":echo expand('%:p')<CR>", { desc = "Print Working Directory" })
+
+-- Disable code completion
+whichkey("n", "<leader>cc", function()
+	if cmp_enabled then
+		require("cmp").setup.buffer({ enabled = false })
+		cmp_enabled = false
+	else
+		require("cmp").setup.buffer({ enabled = true })
+		cmp_enabled = true
+	end
+end, { desc = "Toggle Code Completion" })
