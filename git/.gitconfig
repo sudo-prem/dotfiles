@@ -4,6 +4,10 @@
 
 [core]
   excludesfile = /Users/premnaath/.gitignore_global
+  pager = delta
+
+[interactive]
+  diffFilter = delta --color-only
 
 [merge]
   tool = vimdiff
@@ -24,9 +28,6 @@
 
 [credential]
   helper = cache
-
-[interactive]
-  diffFilter = delta --color-only
 
 [delta]
   navigate = true
