@@ -19,7 +19,7 @@ config.window_padding = {
 	bottom = "0.5cell",
 }
 
-config.default_workspace = "sudo-wez"
+config.default_workspace = "sudo-term"
 config.scrollback_lines = 3000
 
 config.inactive_pane_hsb = {

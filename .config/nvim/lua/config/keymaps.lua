@@ -47,6 +47,12 @@ whichkey("n", "X", ":keeppatterns substitute/\\s*\\%#\\s*/\\r/e <bar> normal! ==
 -- Current buffer's location
 whichkey("n", "<C-p>", ":echo expand('%:p')<CR>", { desc = "Print Working Directory" })
 
+-- Multiple cursor
+whichkey("n", "<C-j>", "<Plug>(VM-Add-Cursor-Down)", { desc = "Add cursor down" })
+whichkey("n", "<C-k>", "<Plug>(VM-Add-Cursor-Up)", { desc = "Add cursor up" })
+whichkey("n", "<M-C-j>", "<Plug>(VM-Select-Cursor-Down)", { desc = "Select cursor down" })
+whichkey("n", "<M-C-k>", "<Plug>(VM-Select-Cursor-Up)", { desc = "Select cursor up" })
+
 -- Disable code completion
 whichkey("n", "<leader>cc", function()
 	if cmp_enabled then
