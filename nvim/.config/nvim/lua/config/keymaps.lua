@@ -34,6 +34,12 @@ keymap("n", "<Right>", "<Nop>", opts)
 keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
 
+-- Keep cursor in the middle
+keymap("n", "<C-d>", "<C-d>zz")
+keymap("n", "<C-u>", "<C-u>zz")
+keymap("n", "n", "nzzzv")
+keymap("n", "N", "Nzzzv")
+
 -- Enter Normal mode on jk
 keymap("i", "jk", "<ESC>", opts)
 
