@@ -25,7 +25,8 @@ alias jl-add='python -m ipykernel install --user --name=venv'
 alias jl-delete='jupyter kernelspec uninstall venv'
 
 alias github='open "https://github.com/sudo-prem"'
-alias gg='lazygit'
+alias lg='lazygit'
+alias ld='lazydocker'
 
 alias mv='mv -i'
 alias rm='rm -i'
