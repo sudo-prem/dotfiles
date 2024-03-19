@@ -34,6 +34,8 @@ alias rm='rm -i'
 alias brew-dep='brew uses --recursive --installed'
 alias brew-upgrade='brew list --cask | xargs brew upgrade --cask'
 alias brew-bundle='rm -rf $HOME/dotfiles/brew/Brewfile; brew bundle dump --file=$HOME/dotfiles/brew/Brewfile'
+alias brew-cleanup='brew cleanup --prune=all'
+
 alias pip-freeze='rm -rf $HOME/dotfiles/misc/python/requirements.txt; pip freeze > $HOME/dotfiles/misc/python/requirements.txt'
 
 alias check-port='function _check-port(){ lsof -i :$1 }; _check-port'
