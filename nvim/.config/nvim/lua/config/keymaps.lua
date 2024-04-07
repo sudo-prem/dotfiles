@@ -54,10 +54,14 @@ whichkey("n", "X", ":keeppatterns substitute/\\s*\\%#\\s*/\\r/e <bar> normal! ==
 whichkey("n", "<C-p>", ":echo expand('%:p')<CR>", { desc = "Print Working Directory" })
 
 -- Multiple cursor
-whichkey("n", "<C-j>", "<Plug>(VM-Add-Cursor-Down)", { desc = "Add cursor down" })
-whichkey("n", "<C-k>", "<Plug>(VM-Add-Cursor-Up)", { desc = "Add cursor up" })
-whichkey("n", "<M-C-j>", "<Plug>(VM-Select-Cursor-Down)", { desc = "Select cursor down" })
-whichkey("n", "<M-C-k>", "<Plug>(VM-Select-Cursor-Up)", { desc = "Select cursor up" })
+whichkey("n", "<A-j>", "<Plug>(VM-Add-Cursor-Down)", { desc = "Add cursor down" })
+whichkey("n", "<A-k>", "<Plug>(VM-Add-Cursor-Up)", { desc = "Add cursor up" })
+whichkey("n", "<M-A-j>", "<Plug>(VM-Select-Cursor-Down)", { desc = "Select cursor down" })
+whichkey("n", "<M-A-k>", "<Plug>(VM-Select-Cursor-Up)", { desc = "Select cursor up" })
+
+-- Window splits
+whichkey("n", "<C-w>\\", ":vsplit<CR>", opts)
+whichkey("n", "<C-w>-", ":split<CR>", opts)
 
 -- Disable code completion
 whichkey("n", "<leader>cc", function()
