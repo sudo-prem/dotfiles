@@ -25,7 +25,7 @@ alias jl-add='python -m ipykernel install --user --name=venv'
 alias jl-delete='jupyter kernelspec uninstall venv'
 
 alias github='open "https://github.com/sudo-prem"'
-alias lg='lazygit'
+alias gg='lazygit'
 alias ld='lazydocker'
 
 alias mv='mv -i'
@@ -40,3 +40,4 @@ alias pip-freeze='rm -rf $HOME/dotfiles/misc/python/requirements.txt; pip freeze
 
 alias check-port='function _check-port(){ lsof -i :$1 }; _check-port'
 alias kill-port='sudo kill -9'
+
