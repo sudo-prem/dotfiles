@@ -12,11 +12,11 @@ SAVEHIST=10000
 HISTFILE=~/.cache/zsh/history
 
 # tab complete
-autoload -U compinit
-zstyle ':completion:*' menu select
-zmodload zsh/complist
-compinit
-_comp_options+=(globdots)
+# autoload -U compinit
+# zstyle ':completion:*' menu select
+# zmodload zsh/complist
+# compinit
+# _comp_options+=(globdots)
 
 # update cursor shapes on vi mode change
 function zle-keymap-select {
