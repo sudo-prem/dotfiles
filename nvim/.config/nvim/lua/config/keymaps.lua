@@ -73,3 +73,7 @@ whichkey("n", "<leader>cc", function()
 		cmp_enabled = true
 	end
 end, { desc = "Toggle Code Completion" })
+
+-- remove lazygit support
+vim.keymap.del("n", "<leader>gg")
+vim.keymap.del("n", "<leader>gG")
