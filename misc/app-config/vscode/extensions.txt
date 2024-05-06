@@ -1,7 +1,0 @@
-enkia.tokyo-night
-esbenp.prettier-vscode
-naumovs.color-highlight
-oderwat.indent-rainbow
-ritwickdey.liveserver
-vscode-icons-team.vscode-icons
-vscodevim.vim
