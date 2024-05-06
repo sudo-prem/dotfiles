@@ -13,9 +13,10 @@ export NVM_DIR="$HOME/.nvm"
 eval "$(zoxide init --cmd cd zsh)"
 eval "$(pyenv init -)"
 
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $DOTFILES/zsh/options.zsh
 source $DOTFILES/zsh/bindkey.zsh
 source $DOTFILES/zsh/alias.zsh
-source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $HOME/.fzf.zsh
 

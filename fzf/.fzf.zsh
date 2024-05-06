@@ -1,8 +1,10 @@
 # Setup fzf
 # ---------
 if [[ ! "$PATH" == */opt/homebrew/opt/fzf/bin* ]]; then
-  export PATH="${PATH:+${PATH}:}/opt/homebrew/opt/fzf/bin"
+  PATH="${PATH:+${PATH}:}/opt/homebrew/opt/fzf/bin"
 fi
+
+eval "$(fzf --zsh)"
 
 # Auto-completion
 # ---------------
@@ -12,5 +14,5 @@ fi
 # ------------
 source "/opt/homebrew/opt/fzf/shell/key-bindings.zsh"
 
-# export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
-# export FZF_DEFAULT_OPTS="--layout=reverse --cycle --border"
+export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
+export FZF_DEFAULT_OPTS="--layout=reverse --cycle --border"
