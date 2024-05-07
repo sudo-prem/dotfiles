@@ -1,4 +1,5 @@
-local keymap = vim.keymap.set
+local setKeymap = vim.keymap.set
+local deleteKeymap = vim.keymap.del
 local opts = { noremap = true, silent = true }
 
 local util = require("lazyvim.util")
@@ -6,42 +7,57 @@ local whichkey = util.safe_keymap_set
 local cmp_enabled = true
 
 -- Move lines in visual
-keymap("v", "J", ":m '>+1<CR>gv=gv", opts)
-keymap("v", "K", ":m '<-2<CR>gv=gv", opts)
+setKeymap("v", "J", ":m '>+1<CR>gv=gv", opts)
+setKeymap("v", "K", ":m '<-2<CR>gv=gv", opts)
 
 -- Move to start/end of line
-keymap("n", "H", "0", opts)
-keymap("n", "L", "$", opts)
+setKeymap("n", "H", "0", opts)
+setKeymap("n", "L", "$", opts)
 
 -- Paste in visual: do not copy text back
-keymap("x", "p", [["_dP]])
+setKeymap("x", "p", [["_dP]])
 
 -- Copy to clipboard only when yanked
-keymap("n", "y", '"*y', opts)
-keymap("v", "y", '"*y', opts)
-keymap("n", "d", '"_d', opts)
-keymap("v", "d", '"_d', opts)
-keymap("n", "c", '"_c', opts)
-keymap("v", "c", '"_c', opts)
+setKeymap("n", "y", '"*y', opts)
+setKeymap("v", "y", '"*y', opts)
+setKeymap("n", "d", '"_d', opts)
+setKeymap("v", "d", '"_d', opts)
+setKeymap("n", "c", '"_c', opts)
+setKeymap("v", "c", '"_c', opts)
 
 -- Disable arrow keys in normal mode
-keymap("n", "<Up>", "<Nop>", opts)
-keymap("n", "<Down>", "<Nop>", opts)
-keymap("n", "<Left>", "<Nop>", opts)
-keymap("n", "<Right>", "<Nop>", opts)
+setKeymap("n", "<Up>", "<Nop>", opts)
+setKeymap("n", "<Down>", "<Nop>", opts)
+setKeymap("n", "<Left>", "<Nop>", opts)
+setKeymap("n", "<Right>", "<Nop>", opts)
 
 -- Indent in visual mode
-keymap("v", "<", "<gv", opts)
-keymap("v", ">", ">gv", opts)
+setKeymap("v", "<", "<gv", opts)
+setKeymap("v", ">", ">gv", opts)
 
 -- Keep cursor in the middle
-keymap("n", "<C-d>", "<C-d>zz")
-keymap("n", "<C-u>", "<C-u>zz")
-keymap("n", "n", "nzzzv")
-keymap("n", "N", "Nzzzv")
+setKeymap("n", "<C-d>", "<C-d>zz")
+setKeymap("n", "<C-u>", "<C-u>zz")
+setKeymap("n", "n", "nzzzv")
+setKeymap("n", "N", "Nzzzv")
 
 -- Enter Normal mode on jk
-keymap("i", "jk", "<ESC>", opts)
+setKeymap("i", "jk", "<ESC>", opts)
+
+-- set keymap for lazy plugin manager, lazygit, lazydocker
+setKeymap("n", "<leader>lp", "<cmd>Lazy<cr>", { desc = "Lazy" })
+setKeymap("n", "<leader>lg", function()
+	LazyVim.lazygit({ cwd = LazyVim.root.git() })
+end, { desc = "Lazygit (Root Dir)" })
+setKeymap("n", "<leader>lG", function()
+	LazyVim.lazygit()
+end, { desc = "Lazygit (cwd)" })
+setKeymap("n", "<leader>ld", "<cmd>LazyDocker<CR>", { desc = "LazyDocker", noremap = true, silent = true })
+
+-- remove keymaps
+deleteKeymap("n", "<leader>l")
+deleteKeymap("n", "<leader>gg")
+deleteKeymap("n", "<leader>gG")
 
 -- Navigate buffers
 whichkey("n", "<Right>", ":bnext<CR>", { desc = "Next buffer" })
@@ -73,7 +89,3 @@ whichkey("n", "<leader>cc", function()
 		cmp_enabled = true
 	end
 end, { desc = "Toggle Code Completion" })
-
--- remove lazygit support
-vim.keymap.del("n", "<leader>gg")
-vim.keymap.del("n", "<leader>gG")

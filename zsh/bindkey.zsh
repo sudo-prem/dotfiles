@@ -1,6 +1,3 @@
-# find files using fzf
-bindkey '^f' fzf-file-widget
-
 # enable vi mode
 bindkey -v
 
