@@ -2,7 +2,7 @@
 
 SCRIPT_DIR=$( cd -- "$( dirname -- "${(%):-%x}" )" && pwd )
 
-DOT_FOLDERS="stow,wezterm,fzf,zsh,lsd,git,lazygit,lazydocker,nvim,btop"
+DOT_FOLDERS="stow,wezterm,fzf,zsh,lsd,git,lazygit,lazydocker,nvim,htop"
 
 for folder in ${(s/,/)DOT_FOLDERS}; do
     echo "[+] Folder :: $folder"
