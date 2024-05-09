@@ -1,4 +1,3 @@
-alias cat='cat -n'
 alias vim='nvim'
 alias ls='lsd'
 alias la='lsd -a'
