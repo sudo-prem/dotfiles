@@ -5,12 +5,13 @@
 [core]
   excludesfile = /Users/premnaath/.gitignore_global
   pager = delta
+	editor = nvim
 
 [interactive]
   diffFilter = delta --color-only
 
 [merge]
-  tool = vimdiff
+	tool = vscode
   conflictstyle = diff3
 
 [mergetool]
@@ -36,3 +37,10 @@
 
 [diff]
   colorMoved = default
+	tool = vscode
+
+[mergetool "vscode"]
+	cmd = code --wait --merge $REMOTE $LOCAL $BASE $MERGED
+
+[difftool "vscode"]
+	cmd = code --wait --diff $LOCAL $REMOTE
