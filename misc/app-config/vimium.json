@@ -1,5 +1,5 @@
 {
-  "keyMappings": "map I LinkHints.activateModeToOpenIncognito",
+  "keyMappings": "map I LinkHints.activateModeToOpenIncognito\nunmap <a-p>\nmap gp togglePinTab",
   "scrollStepSize": 77,
   "grabBackFocus": true,
   "settingsVersion": "2.1.2",
