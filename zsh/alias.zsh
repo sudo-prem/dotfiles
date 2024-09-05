@@ -1,6 +1,4 @@
 alias cat='bat'
-alias vi='vim'
-alias vim='nvim'
 alias ls='lsd'
 alias l.='lsd -d .*'
 alias la='lsd -a'
