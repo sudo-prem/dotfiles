@@ -34,15 +34,8 @@
   "markdown.preview.lineHeight": 1.2,
   "vsicons.dontShowNewVersionMessage": true,
   "git.openRepositoryInParentFolders": "always",
-  "vim.insertModeKeyBindings": [
-    {
-      "before": [
-        "j",
-        "k"
-      ],
-      "after": [
-        "<Esc>"
-      ]
-    }
-  ]
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "update.mode": "manual",
+  "vim.vimrc.enable": true
 }
+

@@ -28,7 +28,6 @@ set shiftwidth=4                  " Indentation width
 set smarttab                      " Smart tab handling
 set softtabstop=4                 " Soft tab width
 set encoding=UTF-8                " Encoding
-set title                         " Set terminal title
 set shortmess=atI                 " Shorten messages
 set backspace=indent,eol,start    " Backspace behavior
 set whichwrap+=<,>,h,l,[,]        " Allow wrap with certain keys
