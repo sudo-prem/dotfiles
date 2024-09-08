@@ -24,4 +24,4 @@ keybinding:
     moveDownCommit: ''
     moveUpCommit: ''
 os:
-  editPreset: 'nvim'
+  editPreset: 'vim'
