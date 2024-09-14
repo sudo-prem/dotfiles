@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>com.SudoPrem.UUIDGenerator</string>
+	<string>com.premnaath.uuidgenerator</string>
 	<key>category</key>
 	<string>Tools</string>
 	<key>connections</key>
@@ -23,7 +23,7 @@
 		</array>
 	</dict>
 	<key>createdby</key>
-	<string>SudoPrem</string>
+	<string>Premnaath</string>
 	<key>description</key>
 	<string>Generate and copy UUID to clipboard</string>
 	<key>disabled</key>

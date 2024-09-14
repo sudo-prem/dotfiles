@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>com.SudoPrem.NotificationDismisser</string>
+	<string>com.premnaath.notificationdismisser</string>
 	<key>category</key>
 	<string>Tools</string>
 	<key>connections</key>
@@ -96,7 +96,7 @@
 		</array>
 	</dict>
 	<key>createdby</key>
-	<string>SudoPrem</string>
+	<string>Premnaath</string>
 	<key>description</key>
 	<string>Dismiss notifications</string>
 	<key>disabled</key>
