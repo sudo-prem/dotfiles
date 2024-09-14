@@ -132,7 +132,21 @@
 			<key>itemuid</key>
 			<string>B1578810-E784-40D3-853B-60EC6B565AB8</string>
 		</dict>
-		<dict/>
+		<dict>
+			<key>actionconfig</key>
+			<dict>
+				<key>path</key>
+				<string>/System/Library/PreferencePanes/DateAndTime.prefPane</string>
+			</dict>
+			<key>actionuid</key>
+			<string>remote.alfred.launchfile</string>
+			<key>buttoniconid</key>
+			<string>33AC2F1F-8AB8-4736-A770-44376D6A3FFF</string>
+			<key>buttonlabel</key>
+			<string>DateAndTime.prefPane</string>
+			<key>itemuid</key>
+			<string>4F29682A-7DA0-4D03-953F-F014A6A46069</string>
+		</dict>
 		<dict>
 			<key>actionconfig</key>
 			<dict>
@@ -194,21 +208,7 @@
 			<string>A507F3D7-A7C7-48C2-BFA3-843C38DBB50C</string>
 		</dict>
 		<dict/>
-		<dict>
-			<key>actionconfig</key>
-			<dict>
-				<key>path</key>
-				<string>/System/Library/PreferencePanes/DateAndTime.prefPane</string>
-			</dict>
-			<key>actionuid</key>
-			<string>remote.alfred.launchfile</string>
-			<key>buttoniconid</key>
-			<string>33AC2F1F-8AB8-4736-A770-44376D6A3FFF</string>
-			<key>buttonlabel</key>
-			<string>DateAndTime.prefPane</string>
-			<key>itemuid</key>
-			<string>4F29682A-7DA0-4D03-953F-F014A6A46069</string>
-		</dict>
+		<dict/>
 		<dict>
 			<key>actionconfig</key>
 			<dict>
@@ -347,7 +347,21 @@
 			<key>itemuid</key>
 			<string>B1578810-E784-40D3-853B-60EC6B565AB8</string>
 		</dict>
-		<dict/>
+		<dict>
+			<key>actionconfig</key>
+			<dict>
+				<key>path</key>
+				<string>/System/Library/PreferencePanes/DateAndTime.prefPane</string>
+			</dict>
+			<key>actionuid</key>
+			<string>remote.alfred.launchfile</string>
+			<key>buttoniconid</key>
+			<string>33AC2F1F-8AB8-4736-A770-44376D6A3FFF</string>
+			<key>buttonlabel</key>
+			<string>DateAndTime.prefPane</string>
+			<key>itemuid</key>
+			<string>4F29682A-7DA0-4D03-953F-F014A6A46069</string>
+		</dict>
 		<dict>
 			<key>actionconfig</key>
 			<dict>
@@ -409,21 +423,7 @@
 			<string>A507F3D7-A7C7-48C2-BFA3-843C38DBB50C</string>
 		</dict>
 		<dict/>
-		<dict>
-			<key>actionconfig</key>
-			<dict>
-				<key>path</key>
-				<string>/System/Library/PreferencePanes/DateAndTime.prefPane</string>
-			</dict>
-			<key>actionuid</key>
-			<string>remote.alfred.launchfile</string>
-			<key>buttoniconid</key>
-			<string>33AC2F1F-8AB8-4736-A770-44376D6A3FFF</string>
-			<key>buttonlabel</key>
-			<string>DateAndTime.prefPane</string>
-			<key>itemuid</key>
-			<string>4F29682A-7DA0-4D03-953F-F014A6A46069</string>
-		</dict>
+		<dict/>
 		<dict>
 			<key>actionconfig</key>
 			<dict>

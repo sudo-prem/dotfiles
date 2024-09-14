@@ -132,10 +132,6 @@
 			<key>itemuid</key>
 			<string>887F9867-F703-403F-B151-F31E35A478FA</string>
 		</dict>
-		<dict/>
-		<dict/>
-		<dict/>
-		<dict/>
 		<dict>
 			<key>actionconfig</key>
 			<dict>
@@ -181,6 +177,10 @@
 			<key>itemuid</key>
 			<string>C32ACBE7-B8B1-47B0-9992-593F45113837</string>
 		</dict>
+		<dict/>
+		<dict/>
+		<dict/>
+		<dict/>
 		<dict/>
 	</array>
 	<key>itemsall</key>
@@ -305,10 +305,6 @@
 			<key>itemuid</key>
 			<string>887F9867-F703-403F-B151-F31E35A478FA</string>
 		</dict>
-		<dict/>
-		<dict/>
-		<dict/>
-		<dict/>
 		<dict>
 			<key>actionconfig</key>
 			<dict>
@@ -354,6 +350,10 @@
 			<key>itemuid</key>
 			<string>C32ACBE7-B8B1-47B0-9992-593F45113837</string>
 		</dict>
+		<dict/>
+		<dict/>
+		<dict/>
+		<dict/>
 		<dict/>
 		<dict/>
 		<dict/>

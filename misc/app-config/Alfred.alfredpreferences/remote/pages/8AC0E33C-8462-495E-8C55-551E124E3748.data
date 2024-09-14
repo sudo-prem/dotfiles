@@ -73,7 +73,16 @@
 			<key>itemuid</key>
 			<string>52072D53-C660-4B1C-B2A9-6FCCA65BB87A</string>
 		</dict>
-		<dict/>
+		<dict>
+			<key>actionuid</key>
+			<string>remote.alfred.alfredpreferences</string>
+			<key>buttoniconid</key>
+			<string>BAFF7D72-2A5B-415B-B90A-B2130C9C152D</string>
+			<key>buttonlabel</key>
+			<string>Alfred Preferences</string>
+			<key>itemuid</key>
+			<string>74D5E013-F5DD-464B-AEFD-72B2FE88E818</string>
+		</dict>
 		<dict>
 			<key>actionconfig</key>
 			<dict>
@@ -325,7 +334,16 @@
 			<key>itemuid</key>
 			<string>52072D53-C660-4B1C-B2A9-6FCCA65BB87A</string>
 		</dict>
-		<dict/>
+		<dict>
+			<key>actionuid</key>
+			<string>remote.alfred.alfredpreferences</string>
+			<key>buttoniconid</key>
+			<string>BAFF7D72-2A5B-415B-B90A-B2130C9C152D</string>
+			<key>buttonlabel</key>
+			<string>Alfred Preferences</string>
+			<key>itemuid</key>
+			<string>74D5E013-F5DD-464B-AEFD-72B2FE88E818</string>
+		</dict>
 		<dict>
 			<key>actionconfig</key>
 			<dict>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>customSites</key>
+	<dict>
+		<key>234A2E19-C7E2-4F51-AC4D-5285B229DA69</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>reddit</string>
+			<key>text</key>
+			<string>Open Reddit</string>
+			<key>url</key>
+			<string>https://www.reddit.com/</string>
+		</dict>
+		<key>3ADD3B2A-FFC6-443A-A303-4EA6E3F978CA</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>amazon</string>
+			<key>text</key>
+			<string>Search Amazon for '{query}'</string>
+			<key>url</key>
+			<string>https://www.amazon.in/s?k={query}</string>
+		</dict>
+		<key>757F5A68-2810-4A41-834A-75C47405DC17</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>subreddit</string>
+			<key>text</key>
+			<string>Open Subreddit '{query}'</string>
+			<key>url</key>
+			<string>https://www.reddit.com/r/{query}/</string>
+		</dict>
+		<key>8103B92E-4295-4EC9-9112-F6AC4E58477D</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>youtube</string>
+			<key>text</key>
+			<string>Search YouTube for '{query}'</string>
+			<key>url</key>
+			<string>https://www.youtube.com/results?search_query={query}</string>
+		</dict>
+		<key>C72D4C18-81C8-4810-BC20-526D3D80BEB0</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>reddit</string>
+			<key>text</key>
+			<string>Search Reddit for '{query}'</string>
+			<key>url</key>
+			<string>https://www.reddit.com/search/?q={query}</string>
+		</dict>
+		<key>CBD2FAEF-00A8-4F1B-A912-357A76823BE8</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>youtube</string>
+			<key>text</key>
+			<string>Open YouTube</string>
+			<key>url</key>
+			<string>https://www.youtube.com</string>
+		</dict>
+	</dict>
+	<key>onlyShowEnabledInPrefs</key>
+	<true/>
+</dict>
+</plist>
