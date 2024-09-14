@@ -222,37 +222,37 @@ The workflow also accounts for timezones and Daylight Saving Time (DST). All tim
 		<key>09CA121B-D8B4-4ABF-AB14-039EE9CA5965</key>
 		<dict>
 			<key>xpos</key>
-			<real>600</real>
+			<real>535</real>
 			<key>ypos</key>
-			<real>170</real>
+			<real>145</real>
 		</dict>
 		<key>63611A99-79C1-437F-9440-06BD78E1A17F</key>
 		<dict>
 			<key>xpos</key>
-			<real>440</real>
+			<real>375</real>
 			<key>ypos</key>
-			<real>170</real>
+			<real>145</real>
 		</dict>
 		<key>AD06006F-71F6-4731-9942-D0697E95329A</key>
 		<dict>
 			<key>xpos</key>
-			<real>95</real>
+			<real>30</real>
 			<key>ypos</key>
-			<real>105</real>
+			<real>80</real>
 		</dict>
 		<key>CAD3A45C-8496-4F9C-9FD8-78677008FBA5</key>
 		<dict>
 			<key>xpos</key>
-			<real>265</real>
+			<real>200</real>
 			<key>ypos</key>
-			<real>125</real>
+			<real>100</real>
 		</dict>
 		<key>F69A44DF-57DE-4713-BACA-8EDFBFE14FF6</key>
 		<dict>
 			<key>xpos</key>
-			<real>440</real>
+			<real>375</real>
 			<key>ypos</key>
-			<real>40</real>
+			<real>15</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
