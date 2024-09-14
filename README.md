@@ -1,3 +1,3 @@
 # dotfiles
 
-Config files for htop, lsd, neovim, wezterm, git, and zshell
+Config files for alfred, htop, lsd, neovim, wezterm, git, and zshell
