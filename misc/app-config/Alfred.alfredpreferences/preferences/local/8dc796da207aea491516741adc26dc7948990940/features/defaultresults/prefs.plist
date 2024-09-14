@@ -11,8 +11,6 @@
 		<string>/System/Library/CoreServices/Applications</string>
 		<string>/System/Library/PreferencePanes</string>
 		<string>/usr/local/Cellar</string>
-		<string>~/Developer</string>
-		<string>~/dotfiles</string>
 	</array>
 </dict>
 </plist>
