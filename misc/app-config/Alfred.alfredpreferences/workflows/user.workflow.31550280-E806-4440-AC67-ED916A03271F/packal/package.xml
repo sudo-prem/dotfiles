@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<workflow>
+  <name>JSON Tools</name>
+  <version>1.2</version>
+  <bundle>dokiy.workflow.jsontools</bundle>
+  <updated>1666853183</updated>
+  <file>json_tools.alfredworkflow</file>
+</workflow>
