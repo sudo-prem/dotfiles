@@ -4,6 +4,8 @@
 <dict>
 	<key>bundleid</key>
 	<string>com.SudoPrem.UUIDGenerator</string>
+	<key>category</key>
+	<string>Tools</string>
 	<key>connections</key>
 	<dict>
 		<key>8414C6DA-6391-4A49-839B-C7B149D52951</key>

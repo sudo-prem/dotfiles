@@ -4,6 +4,8 @@
 <dict>
 	<key>emptytrashKeywordEnabled</key>
 	<false/>
+	<key>forcequitKeyword</key>
+	<string>fq</string>
 	<key>hideKeywordEnabled</key>
 	<false/>
 	<key>lockKeywordEnabled</key>

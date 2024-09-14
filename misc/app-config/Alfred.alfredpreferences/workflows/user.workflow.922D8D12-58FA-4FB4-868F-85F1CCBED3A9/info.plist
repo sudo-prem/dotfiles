@@ -5,7 +5,7 @@
 	<key>bundleid</key>
 	<string>com.alfredapp.openinvim</string>
 	<key>category</key>
-	<string>Productivity</string>
+	<string>Tools</string>
 	<key>connections</key>
 	<dict>
 		<key>6DAEBF5A-9D6D-4528-96BA-E0669D5E8EC7</key>
