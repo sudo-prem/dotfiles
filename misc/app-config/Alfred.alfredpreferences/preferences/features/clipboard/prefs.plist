@@ -13,6 +13,8 @@
 		<key>string</key>
 		<string></string>
 	</dict>
+	<key>ignoreRemoteClipboard</key>
+	<true/>
 	<key>snippetKeywordEnabled</key>
 	<false/>
 	<key>snippetMatchFields</key>
