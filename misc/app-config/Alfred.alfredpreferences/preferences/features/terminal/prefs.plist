@@ -5,8 +5,13 @@
 	<key>application</key>
 	<integer>1</integer>
 	<key>custom</key>
-	<string>on alfred_script(q)
-
+	<string>on alfred_script(query)
+    tell application "WezTerm" to activate
+    do shell script "/Applications/WezTerm.app/Contents/MacOS/wezterm cli spawn"
+    set commandList to paragraphs of query
+    repeat with command in commandList
+        do shell script "echo " &amp; quoted form of command &amp; " | /Applications/WezTerm.app/Contents/MacOS/wezterm cli send-text --no-paste"
+    end repeat
 end alfred_script</string>
 </dict>
 </plist>
