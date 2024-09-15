@@ -291,45 +291,45 @@ Search for a folder via the `ff` keyword. Press &lt;kbd&gt;↩&lt;/kbd&gt; to th
 			<key>note</key>
 			<string>2. The JSON utility sets the folder dynamically as a config setting for the next File Filter.</string>
 			<key>xpos</key>
-			<real>280</real>
+			<real>260</real>
 			<key>ypos</key>
-			<real>190</real>
+			<real>155</real>
 		</dict>
 		<key>42D54E89-9343-448E-8E65-2F90EA1949BB</key>
 		<dict>
 			<key>note</key>
 			<string>1. This File Filter is set to present folders only, so type your keyword followed by the name of your folder to set the scope for your next search.</string>
 			<key>xpos</key>
-			<real>50</real>
+			<real>30</real>
 			<key>ypos</key>
-			<real>160</real>
+			<real>125</real>
 		</dict>
 		<key>4D687541-1BF3-4EB8-A531-9B0952C66A8E</key>
 		<dict>
 			<key>note</key>
 			<string>3. Type the name of the file you want to search for within the folder defined earlier.</string>
 			<key>xpos</key>
-			<real>420</real>
+			<real>400</real>
 			<key>ypos</key>
-			<real>160</real>
+			<real>125</real>
 		</dict>
 		<key>5AD8EFE2-7958-42CA-BA8D-52F9C5305F8C</key>
 		<dict>
 			<key>note</key>
 			<string>4. Pressing the Return key opens the file you selected.</string>
 			<key>xpos</key>
-			<real>690</real>
+			<real>670</real>
 			<key>ypos</key>
-			<real>50</real>
+			<real>15</real>
 		</dict>
 		<key>8D2AF92C-305C-44F2-9D01-EEE3E9C69007</key>
 		<dict>
 			<key>note</key>
 			<string>5. Hold the Alt key when pressing Return to reveal the file in Finder instead.</string>
 			<key>xpos</key>
-			<real>690</real>
+			<real>670</real>
 			<key>ypos</key>
-			<real>280</real>
+			<real>245</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
