@@ -125,6 +125,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>70C2F258-A406-407C-944B-6A0A1C0E83BC</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>064871A4-D550-4CA3-9CFE-3F0232DCD6E2</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>70FAC2C4-3525-4C13-A053-D271B83A9241</key>
 		<array>
 			<dict>
@@ -260,6 +273,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>EF890109-FC8F-4357-BD5F-8C804D9E893A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>B53D5059-10EC-4C12-BCF1-AF8D19314A93</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>064871A4-D550-4CA3-9CFE-3F0232DCD6E2</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -778,35 +804,6 @@ end alfred_script</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>0</integer>
-				<key>hotmod</key>
-				<integer>0</integer>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedAppsMode</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>737209D4-4DFE-4766-9A5F-205CA96F4B0B</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>applescript</key>
 				<string>on alfred_script(q)
 	tell application "Spotify"		get spotify url of current track	end tell
@@ -883,6 +880,35 @@ echo -n "https://open.spotify.com/track/$sid"</string>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
 			<string>4D807ACE-4758-4FEF-9C44-EE0FEAA40AD1</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>0</integer>
+				<key>hotmod</key>
+				<integer>0</integer>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>737209D4-4DFE-4766-9A5F-205CA96F4B0B</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -1097,6 +1123,27 @@ end alfred_script</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>!loop</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Toggle Loop</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>7ADF8BF5-4EE5-4177-AF8D-CA8B7F389287</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>applescript</key>
 				<string>on alfred_script(q)
   	tell application "Spotify"
@@ -1199,20 +1246,74 @@ echo -n "$sid"</string>
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
-				<string>!loop</string>
+				<string>!song</string>
 				<key>subtext</key>
 				<string></string>
 				<key>text</key>
-				<string>Toggle Loop</string>
+				<string>Current Track Information</string>
 				<key>withspace</key>
 				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>7ADF8BF5-4EE5-4177-AF8D-CA8B7F389287</string>
+			<string>70C2F258-A406-407C-944B-6A0A1C0E83BC</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>applescript</key>
+				<string>on alfred_script(q)
+	tell application "Spotify"
+
+		set currentTrack to the current track
+		set currentName to the name of currentTrack as string		set currentArtist to the artist of currentTrack as string
+		set currentAlbum to the album of currentTrack as string
+
+		display notification "by " &amp; currentArtist &amp; " from the album " &amp; currentAlbum with title currentName 
+		  	end tell
+
+end alfred_script</string>
+				<key>cachescript</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.applescript</string>
+			<key>uid</key>
+			<string>064871A4-D550-4CA3-9CFE-3F0232DCD6E2</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>0</integer>
+				<key>hotmod</key>
+				<integer>0</integer>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>B53D5059-10EC-4C12-BCF1-AF8D19314A93</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1353,6 +1454,13 @@ end alfred_script</string>
 	<string></string>
 	<key>uidata</key>
 	<dict>
+		<key>064871A4-D550-4CA3-9CFE-3F0232DCD6E2</key>
+		<dict>
+			<key>xpos</key>
+			<real>360</real>
+			<key>ypos</key>
+			<real>1645</real>
+		</dict>
 		<key>139ABC17-672A-4E01-8C38-18B50DE267FF</key>
 		<dict>
 			<key>colorindex</key>
@@ -1449,7 +1557,7 @@ end alfred_script</string>
 			<key>xpos</key>
 			<real>355</real>
 			<key>ypos</key>
-			<real>1700</real>
+			<real>1835</real>
 		</dict>
 		<key>6599A00D-9346-41A9-8172-A110FF4CFDAD</key>
 		<dict>
@@ -1461,6 +1569,17 @@ end alfred_script</string>
 			<real>30</real>
 			<key>ypos</key>
 			<real>925</real>
+		</dict>
+		<key>70C2F258-A406-407C-944B-6A0A1C0E83BC</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>5</integer>
+			<key>note</key>
+			<string>Displays what the song, album and artist name</string>
+			<key>xpos</key>
+			<real>30</real>
+			<key>ypos</key>
+			<real>1640</real>
 		</dict>
 		<key>70FAC2C4-3525-4C13-A053-D271B83A9241</key>
 		<dict>
@@ -1535,7 +1654,7 @@ end alfred_script</string>
 			<key>xpos</key>
 			<real>30</real>
 			<key>ypos</key>
-			<real>1700</real>
+			<real>1835</real>
 		</dict>
 		<key>9354AEE7-97C4-4006-96DC-4E38E150B613</key>
 		<dict>
@@ -1576,6 +1695,13 @@ end alfred_script</string>
 			<key>ypos</key>
 			<real>685</real>
 		</dict>
+		<key>B53D5059-10EC-4C12-BCF1-AF8D19314A93</key>
+		<dict>
+			<key>xpos</key>
+			<real>185</real>
+			<key>ypos</key>
+			<real>1645</real>
+		</dict>
 		<key>B93B1787-129D-4C94-BC18-AC24CA8240B8</key>
 		<dict>
 			<key>colorindex</key>
@@ -1592,14 +1718,14 @@ end alfred_script</string>
 			<key>xpos</key>
 			<real>175</real>
 			<key>ypos</key>
-			<real>1700</real>
+			<real>1835</real>
 		</dict>
 		<key>CF7C5E78-EA2B-4021-8F9E-B9C152398C9B</key>
 		<dict>
 			<key>xpos</key>
 			<real>175</real>
 			<key>ypos</key>
-			<real>1845</real>
+			<real>1980</real>
 		</dict>
 		<key>DF020392-5D15-4623-8C50-A7A4DC86AE79</key>
 		<dict>
@@ -1610,7 +1736,7 @@ end alfred_script</string>
 			<key>xpos</key>
 			<real>30</real>
 			<key>ypos</key>
-			<real>1845</real>
+			<real>1980</real>
 		</dict>
 		<key>E1616286-7487-41CA-B329-949244D618C2</key>
 		<dict>
@@ -1665,7 +1791,7 @@ end alfred_script</string>
 			<key>xpos</key>
 			<real>355</real>
 			<key>ypos</key>
-			<real>1845</real>
+			<real>1980</real>
 		</dict>
 		<key>FCA72EF2-FA51-4883-82E2-6F2ABC8306F0</key>
 		<dict>
