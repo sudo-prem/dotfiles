@@ -48,6 +48,19 @@
 			<key>url</key>
 			<string>https://www.youtube.com/results?search_query={query}</string>
 		</dict>
+		<key>8652EF09-587D-4B60-91B8-1B00D8388859</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>google</string>
+			<key>spaces</key>
+			<string>%20</string>
+			<key>text</key>
+			<string>Search Google for '{query}'</string>
+			<key>url</key>
+			<string>https://www.google.com/search?q={query}</string>
+		</dict>
 		<key>C72D4C18-81C8-4810-BC20-526D3D80BEB0</key>
 		<dict>
 			<key>enabled</key>
