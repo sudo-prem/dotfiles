@@ -221,23 +221,23 @@ Find data and cache folders from uninstalled workflows via the `delold` keyword.
 		<key>74623E9A-3065-4394-B973-8D44E36D1CA1</key>
 		<dict>
 			<key>xpos</key>
-			<real>250</real>
+			<real>230</real>
 			<key>ypos</key>
-			<real>185</real>
+			<real>160</real>
 		</dict>
 		<key>F85456BB-EE45-4DF8-BE05-4F0697DFB598</key>
 		<dict>
 			<key>xpos</key>
-			<real>250</real>
+			<real>230</real>
 			<key>ypos</key>
-			<real>40</real>
+			<real>15</real>
 		</dict>
 		<key>FB10D2CE-7CC5-42C2-8B70-97B7DD15574F</key>
 		<dict>
 			<key>xpos</key>
-			<real>50</real>
+			<real>30</real>
 			<key>ypos</key>
-			<real>40</real>
+			<real>15</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
