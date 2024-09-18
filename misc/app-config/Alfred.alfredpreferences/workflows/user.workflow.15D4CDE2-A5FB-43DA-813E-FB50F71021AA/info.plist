@@ -97,19 +97,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>DDFAE429-BEEC-49EA-BEDB-7E71BD402695</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>0DF99641-3C65-4832-B2BA-B2B6A5B78B3D</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 	</dict>
 	<key>createdby</key>
 	<string>Alex Chan</string>
@@ -121,23 +108,6 @@
 	<string>Visual Studio Code</string>
 	<key>objects</key>
 	<array>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>acceptsmulti</key>
-				<integer>1</integer>
-				<key>filetypes</key>
-				<array/>
-				<key>name</key>
-				<string>Open with Visual Studio Code</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.action</string>
-			<key>uid</key>
-			<string>DDFAE429-BEEC-49EA-BEDB-7E71BD402695</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -278,49 +248,42 @@
 			<key>xpos</key>
 			<real>775</real>
 			<key>ypos</key>
-			<real>225</real>
+			<real>115</real>
 		</dict>
 		<key>0DF99641-3C65-4832-B2BA-B2B6A5B78B3D</key>
 		<dict>
 			<key>xpos</key>
 			<real>1195</real>
 			<key>ypos</key>
-			<real>125</real>
+			<real>15</real>
 		</dict>
 		<key>21750E1C-77A3-4F52-81DD-1052976D1742</key>
 		<dict>
 			<key>xpos</key>
 			<real>625</real>
 			<key>ypos</key>
-			<real>215</real>
+			<real>105</real>
 		</dict>
 		<key>5483D3AE-DBE6-4FB8-ACF9-45EF494F0A57</key>
 		<dict>
 			<key>xpos</key>
 			<real>290</real>
 			<key>ypos</key>
-			<real>165</real>
+			<real>55</real>
 		</dict>
 		<key>CB080C5E-956D-46AE-B833-3660D68FA9AD</key>
 		<dict>
 			<key>xpos</key>
 			<real>445</real>
 			<key>ypos</key>
-			<real>195</real>
+			<real>85</real>
 		</dict>
 		<key>CC170ECD-6B82-4A05-8681-8185ACE453FE</key>
 		<dict>
 			<key>xpos</key>
 			<real>30</real>
 			<key>ypos</key>
-			<real>145</real>
-		</dict>
-		<key>DDFAE429-BEEC-49EA-BEDB-7E71BD402695</key>
-		<dict>
-			<key>xpos</key>
-			<real>775</real>
-			<key>ypos</key>
-			<real>15</real>
+			<real>35</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
