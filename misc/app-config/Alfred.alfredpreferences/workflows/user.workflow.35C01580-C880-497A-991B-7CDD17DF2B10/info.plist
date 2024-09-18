@@ -4,6 +4,8 @@
 <dict>
 	<key>bundleid</key>
 	<string>com.vitorgalvao.alfred.appfreeze</string>
+	<key>category</key>
+	<string>Tools</string>
 	<key>connections</key>
 	<dict>
 		<key>391EDE9B-08C4-4B4A-A84B-8AB481A2F7B2</key>
