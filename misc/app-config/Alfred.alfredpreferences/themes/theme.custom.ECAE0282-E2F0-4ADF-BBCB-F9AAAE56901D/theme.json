@@ -41,17 +41,16 @@
       "paddingVertical" : 6
     },
     "window" : {
-      "color" : "#00000066",
+      "color" : "#000000B2",
       "paddingHorizontal" : 5,
       "width" : 588,
       "borderPadding" : 0,
       "borderColor" : "#0000007F",
-      "blur" : 0,
+      "blur" : 10,
       "roundness" : 10,
       "paddingVertical" : 5
     },
     "credit" : "sudo-prem",
-    "visualEffectMode" : 2,
     "separator" : {
       "color" : "#CBCBCBF3",
       "thickness" : 0
