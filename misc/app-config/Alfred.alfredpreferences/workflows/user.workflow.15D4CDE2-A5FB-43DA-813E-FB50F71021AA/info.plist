@@ -101,7 +101,7 @@
 	<key>createdby</key>
 	<string>Alex Chan</string>
 	<key>description</key>
-	<string>Open files or folders in Visual Studio Code.</string>
+	<string>Open in Visual Studio Code.</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
@@ -128,14 +128,12 @@
 			<dict>
 				<key>argumenttype</key>
 				<integer>1</integer>
-				<key>keyword</key>
-				<string>code</string>
 				<key>subtext</key>
 				<string>Open Finder folder or selection in Visual Studio Code or optionally enter a path to open</string>
 				<key>text</key>
-				<string>Open with Visual Studio Code</string>
+				<string>Open in Visual Studio Code</string>
 				<key>withspace</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
