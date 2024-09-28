@@ -127,7 +127,9 @@
 			<key>config</key>
 			<dict>
 				<key>argumenttype</key>
-				<integer>1</integer>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>vscode</string>
 				<key>subtext</key>
 				<string>Open Finder folder or selection in Visual Studio Code or optionally enter a path to open</string>
 				<key>text</key>
