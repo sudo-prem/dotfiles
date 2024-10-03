@@ -78,60 +78,25 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>{var:freeze_keyword}</string>
+				<key>skipuniversalaction</key>
+				<true/>
+				<key>subtext</key>
+				<string>Pause execution of frontmost app</string>
+				<key>text</key>
+				<string>Freeze</string>
+				<key>withspace</key>
 				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>0</integer>
-				<key>hotmod</key>
-				<integer>0</integer>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedAppsMode</key>
-				<integer>0</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
+			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>CE15752D-DC11-4A3C-BD59-454E1EF945E5</string>
+			<string>391EDE9B-08C4-4B4A-A84B-8AB481A2F7B2</string>
 			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>0</integer>
-				<key>hotmod</key>
-				<integer>0</integer>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedAppsMode</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>F2D0B64D-D1F4-4F2F-9EF3-D5544B1E22F6</string>
-			<key>version</key>
-			<integer>2</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -167,6 +132,58 @@ notification "Froze ${front_app}"</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>0</integer>
+				<key>hotmod</key>
+				<integer>0</integer>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>CE15752D-DC11-4A3C-BD59-454E1EF945E5</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>{var:unfreeze_keyword}</string>
+				<key>skipuniversalaction</key>
+				<true/>
+				<key>subtext</key>
+				<string>Resume execution of frontmost app</string>
+				<key>text</key>
+				<string>Unfreeze</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>B5E21680-DC90-4677-AD06-F60A31AE9161</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -198,44 +215,31 @@ notification "Unfroze ${front_app}"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>{var:freeze_keyword}</string>
-				<key>subtext</key>
-				<string>Pause execution of frontmost app</string>
-				<key>text</key>
-				<string>Freeze</string>
-				<key>withspace</key>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
 				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>0</integer>
+				<key>hotmod</key>
+				<integer>0</integer>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
+			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
-			<string>391EDE9B-08C4-4B4A-A84B-8AB481A2F7B2</string>
+			<string>F2D0B64D-D1F4-4F2F-9EF3-D5544B1E22F6</string>
 			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>{var:unfreeze_keyword}</string>
-				<key>subtext</key>
-				<string>Resume execution of frontmost app</string>
-				<key>text</key>
-				<string>Unfreeze</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>B5E21680-DC90-4677-AD06-F60A31AE9161</string>
-			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 	</array>
 	<key>readme</key>
@@ -251,44 +255,44 @@ Configure the [Hotkeys](https://www.alfredapp.com/help/workflows/triggers/hotkey
 		<key>391EDE9B-08C4-4B4A-A84B-8AB481A2F7B2</key>
 		<dict>
 			<key>xpos</key>
-			<real>30</real>
+			<real>260</real>
 			<key>ypos</key>
-			<real>280</real>
+			<real>15</real>
 		</dict>
 		<key>5DD52708-CA8D-4444-9E93-254386BF04EC</key>
 		<dict>
 			<key>xpos</key>
-			<real>535</real>
+			<real>460</real>
 			<key>ypos</key>
-			<real>275</real>
+			<real>130</real>
 		</dict>
 		<key>B5E21680-DC90-4677-AD06-F60A31AE9161</key>
 		<dict>
 			<key>xpos</key>
-			<real>30</real>
+			<real>260</real>
 			<key>ypos</key>
-			<real>395</real>
+			<real>130</real>
 		</dict>
 		<key>CE15752D-DC11-4A3C-BD59-454E1EF945E5</key>
 		<dict>
 			<key>xpos</key>
-			<real>30</real>
+			<real>60</real>
 			<key>ypos</key>
-			<real>15</real>
+			<real>70</real>
 		</dict>
 		<key>F2D0B64D-D1F4-4F2F-9EF3-D5544B1E22F6</key>
 		<dict>
 			<key>xpos</key>
-			<real>30</real>
+			<real>60</real>
 			<key>ypos</key>
-			<real>135</real>
+			<real>190</real>
 		</dict>
 		<key>FFEB7D08-F086-4CCA-AAED-888F19EB4812</key>
 		<dict>
 			<key>xpos</key>
-			<real>535</real>
+			<real>460</real>
 			<key>ypos</key>
-			<real>160</real>
+			<real>15</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
@@ -337,7 +341,7 @@ Configure the [Hotkeys](https://www.alfredapp.com/help/workflows/triggers/hotkey
 		</dict>
 	</array>
 	<key>version</key>
-	<string>2023.3</string>
+	<string>2024.1</string>
 	<key>webaddress</key>
 	<string>https://github.com/vitorgalvao/app-freeze-workflow/</string>
 </dict>
