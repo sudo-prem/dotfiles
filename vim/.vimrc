@@ -105,6 +105,10 @@ nnoremap <silent> d "_d
 vnoremap <silent> d "_d
 nnoremap <silent> c "_c
 vnoremap <silent> c "_c
+nnoremap <silent> D "_D
+vnoremap <silent> D "_D
+nnoremap <silent> C "_C
+vnoremap <silent> C "_C
 
 " Disable arrow keys in normal mode
 nnoremap <silent> <Up> <Nop>
