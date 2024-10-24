@@ -11,12 +11,6 @@ disableStartupPopups: false
 notARepository: 'skip'
 keybinding:
   universal:
-    prevItem: 'k'
-    nextItem: 'j'
-    prevItem-alt: 'k'
-    nextItem-alt: 'j'
-    prevBlock: '<C-k>'
-    nextBlock: '<C-j>'
     extrasMenu: '@'
     increaseContextInDiffView: '}'
     decreaseContextInDiffView: '{'
