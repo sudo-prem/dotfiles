@@ -51,6 +51,9 @@ let g:tokyonight_enable_italic = 1
 let g:tokyonight_transparent_background = 1
 colorscheme tokyonight
 
+" Airline Settings
+let g:airline_symbols_ascii = 1
+
 " Set leader key
 let mapleader = " "
 
