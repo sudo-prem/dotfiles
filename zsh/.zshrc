@@ -7,6 +7,7 @@ export TLDR_AUTO_UPDATE_DISABLED=TRUE
 export KEYTIMEOUT=20
 export SHELL_SESSIONS_DISABLE=1
 export NVM_DIR="$HOME/.nvm"
+export COLIMA_HOME="$XDG_CONFIG_HOME/colima"
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
 [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
