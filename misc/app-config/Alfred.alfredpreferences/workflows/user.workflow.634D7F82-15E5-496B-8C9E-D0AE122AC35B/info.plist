@@ -8,19 +8,6 @@
 	<string>Productivity</string>
 	<key>connections</key>
 	<dict>
-		<key>05AD3A48-D930-49CD-A5AC-347A1AB01415</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>1EA86C16-2EF5-4CE3-BA05-80343F02CBC5</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>1EA86C16-2EF5-4CE3-BA05-80343F02CBC5</key>
 		<array>
 			<dict>
@@ -75,7 +62,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>05AD3A48-D930-49CD-A5AC-347A1AB01415</string>
+				<string>FCA708B5-3694-4C27-8C9E-894554D3585A</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -88,7 +75,20 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>05AD3A48-D930-49CD-A5AC-347A1AB01415</string>
+				<string>FCA708B5-3694-4C27-8C9E-894554D3585A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>FCA708B5-3694-4C27-8C9E-894554D3585A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>1EA86C16-2EF5-4CE3-BA05-80343F02CBC5</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -139,37 +139,13 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>$.NSProcessInfo.processInfo.operatingSystemVersion.majorVersion</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>7</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>05AD3A48-D930-49CD-A5AC-347A1AB01415</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
 				<string>Application("System Events")
   .applicationProcesses.byName("NotificationCenter")
   .windows[0]
   .groups[0]
   .groups[0]
   .scrollAreas[0]
-  .uiElements[0]
-  .buttons()
+  .uiElements()
   .map(banner =&gt; banner.actions().slice(-1)[0])
   .forEach(banner =&gt; banner.perform())</string>
 				<key>scriptargtype</key>
@@ -185,6 +161,24 @@
 			<string>B0C35CAF-841A-4F23-8192-F4888C603092</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>tasksettings</key>
+				<dict>
+					<key>precision</key>
+					<string>majorVersion</string>
+				</dict>
+				<key>taskuid</key>
+				<string>com.alfredapp.automation.core/macOS/system.version</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.automation.task</string>
+			<key>uid</key>
+			<string>FCA708B5-3694-4C27-8C9E-894554D3585A</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -235,35 +229,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>0</integer>
-				<key>hotmod</key>
-				<integer>0</integer>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedAppsMode</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>56056996-E906-4F4A-8EA9-FBEF1B6A826A</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -289,6 +254,35 @@
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
 			<string>E718C2BF-B0EB-4C56-9702-77B670797A22</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>0</integer>
+				<key>hotmod</key>
+				<integer>0</integer>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>56056996-E906-4F4A-8EA9-FBEF1B6A826A</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -339,13 +333,6 @@ Clear visible macOS notification banners via the `notclear` keyword.
 Configure the [Hotkey](https://www.alfredapp.com/help/workflows/triggers/hotkey/) for faster triggering.</string>
 	<key>uidata</key>
 	<dict>
-		<key>05AD3A48-D930-49CD-A5AC-347A1AB01415</key>
-		<dict>
-			<key>xpos</key>
-			<real>235</real>
-			<key>ypos</key>
-			<real>45</real>
-		</dict>
 		<key>1EA86C16-2EF5-4CE3-BA05-80343F02CBC5</key>
 		<dict>
 			<key>xpos</key>
@@ -395,6 +382,13 @@ Configure the [Hotkey](https://www.alfredapp.com/help/workflows/triggers/hotkey/
 			<key>ypos</key>
 			<real>180</real>
 		</dict>
+		<key>FCA708B5-3694-4C27-8C9E-894554D3585A</key>
+		<dict>
+			<key>xpos</key>
+			<real>230</real>
+			<key>ypos</key>
+			<real>45</real>
+		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
 	<array>
@@ -421,7 +415,7 @@ Configure the [Hotkey](https://www.alfredapp.com/help/workflows/triggers/hotkey/
 		</dict>
 	</array>
 	<key>version</key>
-	<string>2024.3</string>
+	<string>2024.4</string>
 	<key>webaddress</key>
 	<string>https://github.com/alfredapp/banner-be-gone-workflow/</string>
 </dict>
