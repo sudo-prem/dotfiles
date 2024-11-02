@@ -29,6 +29,7 @@ config.inactive_pane_hsb = {
 config.use_fancy_tab_bar = false
 config.status_update_interval = 1000
 config.tab_bar_at_bottom = true
+config.native_macos_fullscreen_mode = true
 
 wezterm.on("update-status", function(window, pane)
 	local stat = window:active_workspace()
