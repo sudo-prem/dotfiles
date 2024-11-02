@@ -36,6 +36,12 @@
   "git.openRepositoryInParentFolders": "always",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "update.mode": "manual",
-  "vim.vimrc.enable": true
+  "vim.vimrc.enable": true,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["f"],
+      "commands": ["leap.find"]
+    }
+  ]
 }
 
