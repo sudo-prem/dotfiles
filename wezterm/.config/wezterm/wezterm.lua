@@ -3,6 +3,7 @@ local act = wezterm.action
 
 local config = wezterm.config_builder()
 
+config.max_fps = 120
 config.color_scheme = "Tokyo Night"
 config.font = wezterm.font_with_fallback({
 	{ family = "JetBrainsMono Nerd Font", scale = 1, weight = "Regular" },
