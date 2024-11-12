@@ -1,3 +1,5 @@
 lazygit/.config/lazygit/state.yml
 colima/.config/colima/*
 !colima/.config/colima/default/colima.yaml
+nvim/lazy-lock.json
+nvim/lazyvim.json
