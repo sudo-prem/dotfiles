@@ -6,8 +6,16 @@ local M = {
       "nvim-tree/nvim-web-devicons",
       "MunifTanjim/nui.nvim",
     },
-    config = function()
-        vim.cmd [[nnoremap \ :Neotree toggle<cr>]]
+    opts = {
+        filesystem = {
+            filtered_items = {
+                visible = true,
+            },
+        },
+    },
+    config = function(_, opts)
+        require("neo-tree").setup(opts)
+        vim.cmd [[nnoremap \ :Neotree toggle<CR>]]
     end
 }
 

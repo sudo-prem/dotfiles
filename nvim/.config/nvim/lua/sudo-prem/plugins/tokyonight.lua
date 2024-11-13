@@ -1,4 +1,3 @@
--- Make tokyonight transparent
 local M = {
 	"folke/tokyonight.nvim",
 	lazy = false,

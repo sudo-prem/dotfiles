@@ -1,3 +1,5 @@
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
 vim.g.netrw_browse_split = 0
 vim.g.netrw_banner = 0
 vim.g.netrw_winsize = 0
@@ -13,6 +15,7 @@ vim.opt.smartcase = true
 vim.opt.smartindent = true
 vim.opt.cursorline = true
 vim.opt.wrap = false
+vim.o.whichwrap = "bs<>[]hl"
 vim.opt.scrolloff = 8
 vim.opt.sidescrolloff = 8
 vim.opt.expandtab = true

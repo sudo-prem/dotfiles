@@ -1,10 +1,7 @@
-local augroup = vim.api.nvim_create_augroup
-local autocmd = vim.api.nvim_create_autocmd
+local sudo_group = vim.api.nvim_create_augroup('SudoGroup', {})
+local yank_group = vim.api.nvim_create_augroup('YankGroup', {})
 
-local sudo_group = augroup('SudoGroup', {})
-local yank_group = augroup('YankGroup', {})
-
-autocmd('TextYankPost', {
+vim.api.nvim_create_autocmd('TextYankPost', {
 	group = yank_group,
 	pattern = '*',
 	callback = function()
@@ -15,20 +12,20 @@ autocmd('TextYankPost', {
 	end,
 })
 
-autocmd({"BufWritePre"}, {
+vim.api.nvim_create_autocmd({"BufWritePre"}, {
 	group = sudo_group,
 	pattern = "*",
 	command = [[%s/\s\+$//e]],
 })
 
-autocmd('BufEnter', {
+vim.api.nvim_create_autocmd('BufEnter', {
 	group = sudo_group,
 	callback = function()
 		vim.cmd.colorscheme("tokyonight")
 	end
 })
 
-autocmd('LspAttach', {
+vim.api.nvim_create_autocmd('LspAttach', {
 	group = sudo_group,
 	callback = function(e)
 		local opts = { buffer = e.buf }
