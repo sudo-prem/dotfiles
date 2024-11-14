@@ -10,7 +10,6 @@ on_attach = function(bufnr)
         vim.keymap.set(mode, l, r, opts)
       end
 
-      -- Navigation
       map('n', ']c', function()
         if vim.wo.diff then
           vim.cmd.normal({']c', bang = true})
@@ -27,7 +26,6 @@ on_attach = function(bufnr)
         end
       end)
 
-      -- Actions
       map('n', '<leader>hs', gitsigns.stage_hunk)
       map('n', '<leader>hr', gitsigns.reset_hunk)
       map('v', '<leader>hs', function() gitsigns.stage_hunk {vim.fn.line('.'), vim.fn.line('v')} end)
@@ -41,8 +39,6 @@ on_attach = function(bufnr)
       map('n', '<leader>hd', gitsigns.diffthis)
       map('n', '<leader>hD', function() gitsigns.diffthis('~') end)
       map('n', '<leader>td', gitsigns.toggle_deleted)
-
-      -- Text object
       map({'o', 'x'}, 'ih', ':<C-U>Gitsigns select_hunk<CR>')
     end,
     },
