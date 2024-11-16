@@ -4,41 +4,55 @@ vim.g.netrw_browse_split = 0
 vim.g.netrw_banner = 0
 vim.g.netrw_winsize = 0
 
-vim.opt.number = true
-vim.opt.relativenumber = true
-vim.opt.autoindent = true
-vim.opt.tabstop = 4
-vim.opt.softtabstop = 4
-vim.opt.shiftwidth = 4
-vim.opt.smarttab = true
-vim.opt.smartcase = true
-vim.opt.smartindent = true
-vim.opt.cursorline = true
-vim.opt.wrap = false
-vim.o.whichwrap = "bs<>[]hl"
-vim.opt.scrolloff = 8
-vim.opt.sidescrolloff = 8
-vim.opt.expandtab = true
+vim.o.hlsearch = false
+vim.o.mouse = 'a'
+vim.o.clipboard = 'unnamedplus'
+vim.o.breakindent = true
+vim.o.ignorecase = true
+vim.o.smartcase = true
+vim.o.updatetime = 50
+vim.o.timeoutlen = 300
+vim.o.backup = false
+vim.o.writebackup = false
+vim.o.whichwrap = 'bs<>[]hl'
+vim.o.wrap = false
+vim.o.linebreak = true
+vim.o.scrolloff = 4
+vim.o.sidescrolloff = 8
+vim.o.relativenumber = true
+vim.o.numberwidth = 4
+vim.o.shiftwidth = 4
+vim.o.tabstop = 4
+vim.o.softtabstop = 4
+vim.o.expandtab = true
+vim.o.cursorline = true
+vim.o.splitbelow = true
+vim.o.splitright = true
+vim.o.swapfile = false
+vim.o.smartindent = true
+vim.o.showmode = false
+vim.o.showtabline = 2
+vim.o.backspace = 'indent,eol,start'
+vim.o.pumheight = 10
+vim.o.conceallevel = 0
+vim.o.fileencoding = 'utf-8'
+vim.o.cmdheight = 1
+vim.o.autoindent = true
 
-vim.opt.hlsearch = false
-vim.opt.incsearch = true
+vim.wo.number = true
+vim.wo.signcolumn = 'yes'
+
 vim.opt.termguicolors = true
+vim.opt.smarttab = true
+vim.opt.incsearch = true
 vim.opt.colorcolumn = "80"
-vim.opt.signcolumn = "yes"
-vim.opt.isfname:append("@-@")
-
 vim.opt.encoding = "utf-8"
-vim.opt.shortmess:append("atI")
-vim.opt.backspace = "indent,eol,start"
-vim.opt.display:append("lastline")
-
 vim.opt.ttimeout = true
 vim.opt.ttimeoutlen = 1
 vim.opt.ttyfast = true
-vim.opt.updatetime = 50
+vim.opt.shortmess:append 'catI'
+vim.opt.iskeyword:append '-'
+vim.opt.isfname:append("@-@")
+vim.opt.display:append("lastline")
+vim.opt.formatoptions:remove { 'c', 'r', 'o' }
 
-vim.opt.clipboard = "unnamedplus"
-vim.opt.swapfile = false
-vim.opt.backup = false
-vim.opt.writebackup = false
-vim.opt.undofile = false
