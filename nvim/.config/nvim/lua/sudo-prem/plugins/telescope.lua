@@ -34,7 +34,13 @@ return {
         buffers = {
           initial_mode = 'normal',
           sort_last_used = true,
-        },
+        mappings = {
+            n = {
+              ['d'] = actions.delete_buffer,
+              ['l'] = actions.select_default,
+            },
+          },
+                    },
       },
       live_grep = {
         file_ignore_patterns = { 'node_modules', '.git', '.venv' },
@@ -60,3 +66,4 @@ return {
         end,
     },
 }
+

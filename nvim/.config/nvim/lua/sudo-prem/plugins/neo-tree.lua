@@ -11,7 +11,7 @@ return {
     require('neo-tree').setup {
       popup_border_style = 'rounded',
       window = {
-        position = 'left',
+        position = 'right',
         width = 35,
         mapping_options = {
           noremap = true,
@@ -22,7 +22,6 @@ return {
           ['P'] = { 'toggle_preview', config = { use_float = false } },
           ['l'] = 'open',
           ['h'] = 'close_node',
-          ['<C-h>'] = 'close_all_subnodes',
           ['t'] = 'open_tabnew',
           ['y'] = 'copy_to_clipboard',
           ['x'] = 'cut_to_clipboard',
@@ -63,8 +62,7 @@ return {
             ['H'] = 'toggle_hidden',
             ['/'] = 'fuzzy_finder',
             ['D'] = 'fuzzy_finder_directory',
-            ['f'] = 'filter_on_submit',
-            ['<c-x>'] = 'clear_filter',
+            ['f'] = '',
             ['[g'] = 'prev_git_modified',
             [']g'] = 'next_git_modified',
           },
@@ -92,7 +90,8 @@ return {
         },
       },
     }
-    vim.cmd [[nnoremap \ :Neotree toggle<CR>]]
+    vim.cmd [[nnoremap \ :Neotree filesystem reveal toggle right<CR>]]
   end,
 }
+
 
