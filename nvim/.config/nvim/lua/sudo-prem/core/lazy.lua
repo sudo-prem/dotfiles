@@ -12,25 +12,39 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-	spec = "sudo-prem.plugins",
-	change_detection = { notify = false },
-	checker = { enabled = false },
-	defaults = {
-		lazy = false,
-		version = false,
-	},
-	performance = {
-		rtp = {
-			disabled_plugins = {
-				"gzip",
-				"matchit",
-				"matchparen",
-				"netrwPlugin",
-				"tarPlugin",
-				"tohtml",
-				"tutor",
-				"zipPlugin",
-			},
-		},
-	},
+  require('sudo-prem.plugins.tokyonight'),
+  require('sudo-prem.plugins.telescope'),
+  require('sudo-prem.plugins.treesitter'),
+  require('sudo-prem.plugins.lsp'),
+  require('sudo-prem.plugins.autocompletion'),
+  require('sudo-prem.plugins.none-ls'),
+  require('sudo-prem.plugins.lualine'),
+  require('sudo-prem.plugins.bufferline'),
+  require('sudo-prem.plugins.neo-tree'),
+  require('sudo-prem.plugins.gitsigns'),
+  require 'sudo-prem.plugins.indent-blankline',
+  require('sudo-prem.plugins.nvim-surround'),
+  require('sudo-prem.plugins.leap'),
+  require('sudo-prem.plugins.misc'),
+}, {
+  change_detection = { notify = false },
+  checker = { enabled = false },
+  defaults = {
+    lazy = false,
+    version = false,
+  },
+  performance = {
+    rtp = {
+      disabled_plugins = {
+        "gzip",
+        "matchit",
+        "matchparen",
+        "netrwplugin",
+        "tarplugin",
+        "tohtml",
+        "tutor",
+        "zipplugin",
+      },
+    },
+  },
 })

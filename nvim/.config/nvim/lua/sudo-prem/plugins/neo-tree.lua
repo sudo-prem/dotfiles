@@ -26,19 +26,18 @@ return {
           enabled = true,
           leave_dirs_open = true,
         },
-        group_empty_dirs = true,
         window = {
           fuzzy_finder_mappings = {
             ['<C-j>'] = 'move_cursor_down',
             ['<C-k>'] = 'move_cursor_up',
           },
         },
+        use_libuv_file_watcher = false,
       },
       buffers = {
         follow_current_file = {
           leave_dirs_open = true,
         },
-        group_empty_dirs = true,
       },
     }
     vim.cmd [[nnoremap \ :Neotree filesystem reveal toggle<CR>]]

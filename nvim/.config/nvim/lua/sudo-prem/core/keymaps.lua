@@ -2,10 +2,11 @@ local opts = { noremap = true, silent = true }
 
 vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', opts)
 vim.keymap.set("i", "jk", "<ESC>", opts)
-vim.keymap.set("n", "H", "0", opts)
+vim.keymap.set('i', 'kj', '<ESC>', opts)
+vim.keymap.set({"n", "v"}, "H", "0", opts)
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv", opts)
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv", opts)
-vim.keymap.set("n", "L", "$", opts)
+vim.keymap.set( {"n", "v"},"L", "$", opts)
 
 vim.keymap.set("n", "X", ":keeppatterns substitute/\\s*\\%#\\s*/\\r/e <bar> normal! ==^<cr>", opts)
 vim.keymap.set('n', '<Esc>', ':noh<CR>', opts)
