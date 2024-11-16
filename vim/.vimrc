@@ -94,6 +94,8 @@ xnoremap <silent> K :m '<-2<CR>gv=gv
 " Move to start/end of line
 nnoremap <silent> H 0
 nnoremap <silent> L $
+vnoremap <silent> H 0
+vnoremap <silent> L $
 
 " Paste in visual mode without copying the replaced text
 xnoremap <silent> p "_dP
