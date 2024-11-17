@@ -13,14 +13,15 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
   require('sudo-prem.plugins.tokyonight'),
+  require('sudo-prem.plugins.alpha'),
+  require('sudo-prem.plugins.lualine'),
+  require('sudo-prem.plugins.nvim-tree'),
+  require('sudo-prem.plugins.bufferline'),
   require('sudo-prem.plugins.telescope'),
   require('sudo-prem.plugins.treesitter'),
   require('sudo-prem.plugins.lsp'),
   require('sudo-prem.plugins.autocompletion'),
   require('sudo-prem.plugins.none-ls'),
-  require('sudo-prem.plugins.lualine'),
-  require('sudo-prem.plugins.bufferline'),
-  require('sudo-prem.plugins.neo-tree'),
   require('sudo-prem.plugins.gitsigns'),
   require 'sudo-prem.plugins.indent-blankline',
   require('sudo-prem.plugins.nvim-surround'),

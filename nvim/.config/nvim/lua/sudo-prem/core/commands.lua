@@ -18,13 +18,6 @@ vim.api.nvim_create_autocmd({"BufWritePre"}, {
 	command = [[%s/\s\+$//e]],
 })
 
-vim.api.nvim_create_autocmd('BufEnter', {
-	group = sudo_group,
-	callback = function()
-		vim.cmd.colorscheme("tokyonight")
-	end
-})
-
 vim.api.nvim_create_autocmd('LspAttach', {
 	group = sudo_group,
 	callback = function(e)

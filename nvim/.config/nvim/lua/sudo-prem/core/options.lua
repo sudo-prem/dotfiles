@@ -1,11 +1,9 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
-vim.g.netrw_browse_split = 0
-vim.g.netrw_banner = 0
-vim.g.netrw_winsize = 0
+vim.g.loaded_netrwPlugin = 1
+vim.g.loaded_netrw = 1
 
 vim.o.hlsearch = false
-vim.o.mouse = 'a'
 vim.o.clipboard = 'unnamedplus'
 vim.o.breakindent = true
 vim.o.ignorecase = true
@@ -31,7 +29,6 @@ vim.o.splitright = true
 vim.o.swapfile = false
 vim.o.smartindent = true
 vim.o.showmode = false
-vim.o.showtabline = 2
 vim.o.backspace = 'indent,eol,start'
 vim.o.pumheight = 10
 vim.o.conceallevel = 0
@@ -54,5 +51,4 @@ vim.opt.shortmess:append 'catI'
 vim.opt.iskeyword:append '-'
 vim.opt.isfname:append("@-@")
 vim.opt.display:append("lastline")
-vim.opt.formatoptions:remove { 'c', 'r', 'o' }
 
