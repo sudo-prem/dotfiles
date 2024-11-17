@@ -76,11 +76,11 @@ dashboard.section.header.val = sudo_vim
 
 dashboard.section.buttons.val = {
     dashboard.button( "n", "󰝒  > New File" , ":ene <BAR> startinsert <CR>"),
-    dashboard.button( "f", "󰱼  > Find File", ":Telescope find_files<CR>"),
-    dashboard.button( "w", "󰺯  > Find Word", ":Telescope live_grep<CR>"),
     dashboard.button( "r", "󰤘  > Recents"   , ":Telescope oldfiles<CR>"),
+    dashboard.button( "f", "󰱼  > Find File", ":Telescope find_files<CR>"),
+    dashboard.button( "s", "󰺯  > Find String", ":Telescope live_grep<CR>"),
     dashboard.button( "l", "󰒲  > Lazy" , ":Lazy<CR>"),
-    dashboard.button( "s", "  > Config" , ":e $XDG_CONFIG_HOME/nvim<CR>"),
+    dashboard.button( "c", "  > Config" , ":e $XDG_CONFIG_HOME/nvim<CR>"),
     dashboard.button( "q", "  > Quit", ":qa<CR>"),
 }
 
