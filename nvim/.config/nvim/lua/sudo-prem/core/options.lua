@@ -35,6 +35,7 @@ vim.o.conceallevel = 0
 vim.o.fileencoding = 'utf-8'
 vim.o.cmdheight = 1
 vim.o.autoindent = true
+vim.o.laststatus = 3
 
 vim.wo.number = true
 vim.wo.signcolumn = 'yes'

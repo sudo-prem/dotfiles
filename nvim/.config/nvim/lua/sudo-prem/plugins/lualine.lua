@@ -12,9 +12,7 @@ require('lualine').setup {
     },
    section_separators = { left = '', right = '' },
     component_separators = { left = '', right = '' },
-    ignore_focus = {},
     always_divide_middle = true,
-    globalstatus = false,
     refresh = {
       statusline = 10,
       tabline = 10,
@@ -37,10 +35,6 @@ require('lualine').setup {
     lualine_y = {},
     lualine_z = {}
   },
-  tabline = {},
-  winbar = {},
-  inactive_winbar = {},
-  extensions = {}
 }
     end
 }
