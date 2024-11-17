@@ -5,11 +5,13 @@ return {
 require('lualine').setup {
   options = {
     icons_enabled = true,
-    theme = 'auto',
+    theme = 'tokyonight',
     disabled_filetypes = {
           'NvimTree',
           'alpha'
     },
+   section_separators = { left = '', right = '' },
+    component_separators = { left = '', right = '' },
     ignore_focus = {},
     always_divide_middle = true,
     globalstatus = false,

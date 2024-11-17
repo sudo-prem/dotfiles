@@ -105,10 +105,10 @@ nnoremap <silent> y "*y
 vnoremap <silent> y "*y
 nnoremap <silent> d "_d
 vnoremap <silent> d "_d
-nnoremap <silent> c "_c
-vnoremap <silent> c "_c
 nnoremap <silent> D "_D
 vnoremap <silent> D "_D
+nnoremap <silent> c "_c
+vnoremap <silent> c "_c
 nnoremap <silent> C "_C
 vnoremap <silent> C "_C
 

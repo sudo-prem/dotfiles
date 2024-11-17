@@ -1,8 +1,4 @@
 return {
-  {
-    "nvim-telescope/telescope-ui-select.nvim",
-  },
-  {
     "nvim-telescope/telescope.nvim",
     branch = '0.1.x',
     dependencies = {
@@ -12,7 +8,6 @@ return {
     config = function()
         local builtin = require("telescope.builtin")
         local actions = require('telescope.actions')
-        require("telescope").load_extension("ui-select")
       require("telescope").setup{
       defaults = {
         mappings = {
@@ -61,9 +56,9 @@ return {
 
       vim.keymap.set("n", "<leader><leader>", builtin.find_files, {})
       vim.keymap.set("n", "<leader>fg", builtin.live_grep, {})
+      vim.keymap.set("n", "<leader>fw", builtin.grep_string, {})
       vim.keymap.set("n", "<leader>fb", builtin.buffers, {})
       vim.keymap.set('n', '<leader>fd', builtin.diagnostics, {})
-        end,
-    },
+        end
 }
 

@@ -8,17 +8,6 @@ return {
 local alpha = require("alpha")
 local dashboard = require("alpha.themes.dashboard")
 
-local neovim = {
-    "                                                     ",
-    "  ███╗   ██╗███████╗ ██████╗ ██╗   ██╗██╗███╗   ███╗ ",
-    "  ████╗  ██║██╔════╝██╔═══██╗██║   ██║██║████╗ ████║ ",
-    "  ██╔██╗ ██║█████╗  ██║   ██║██║   ██║██║██╔████╔██║ ",
-    "  ██║╚██╗██║██╔══╝  ██║   ██║╚██╗ ██╔╝██║██║╚██╔╝██║ ",
-    "  ██║ ╚████║███████╗╚██████╔╝ ╚████╔╝ ██║██║ ╚═╝ ██║ ",
-    "  ╚═╝  ╚═══╝╚══════╝ ╚═════╝   ╚═══╝  ╚═╝╚═╝     ╚═╝ ",
-    "                                                     ",
-}
-
 local walter_white = {
     "⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠿⠿⠿⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿",
     "⣿⣿⣿⣿⣿⣿⣿⣿⠟⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠉⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿",
@@ -38,7 +27,7 @@ local walter_white = {
     "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢷⠾⠛⠂⢹⠀⠀⠀⢡⠀⠀⠀⠀⠀⠙⠛⠿⢿",
 }
 
-local mexi_laugh = {
+local el_rasitas = {
     "⢰⣶⠶⢶⣶⣶⡶⢶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⡶⠶⢶⣶⣶⣶⣶",
     "⠘⠄⠄⠄⠄⠄⠄⠄⠄⣿⣿⣿⣿⣿⣿⣿⠿⠄⠄⠄⠈⠉⠄⠄⣹⣶⣿⣿⣿⣿⢿",
     "⠄⠤⣾⣿⣿⣿⣿⣷⣤⡈⠙⠛⣿⣿⣿⣧⣀⠠⣤⣤⣴⣶⣿⣿⣿⣿⣿⣿⣿⣿⣶",
@@ -56,7 +45,7 @@ local mexi_laugh = {
     "⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿",
 }
 
-local sus = {
+local sussy = {
     "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣤⣤⣤⣤⣤⣶⣦⣤⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀",
     "⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⡿⠛⠉⠙⠛⠛⠛⠛⠻⢿⣿⣷⣤⡀⠀⠀⠀⠀⠀",
     "⠀⠀⠀⠀⠀⠀⠀⠀⣼⣿⠋⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⠈⢻⣿⣿⡄⠀⠀⠀⠀",
@@ -74,15 +63,28 @@ local sus = {
     "⠀⠀⠀⠀⠀⠀⠀⠈⠛⠻⠿⠿⠿⠿⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
 }
 
-dashboard.section.header.val = walter_white
+local sudo_vim = {
+    "███████╗██╗   ██╗██████╗  ██████╗       ██╗   ██╗██╗███╗   ███╗",
+    "██╔════╝██║   ██║██╔══██╗██╔═══██╗      ██║   ██║██║████╗ ████║",
+    "███████╗██║   ██║██║  ██║██║   ██║█████╗██║   ██║██║██╔████╔██║",
+    "╚════██║██║   ██║██║  ██║██║   ██║╚════╝╚██╗ ██╔╝██║██║╚██╔╝██║",
+    "███████║╚██████╔╝██████╔╝╚██████╔╝       ╚████╔╝ ██║██║ ╚═╝ ██║",
+    "╚══════╝ ╚═════╝ ╚═════╝  ╚═════╝         ╚═══╝  ╚═╝╚═╝     ╚═╝",
+}
+
+dashboard.section.header.val = sudo_vim
 
 dashboard.section.buttons.val = {
-    dashboard.button( "n", "  > New file" , ":ene <BAR> startinsert <CR>"),
-    dashboard.button( "f", "  > Find file", ":Telescope find_files<CR>"),
-    dashboard.button( "r", "  > Recent"   , ":Telescope oldfiles<CR>"),
-    dashboard.button( "s", "  > Settings" , ":e $XDG_CONFIG_HOME/nvim<CR>"),
-    dashboard.button( "q", "  > Quit NVIM", ":qa<CR>"),
+    dashboard.button( "n", "󰝒  > New File" , ":ene <BAR> startinsert <CR>"),
+    dashboard.button( "f", "󰱼  > Find File", ":Telescope find_files<CR>"),
+    dashboard.button( "w", "󰺯  > Find Word", ":Telescope live_grep<CR>"),
+    dashboard.button( "r", "󰤘  > Recents"   , ":Telescope oldfiles<CR>"),
+    dashboard.button( "l", "󰒲  > Lazy" , ":Lazy<CR>"),
+    dashboard.button( "s", "  > Config" , ":e $XDG_CONFIG_HOME/nvim<CR>"),
+    dashboard.button( "q", "  > Quit", ":qa<CR>"),
 }
+
+dashboard.section.footer.val = "  sudo-prem"
 
 alpha.setup(dashboard.opts)
 vim.cmd([[
