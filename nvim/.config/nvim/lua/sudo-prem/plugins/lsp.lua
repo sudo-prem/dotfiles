@@ -144,9 +144,6 @@ return {
                     capabilities = capabilities,
                     settings = {
                         Lua = {
-                            -- diagnostics = {
-                            --   globals = { "vim" },
-                            -- },
                             completion = {
                                 callSnippet = "Replace",
                             },
@@ -158,21 +155,25 @@ return {
             require("mason").setup()
             local ensure_installed = vim.tbl_keys(servers or {})
             vim.list_extend(ensure_installed, {
+                -- LSPs
                 "lua_ls",
                 "html",
                 "cssls",
                 "ts_ls",
                 "pyright",
+
+                -- Linters
+                "pylint",
+                "eslint_d",
+
+                -- Formatters
+                "prettier",
+                "stylua",
+                "black",
             })
 
             require("mason-tool-installer").setup({
-                ensure_installed = {
-                    "prettier",
-                    "stylua",
-                    "black",
-                    "pylint",
-                    "eslint_d",
-                },
+                ensure_installed = ensure_installed,
             })
 
             require("mason-lspconfig").setup({
