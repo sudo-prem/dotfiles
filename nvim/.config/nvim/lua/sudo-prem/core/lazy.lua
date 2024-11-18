@@ -33,10 +33,6 @@ require("lazy").setup({
     require("sudo-prem.plugins.conform"),
     require("sudo-prem.plugins.nvim-cmp"),
     require("sudo-prem.plugins.treesitter"),
-}, {
-    ui = {
-        icons = vim.g.have_nerd_font,
-    },
 })
 
 vim.keymap.set("n", "<leader>l", ":Lazy<CR>", { noremap = true, silent = true })
