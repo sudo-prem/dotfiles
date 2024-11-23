@@ -68,7 +68,7 @@
 	<key>createdby</key>
 	<string>Premnaath Varadharajan</string>
 	<key>description</key>
-	<string>Play sounds from alfred</string>
+	<string>Play sounds from Alfred</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
@@ -131,11 +131,11 @@
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>{var:sounds_keyword}</string>
+				<string>i</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -145,14 +145,13 @@
 				<key>queuemode</key>
 				<integer>1</integer>
 				<key>runningsubtext</key>
-				<string>Finding sound files…</string>
+				<string>Finding sound files</string>
 				<key>script</key>
-				<string>// Helpers
-function envVar(varName) {
+				<string>function envVar(varName) {
   return $.NSProcessInfo
     .processInfo
     .environment
-    .objectForKey(varName).js
+    .objectForKey(varName)?.js || "";
 }
 
 function dirContents(path) {
@@ -160,48 +159,41 @@ function dirContents(path) {
     return $.NSFileManager.defaultManager.contentsOfDirectoryAtURLIncludingPropertiesForKeysOptionsError(
       $.NSURL.fileURLWithPath(path),
       undefined,
-      $.NSDirectoryEnumerationSkipsHiddenFiles, undefined).js.map(p =&gt; p.path.js)
+      $.NSDirectoryEnumerationSkipsHiddenFiles, undefined
+    ).js.map(p =&gt; p.path.js);
   } catch {
-    return []
+    return [];
   }
 }
 
-// Main
-const favouriteSounds = envVar("favourite_sounds").split("\n")
+// Get User Input (query passed as an argument)
+const query = envVar("query").toLowerCase();
 
-const allSounds = dirContents("/System/Library/Sounds")
-  .concat(dirContents($("~/Library/Sounds").stringByExpandingTildeInPath.js))
-  .sort()
+// Fetch all sound files
+const soundDir = "/Users/premnaath/dotfiles/misc/app-config/alfred/sounds";
+const allSounds = dirContents(soundDir).sort();
 
-const sortedSounds = allSounds.toSorted((a, b) =&gt; {
-  const first = favouriteSounds.indexOf(a)
-  if (first === -1) return true
-  const second = favouriteSounds.indexOf(b)
-  if (second === -1) return false
-  return first &gt; second
-})
+// Filter results based on query
+const filteredSounds = allSounds.filter(file =&gt; 
+  $(file).stringByDeletingPathExtension.lastPathComponent.js.toLowerCase().includes(query)
+);
 
-const sfItems = sortedSounds.map(file =&gt; {
-  const isFavourite = favouriteSounds.includes(file)
-
+// Map to Alfred items
+const sfItems = filteredSounds.map(file =&gt; {
   return {
     uid: file,
     title: $(file).stringByDeletingPathExtension.lastPathComponent.js,
     subtitle: file,
     arg: file,
-    icon: { path: isFavourite ? "images/favourite.png" : "icon.png" },
-    mods: { cmd: isFavourite ?
-      { variables: { favourite_action: "remove" }, subtitle: "Remove from favourites" } :
-      { variables: { favourite_action: "add" }, subtitle: "Add to favourites" }
-    }
-  }
-})
+    icon: { path: "icon.png" }
+  };
+});
 
+// Output JSON for Alfred
 JSON.stringify({
-  rerun: 0.1,
-  skipknowledge: true,
   items: sfItems
-})</string>
+});
+</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -209,9 +201,9 @@ JSON.stringify({
 				<key>skipuniversalaction</key>
 				<true/>
 				<key>subtext</key>
-				<string>{const:alfred_workflow_description}</string>
+				<string>Play sounds from Alfred</string>
 				<key>title</key>
-				<string>{const:alfred_workflow_name}</string>
+				<string>Sounds</string>
 				<key>type</key>
 				<integer>7</integer>
 				<key>withspace</key>
