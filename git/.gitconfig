@@ -11,8 +11,11 @@
   diffFilter = delta --color-only
 
 [merge]
-  tool = vscode
+  tool = nvim
   conflictstyle = diff3
+
+[mergetool "nvim"]
+  cmd = nvim -c "DiffviewOpen"
 
 [mergetool]
   keepBackup = false
