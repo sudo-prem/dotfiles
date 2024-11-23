@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.sudo-prem.sounds</string>
+	<key>category</key>
+	<string>Tools</string>
+	<key>connections</key>
+	<dict>
+		<key>05C87841-BDC3-4F23-995C-54B5CCEC4ED9</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>DB5113AC-FACF-40A1-81A5-B61523C01866</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>CFCFDB7E-6667-4B2E-BEEF-B9C1680C1A2F</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<true/>
+			</dict>
+		</array>
+		<key>CFCFDB7E-6667-4B2E-BEEF-B9C1680C1A2F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>DB5113AC-FACF-40A1-81A5-B61523C01866</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>FB1367A7-D566-4C68-BFAE-920BECE34E23</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>BD47E631-68DF-4764-B947-50CAE460EBE0</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Premnaath Varadharajan</string>
+	<key>description</key>
+	<string>Play sounds from alfred</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Sounds</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<true/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>/usr/bin/afplay "${1}"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>11</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>DB5113AC-FACF-40A1-81A5-B61523C01866</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>count</key>
+				<integer>1</integer>
+				<key>keychar</key>
+				<string>↓</string>
+				<key>keycode</key>
+				<integer>125</integer>
+				<key>keymod</key>
+				<integer>10485760</integer>
+				<key>overridewithargument</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.dispatchkeycombo</string>
+			<key>uid</key>
+			<string>FB1367A7-D566-4C68-BFAE-920BECE34E23</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>{var:sounds_keyword}</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Finding sound files…</string>
+				<key>script</key>
+				<string>// Helpers
+function envVar(varName) {
+  return $.NSProcessInfo
+    .processInfo
+    .environment
+    .objectForKey(varName).js
+}
+
+function dirContents(path) {
+  try {
+    return $.NSFileManager.defaultManager.contentsOfDirectoryAtURLIncludingPropertiesForKeysOptionsError(
+      $.NSURL.fileURLWithPath(path),
+      undefined,
+      $.NSDirectoryEnumerationSkipsHiddenFiles, undefined).js.map(p =&gt; p.path.js)
+  } catch {
+    return []
+  }
+}
+
+// Main
+const favouriteSounds = envVar("favourite_sounds").split("\n")
+
+const allSounds = dirContents("/System/Library/Sounds")
+  .concat(dirContents($("~/Library/Sounds").stringByExpandingTildeInPath.js))
+  .sort()
+
+const sortedSounds = allSounds.toSorted((a, b) =&gt; {
+  const first = favouriteSounds.indexOf(a)
+  if (first === -1) return true
+  const second = favouriteSounds.indexOf(b)
+  if (second === -1) return false
+  return first &gt; second
+})
+
+const sfItems = sortedSounds.map(file =&gt; {
+  const isFavourite = favouriteSounds.includes(file)
+
+  return {
+    uid: file,
+    title: $(file).stringByDeletingPathExtension.lastPathComponent.js,
+    subtitle: file,
+    arg: file,
+    icon: { path: isFavourite ? "images/favourite.png" : "icon.png" },
+    mods: { cmd: isFavourite ?
+      { variables: { favourite_action: "remove" }, subtitle: "Remove from favourites" } :
+      { variables: { favourite_action: "add" }, subtitle: "Add to favourites" }
+    }
+  }
+})
+
+JSON.stringify({
+  rerun: 0.1,
+  skipknowledge: true,
+  items: sfItems
+})</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>skipuniversalaction</key>
+				<true/>
+				<key>subtext</key>
+				<string>{const:alfred_workflow_description}</string>
+				<key>title</key>
+				<string>{const:alfred_workflow_name}</string>
+				<key>type</key>
+				<integer>7</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>05C87841-BDC3-4F23-995C-54B5CCEC4ED9</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.junction</string>
+			<key>uid</key>
+			<string>CFCFDB7E-6667-4B2E-BEEF-B9C1680C1A2F</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<true/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>// Helpers
+function envVar(varName) {
+  return $.NSProcessInfo
+    .processInfo
+    .environment
+    .objectForKey(varName).js
+}
+
+// Main
+function run(argv) {
+  const soundFile = argv[0]
+  const modeRemove = envVar("favourite_action") === "remove" // Either "add" to add to list or "remove" to remove from it
+
+  // Set favourites
+  const origFavourites = envVar("favourite_sounds")?.split("\n")?.filter(entry =&gt; entry) || [] // Split and remove empty entries
+  const favourites = modeRemove ?
+    origFavourites.filter(entry =&gt; entry !== soundFile) :
+    origFavourites.concat(soundFile)
+
+  Application("com.runningwithcrayons.Alfred").setConfiguration(
+    "favourite_sounds",
+    { toValue: [...new Set(favourites)].join("\n"), inWorkflow: envVar("alfred_workflow_bundleid") }
+  )
+}</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>7</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>BD47E631-68DF-4764-B947-50CAE460EBE0</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>05C87841-BDC3-4F23-995C-54B5CCEC4ED9</key>
+		<dict>
+			<key>xpos</key>
+			<real>30</real>
+			<key>ypos</key>
+			<real>155</real>
+		</dict>
+		<key>BD47E631-68DF-4764-B947-50CAE460EBE0</key>
+		<dict>
+			<key>xpos</key>
+			<real>365</real>
+			<key>ypos</key>
+			<real>295</real>
+		</dict>
+		<key>CFCFDB7E-6667-4B2E-BEEF-B9C1680C1A2F</key>
+		<dict>
+			<key>xpos</key>
+			<real>235</real>
+			<key>ypos</key>
+			<real>185</real>
+		</dict>
+		<key>DB5113AC-FACF-40A1-81A5-B61523C01866</key>
+		<dict>
+			<key>xpos</key>
+			<real>365</real>
+			<key>ypos</key>
+			<real>15</real>
+		</dict>
+		<key>FB1367A7-D566-4C68-BFAE-920BECE34E23</key>
+		<dict>
+			<key>xpos</key>
+			<real>365</real>
+			<key>ypos</key>
+			<real>155</real>
+		</dict>
+	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
+	<key>webaddress</key>
+	<string>www.github.com/sudo-prem</string>
+</dict>
+</plist>
