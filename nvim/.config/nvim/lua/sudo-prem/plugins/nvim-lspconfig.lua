@@ -4,8 +4,8 @@ return {
         { "williamboman/mason.nvim", config = true },
         "williamboman/mason-lspconfig.nvim",
         "WhoIsSethDaniel/mason-tool-installer.nvim",
-        { "j-hui/fidget.nvim", opts = {} },
         "hrsh7th/cmp-nvim-lsp",
+        { "j-hui/fidget.nvim", opts = {} },
     },
     config = function()
         vim.api.nvim_create_autocmd("LspAttach", {
@@ -72,6 +72,7 @@ return {
                         "sudo-lsp-highlight",
                         { clear = false }
                     )
+
                     vim.api.nvim_create_autocmd(
                         { "CursorHold", "CursorHoldI" },
                         {
@@ -95,11 +96,11 @@ return {
                             "sudo-lsp-detach",
                             { clear = true }
                         ),
-                        callback = function(event2)
+                        callback = function(current_event)
                             vim.lsp.buf.clear_references()
                             vim.api.nvim_clear_autocmds({
                                 group = "sudo-lsp-highlight",
-                                buffer = event2.buf,
+                                buffer = current_event.buf,
                             })
                         end,
                     })
