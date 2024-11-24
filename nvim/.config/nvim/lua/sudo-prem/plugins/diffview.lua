@@ -10,6 +10,9 @@ return {
                 },
             },
         })
-        vim.keymap.set("n", "<leader>gd", ":DiffviewOpen<CR>")
+        vim.keymap.set("n", "<leader>do", ":DiffviewOpen<CR>")
+        vim.keymap.set("n", "<leader>dc", ":DiffviewClose<CR>")
+        vim.keymap.set("n", "<leader>dh", ":DiffviewFileHistory %<CR>")
+        vim.keymap.set("n", "|", ":DiffviewToggleFiles<CR>")
     end,
 }
