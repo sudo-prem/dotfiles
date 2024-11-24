@@ -10,7 +10,7 @@ return {
                 vim.keymap.set(mode, l, r, opts)
             end
 
-            map("n", "]g", function()
+            map("n", "]h", function()
                 if vim.wo.diff then
                     vim.cmd.normal({ "]c", bang = true })
                 else
@@ -18,7 +18,7 @@ return {
                 end
             end)
 
-            map("n", "[g", function()
+            map("n", "[h", function()
                 if vim.wo.diff then
                     vim.cmd.normal({ "[c", bang = true })
                 else
@@ -46,7 +46,6 @@ return {
             map("n", "<leader>hD", function()
                 gitsigns.diffthis("~")
             end)
-            map("n", "<leader>td", gitsigns.toggle_deleted)
             map({ "o", "x" }, "ih", ":<C-U>Gitsigns select_hunk<CR>")
         end,
     },
