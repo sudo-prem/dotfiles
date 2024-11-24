@@ -14,6 +14,11 @@ return {
                     style = "none",
                 },
                 offsets = {
+                    -- :set ft
+                    {
+                        filetype = "DiffviewFiles",
+                        highlight = "Directory",
+                    },
                     {
                         filetype = "NvimTree",
                         highlight = "Directory",

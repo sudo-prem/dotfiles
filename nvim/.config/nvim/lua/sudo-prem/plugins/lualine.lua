@@ -9,6 +9,7 @@ return {
                 disabled_filetypes = {
                     "NvimTree",
                     "alpha",
+                    "DiffviewFiles",
                 },
                 section_separators = { left = "", right = "" },
                 component_separators = { left = "", right = "" },
