@@ -34,6 +34,7 @@ return {
             lua = { "stylua" },
             python = { "black" },
             javascript = { "prettier" },
+            json = { "prettier" },
             typescript = { "prettier" },
         },
     },
