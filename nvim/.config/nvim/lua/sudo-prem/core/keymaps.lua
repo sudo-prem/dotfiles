@@ -22,8 +22,6 @@ vim.keymap.set("n", "<A-l>", ":vertical resize -2<CR>", opts)
 
 vim.keymap.set({ "n", "v" }, "<leader>\\", "<C-w>v", opts)
 vim.keymap.set({ "n", "v" }, "<leader>-", "<C-w>s", opts)
-vim.keymap.set({ "n", "v" }, "<leader>x", ":bd<CR>", opts)
-vim.keymap.set({ "n", "v" }, "<leader>X", ":bd!<CR>", opts)
 
 vim.keymap.set("n", "<C-h>", "<C-w>h", opts)
 vim.keymap.set("n", "<C-j>", "<C-w>j", opts)
