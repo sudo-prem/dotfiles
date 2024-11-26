@@ -15,6 +15,8 @@ vim.keymap.set("n", "<leader>sn", "<cmd>noautocmd w <CR>", opts)
 vim.keymap.set({ "v", "x" }, "<", "<gv", opts)
 vim.keymap.set({ "v", "x" }, ">", ">gv", opts)
 
+vim.keymap.set({ "n", "v" }, "<leader>X", ":qa<CR>", opts)
+
 vim.keymap.set("n", "<A-h>", ":vertical resize +2<CR>", opts)
 vim.keymap.set("n", "<A-j>", ":resize +2<CR>", opts)
 vim.keymap.set("n", "<A-k>", ":resize -2<CR>", opts)

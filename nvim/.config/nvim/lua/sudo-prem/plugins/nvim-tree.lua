@@ -68,11 +68,5 @@ return {
             ":bd | NvimTreeClose<CR>",
             { silent = true, noremap = true }
         )
-        vim.keymap.set(
-            { "n", "v" },
-            "<leader>X",
-            ":bd! | NvimTreeClose<CR>",
-            { silent = true, noremap = true }
-        )
     end,
 }
