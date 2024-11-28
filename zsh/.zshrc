@@ -21,3 +21,8 @@ source $DOTFILES/zsh/bindkey.zsh
 source $DOTFILES/zsh/alias.zsh
 source $HOME/.fzf.zsh
 
+# Enable biometrics for terminal/keychain
+# sudo nvim /etc/pam.d/sudo
+# auth       sufficient     pam_tid.so
+# w!
+
