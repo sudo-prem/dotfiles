@@ -45,7 +45,6 @@ vim.wo.signcolumn = "yes"
 vim.opt.termguicolors = true
 vim.opt.smarttab = true
 vim.opt.incsearch = true
-vim.opt.colorcolumn = "80"
 vim.opt.encoding = "utf-8"
 vim.opt.ttimeout = true
 vim.opt.ttimeoutlen = 1

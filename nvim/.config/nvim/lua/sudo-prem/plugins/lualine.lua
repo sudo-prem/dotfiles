@@ -10,6 +10,7 @@ return {
                     "NvimTree",
                     "alpha",
                     "DiffviewFiles",
+                    "grug-far",
                 },
                 section_separators = { left = "", right = "" },
                 component_separators = { left = "", right = "" },

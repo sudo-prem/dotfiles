@@ -27,6 +27,10 @@ return {
                         filetype = "alpha",
                         highlight = "Directory",
                     },
+                    {
+                        filetype = "grug-far",
+                        highlight = "Directory",
+                    },
                 },
                 groups = {
                     items = {
