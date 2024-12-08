@@ -9,7 +9,7 @@ return {
             },
         })
         vim.keymap.set(
-            "n",
+            { "n", "v" },
             "<leader>ro",
             ":GrugFar<CR>",
             { noremap = true, silent = true }
