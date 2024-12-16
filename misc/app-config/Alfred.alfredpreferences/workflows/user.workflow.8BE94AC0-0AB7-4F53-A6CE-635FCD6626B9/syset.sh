@@ -144,6 +144,16 @@ cat <<EOF
       }
     },
     {
+      "uid": "Apple Intelligence & Siri",
+      "title": "Apple Intelligence & Siri",
+      "subtitle": "Open the 'Apple Intelligence & Siri' pane",
+      "arg": "x-apple.systempreferences:com.apple.Siri-Settings.extension*siri-sae",
+      "autocomplete": "Apple Intelligence & Siri",
+      "icon": {
+        "path": "./Images/AppleIntelligence.png"
+      }
+    },
+    {
       "uid": "Autofill & Passwords",
       "title": "Autofill & Passwords",
       "subtitle": "Open the 'Autofill & Passwords' pane",
@@ -692,16 +702,6 @@ cat <<EOF
       "autocomplete": "Sharing → Screen Sharing",
       "icon": {
         "path": "./Images/Sharing.png"
-      }
-    },
-    {
-      "uid": "Siri",
-      "title": "Siri",
-      "subtitle": "Open the 'Siri' pane",
-      "arg": "x-apple.systempreferences:com.apple.Siri-Settings.extension",
-      "autocomplete": "Siri",
-      "icon": {
-        "path": "./Images/SiriSpotlight.png"
       }
     },
     {
