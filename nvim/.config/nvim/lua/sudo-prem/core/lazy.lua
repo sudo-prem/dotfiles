@@ -30,6 +30,7 @@ require("lazy").setup({
     require("sudo-prem.plugins.vim-sleuth"),
     require("sudo-prem.plugins.diffview"),
     require("sudo-prem.plugins.grug-far"),
+    require("sudo-prem.plugins.copilot"),
     -- lsp
     require("sudo-prem.plugins.nvim-lspconfig"),
     require("sudo-prem.plugins.conform"),
