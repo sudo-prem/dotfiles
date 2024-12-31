@@ -4,15 +4,16 @@ return {
     cmd = { "ConformInfo" },
     keys = {
         {
-            "<leader>f",
+            "<leader>fs",
             function()
                 require("conform").format({
                     async = true,
                     lsp_format = "fallback",
                 })
+                vim.cmd("write")
             end,
             mode = "",
-            desc = "[F]ormat buffer",
+            desc = "[F]ormat and [S]ave buffer",
         },
     },
     opts = {

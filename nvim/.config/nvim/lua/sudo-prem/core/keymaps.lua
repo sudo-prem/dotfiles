@@ -11,7 +11,7 @@ vim.keymap.set("n", "x", '"_x', opts)
 
 vim.keymap.set("n", "<Esc>", ":nohlsearch<CR>", opts)
 vim.keymap.set("n", "<C-p>", ":echo expand('%:p')<CR>", opts)
-vim.keymap.set("n", "<leader>sn", "<cmd>noautocmd w <CR>", opts)
+vim.keymap.set("n", "<leader>s", "<cmd>noautocmd w <CR>", opts)
 vim.keymap.set({ "v", "x" }, "<", "<gv", opts)
 vim.keymap.set({ "v", "x" }, ">", ">gv", opts)
 
