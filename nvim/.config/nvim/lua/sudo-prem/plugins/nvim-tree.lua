@@ -48,7 +48,7 @@ return {
                 enable = true,
             },
             git = {
-                ignore = true,
+                ignore = false,
             },
             actions = {
                 open_file = {
