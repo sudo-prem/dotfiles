@@ -73,6 +73,7 @@ let g:multi_cursor_exit_from_insert_mode = 1
 
 " Use jk to escape insert mode
 inoremap jk <Esc>
+inoremap kj <Esc>
 
 " Close the current buffer
 nnoremap <Leader>x :bd<CR>
@@ -111,6 +112,10 @@ nnoremap <silent> c "_c
 vnoremap <silent> c "_c
 nnoremap <silent> C "_C
 vnoremap <silent> C "_C
+nnoremap <silent> s "_s
+vnoremap <silent> s "_s
+nnoremap <silent> S "_S
+vnoremap <silent> S "_S
 
 " Disable arrow keys in normal mode
 nnoremap <silent> <Up> <Nop>
