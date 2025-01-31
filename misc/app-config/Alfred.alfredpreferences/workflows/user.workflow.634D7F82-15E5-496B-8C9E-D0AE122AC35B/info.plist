@@ -8,61 +8,11 @@
 	<string>Productivity</string>
 	<key>connections</key>
 	<dict>
-		<key>1EA86C16-2EF5-4CE3-BA05-80343F02CBC5</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>B0C35CAF-841A-4F23-8192-F4888C603092</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>D8702124-F4BC-4C67-922B-77CF98FBE5D8</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>E718C2BF-B0EB-4C56-9702-77B670797A22</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>E0D4923C-E97A-43B8-BA19-589D7E37DDB4</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>50A1867F-C74D-4AF0-99A7-221EAFA68C77</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>50A1867F-C74D-4AF0-99A7-221EAFA68C77</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>B97685C4-B094-43A1-8C17-3256AA533C6F</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>56056996-E906-4F4A-8EA9-FBEF1B6A826A</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>FCA708B5-3694-4C27-8C9E-894554D3585A</string>
+				<string>B0C35CAF-841A-4F23-8192-F4888C603092</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -75,20 +25,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>FCA708B5-3694-4C27-8C9E-894554D3585A</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>FCA708B5-3694-4C27-8C9E-894554D3585A</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>1EA86C16-2EF5-4CE3-BA05-80343F02CBC5</string>
+				<string>B0C35CAF-841A-4F23-8192-F4888C603092</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -111,44 +48,52 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>{var:clear_keyword}</string>
-				<key>skipuniversalaction</key>
-				<true/>
-				<key>subtext</key>
-				<string>Close notification banners</string>
-				<key>text</key>
-				<string>{const:alfred_workflow_name}</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>831C449E-97B8-488E-AB60-CBD3842BB487</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>Application("System Events")
-  .applicationProcesses.byName("NotificationCenter")
-  .windows[0]
-  .groups[0]
-  .groups[0]
-  .scrollAreas[0]
-  .uiElements()
-  .map(banner =&gt; banner.actions().slice(-1)[0])
-  .reverse()
-  .forEach(banner =&gt; banner.perform())</string>
+				<string>// Notification Center can be disrupted by the simplest of events.
+// Clearing one notification or having an external screen
+// can alter its behaviour in tiny ways which break notification clearing methods.
+// Notification Center's structure keeps changing in minor macOS releases
+// so there is no point chasing alert reference paths.
+// The only sane way to detect banners and alerts is to look for specific known subroles:
+//   AXNotificationCenterAlert
+//   AXNotificationCenterAlertStack
+//   AXNotificationCenterBanner
+//   AXNotificationCenterBannerStack
+// Similarly, looking for "Close" and "Clear" actions by name is suboptimal
+// as every written language has a different word.
+// They have consistently been placed as the last action, so that's what we use.
+// Due to the aforementioned awkward behaviours,
+// and because Notification Center's contents change when clearing each notification,
+// it is impractical to get a full array of contents and act on them one by one.
+// Some approaches work better than others but have large speed trade-offs
+// that may leave the user thinking nothing is happening.
+// This solution keeps requesting and clearing the first alert in sequence.
+// It may not be the fastest in raw terms but it's immediatelly clear it's working.
+// Because Notification Center is insane, many solutions may work most of the way
+// but leave the last banner to be cleared.
+// This is why we also add a number of retries until we're reasonably sure it's done.
+
+let remainingTries = 5
+
+while (true) {
+  try {
+    Application("System Events")
+      .applicationProcesses.byName("NotificationCenter")
+      .windows[0]
+      .entireContents()
+      .find(item =&gt; item.subrole()?.startsWith("AXNotificationCenter"))
+      .actions()
+      .slice(-1)[0]
+      .perform()
+  } catch {
+    remainingTries--
+    if (remainingTries &lt; 1) break
+  }
+}</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -166,64 +111,23 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>tasksettings</key>
-				<dict>
-					<key>precision</key>
-					<string>majorVersion</string>
-				</dict>
-				<key>taskuid</key>
-				<string>com.alfredapp.automation.core/macOS/system.version</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.automation.task</string>
-			<key>uid</key>
-			<string>FCA708B5-3694-4C27-8C9E-894554D3585A</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>conditions</key>
-				<array>
-					<dict>
-						<key>inputstring</key>
-						<string></string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>2</integer>
-						<key>matchstring</key>
-						<string>14</string>
-						<key>outputlabel</key>
-						<string>Sequoia+</string>
-						<key>uid</key>
-						<string>D8702124-F4BC-4C67-922B-77CF98FBE5D8</string>
-					</dict>
-					<dict>
-						<key>inputstring</key>
-						<string></string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>2</integer>
-						<key>matchstring</key>
-						<string>12</string>
-						<key>outputlabel</key>
-						<string>Ventura+</string>
-						<key>uid</key>
-						<string>E0D4923C-E97A-43B8-BA19-589D7E37DDB4</string>
-					</dict>
-				</array>
-				<key>elselabel</key>
-				<string>Unsupported</string>
-				<key>hideelse</key>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>{var:clear_keyword}</string>
+				<key>skipuniversalaction</key>
+				<true/>
+				<key>subtext</key>
+				<string>Close notification banners</string>
+				<key>text</key>
+				<string>{const:alfred_workflow_name}</string>
+				<key>withspace</key>
 				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.conditional</string>
+			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>1EA86C16-2EF5-4CE3-BA05-80343F02CBC5</string>
+			<string>831C449E-97B8-488E-AB60-CBD3842BB487</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -258,74 +162,6 @@
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>Application("System Events")
-  .applicationProcesses.byName("NotificationCenter")
-  .windows[0]
-  .groups[0]
-  .scrollAreas[0]
-  .uiElements[0]
-  .groups()
-  .map(banner =&gt; banner.actions().slice(-1)[0])
-  .reverse()
-  .forEach(banner =&gt; banner.perform())</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>7</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>E718C2BF-B0EB-4C56-9702-77B670797A22</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>soundname</key>
-				<string>Basso</string>
-				<key>systemsound</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.playsound</string>
-			<key>uid</key>
-			<string>B97685C4-B094-43A1-8C17-3256AA533C6F</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>This requires macOS Ventura or later</string>
-				<key>title</key>
-				<string>Unsupportd macOS Version</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>50A1867F-C74D-4AF0-99A7-221EAFA68C77</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string>## Usage
@@ -337,20 +173,6 @@ Clear visible macOS notification banners via the `notclear` keyword.
 Configure the [Hotkey](https://www.alfredapp.com/help/workflows/triggers/hotkey/) for faster triggering.</string>
 	<key>uidata</key>
 	<dict>
-		<key>1EA86C16-2EF5-4CE3-BA05-80343F02CBC5</key>
-		<dict>
-			<key>xpos</key>
-			<real>410</real>
-			<key>ypos</key>
-			<real>50</real>
-		</dict>
-		<key>50A1867F-C74D-4AF0-99A7-221EAFA68C77</key>
-		<dict>
-			<key>xpos</key>
-			<real>590</real>
-			<key>ypos</key>
-			<real>320</real>
-		</dict>
 		<key>56056996-E906-4F4A-8EA9-FBEF1B6A826A</key>
 		<dict>
 			<key>xpos</key>
@@ -368,28 +190,7 @@ Configure the [Hotkey](https://www.alfredapp.com/help/workflows/triggers/hotkey/
 		<key>B0C35CAF-841A-4F23-8192-F4888C603092</key>
 		<dict>
 			<key>xpos</key>
-			<real>590</real>
-			<key>ypos</key>
-			<real>45</real>
-		</dict>
-		<key>B97685C4-B094-43A1-8C17-3256AA533C6F</key>
-		<dict>
-			<key>xpos</key>
-			<real>765</real>
-			<key>ypos</key>
-			<real>320</real>
-		</dict>
-		<key>E718C2BF-B0EB-4C56-9702-77B670797A22</key>
-		<dict>
-			<key>xpos</key>
-			<real>590</real>
-			<key>ypos</key>
-			<real>180</real>
-		</dict>
-		<key>FCA708B5-3694-4C27-8C9E-894554D3585A</key>
-		<dict>
-			<key>xpos</key>
-			<real>230</real>
+			<real>270</real>
 			<key>ypos</key>
 			<real>45</real>
 		</dict>
@@ -419,7 +220,7 @@ Configure the [Hotkey](https://www.alfredapp.com/help/workflows/triggers/hotkey/
 		</dict>
 	</array>
 	<key>version</key>
-	<string>2024.5</string>
+	<string>2025.1</string>
 	<key>webaddress</key>
 	<string>https://github.com/alfredapp/banner-be-gone-workflow/</string>
 </dict>
