@@ -31,3 +31,7 @@ source $HOME/.fzf.zsh
 # defaults write com.apple.dock autohide-time-modifier -float 0.45
 # killall Dock
 
+# Enable fast key repeat
+# sudo defaults write -g InitialKeyRepeat -int 10
+# sudo defaults write -g KeyRepeat -int 1
+# sudo defaults write -g ApplePressAndHoldEnabled -bool false
