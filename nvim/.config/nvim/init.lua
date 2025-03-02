@@ -1,1 +1,2 @@
-require("sudo-prem")
+-- require("sudo-prem")
+require("config.lazy")
