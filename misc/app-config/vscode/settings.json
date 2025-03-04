@@ -1,0 +1,118 @@
+{
+  // UI & Appearance
+  "workbench.sideBar.location": "right",
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.colorTheme": "Tokyo Night",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.settings.editor": "json",
+  "zenMode.hideLineNumbers": false,
+  "window.zoomLevel": 1,
+
+  // Explorer Settings
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "files.exclude": {
+    "**/node_modules": true
+  },
+
+  // Editor Settings
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontSize": 14,
+  "editor.fontWeight": "normal",
+  "editor.fontLigatures": true,
+  "editor.lineNumbers": "relative",
+  "editor.tabSize": 2,
+  "editor.cursorBlinking": "expand",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorSurroundingLines": 5,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.wordWrap": "on",
+  "editor.minimap.enabled": false,
+  "editor.smoothScrolling": true,
+  "editor.stickyScroll.enabled": true,
+  "editor.accessibilitySupport": "off",
+  "editor.linkedEditing": true,
+
+  // Suggest & Formatting
+  "editor.suggestSelection": "first",
+  "editor.inlineSuggest.enabled": true,
+  "editor.suggest.insertMode": "replace",
+  "editor.suggestFontSize": 14,
+  "editor.parameterHints.enabled": false,
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.codeActionsOnSave": {
+    "source.addMissingImports": "explicit",
+    "source.organizeImports": "explicit"
+  },
+
+  // Terminal Settings
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.lineHeight": 0.8,
+
+  // Language Specific Settings
+  "html.suggest.html5": true,
+  "html.autoClosingTags": false,
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+
+  // Git & SCM Settings
+  "git.openRepositoryInParentFolders": "always",
+  "projectManager.git.baseFolders": ["$home/workspace"],
+  "projectManager.sortList": "Recent",
+
+  // Vim Settings
+  "vim.vimrc.enable": true,
+  "vim.leader": "<space>",
+  "vim.foldfix": true,
+  "vim.highlightedyank.enable": true,
+  "vim.highlightedyank.textColor": "white",
+  "vim.hlsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["[", "d"],
+      "commands": ["editor.action.marker.prev"]
+    },
+    {
+      "before": ["]", "d"],
+      "commands": ["editor.action.marker.next"]
+    },
+    {
+      "before": ["[", "h"],
+      "commands": ["workbench.action.editor.previousChange"]
+    },
+    {
+      "before": ["]", "h"],
+      "commands": ["workbench.action.editor.nextChange"]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    {
+      "before": ["<leader>", "h", "r"],
+      "commands": ["git.revertSelectedRanges"]
+    },
+    {
+      "before": [">"],
+      "commands": ["editor.action.indentLines"]
+    },
+    {
+      "before": ["<"],
+      "commands": ["editor.action.outdentLines"]
+    }
+  ],
+
+  // Extensions & Updates
+  "extensions.ignoreRecommendations": true,
+  "extensions.autoUpdate": "onlyEnabledExtensions",
+  "update.mode": "manual",
+  "update.showReleaseNotes": false,
+
+  // Security Settings
+  "security.workspace.trust.enabled": false,
+  "workbench.layoutControl.enabled": false,
+  "window.commandCenter": false
+}
