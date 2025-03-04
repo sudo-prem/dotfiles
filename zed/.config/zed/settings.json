@@ -1,0 +1,122 @@
+{
+  // Editor Appearance
+  "theme": "Tokyo Night",
+  "buffer_font_family": "JetBrainsMono Nerd Font",
+  "buffer_font_size": 14.0,
+  "ui_font_family": "JetBrainsMono Nerd Font",
+  "ui_font_size": 14.0,
+  "buffer_line_height": "comfortable",
+  "scroll_beyond_last_line": "vertical_scroll_margin",
+  "vertical_scroll_margin": 7,
+  "cursor_blink": false,
+
+  // Editor Behavior
+  "base_keymap": "VSCode",
+  "vim_mode": true,
+  "relative_line_numbers": true,
+  "command_aliases": {
+    "W": "w",
+    "Wq": "wq",
+    "Q": "q"
+  },
+  "indent_guides": {
+    "enabled": true,
+    "coloring": "indent_aware"
+  },
+  "inlay_hints": {
+    "enabled": true
+  },
+  "highlight_on_yank_duration": 280,
+
+  // Vim-Specific Settings
+  "vim": {
+    "use_system_clipboard": "on_yank",
+    "use_multiline_find": true,
+    "use_smartcase_find": true,
+    "toggle_relative_line_numbers": true
+  },
+
+  // UI Panels & Layout
+  "project_panel": { "button": false, "dock": "right", "git_status": true },
+  "outline_panel": { "button": false, "dock": "right" },
+  "collaboration_panel": { "button": false, "dock": "right" },
+  "notification_panel": { "button": false, "dock": "right" },
+  "chat_panel": { "button": "never", "dock": "right" },
+  "git_panel": { "button": false, "dock": "right" },
+  "assistant": {
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "claude-3-5-sonnet"
+    },
+    "version": "2",
+    "button": false,
+    "dock": "right"
+  },
+  "terminal": { "button": false },
+  "toolbar": {
+    "breadcrumbs": false,
+    "quick_actions": false
+  },
+  "tab_bar": {
+    "show_tab_bar_buttons": false,
+    "show": true,
+    "show_nav_history_buttons": false
+  },
+  "tabs": {
+    "git_status": true,
+    "file_icons": true,
+    "activate_on_close": "left_neighbour",
+    "show_diagnostics": "all"
+  },
+  "centered_layout": {
+    "left_padding": 0.15,
+    "right_padding": 0.15
+  },
+
+  // Git Settings
+  "git": {
+    "inline_blame": { "enabled": false }
+  },
+
+  // File Finder & Exclusions
+  "file_finder": {
+    "file_icons": true,
+    "modal_max_width": "small"
+  },
+  "file_scan_exclusions": [
+    "**/.git",
+    "**/.svn",
+    "**/.hg",
+    "**/CVS",
+    "**/.DS_Store",
+    "**/Thumbs.db",
+    "**/.classpath",
+    "**/.settings",
+    "**/out",
+    "**/dist",
+    "**/.husky",
+    "**/.turbo",
+    "**/.vscode-test",
+    "**/.vscode",
+    "**/.next",
+    "**/.storybook",
+    "**/.tap",
+    "**/.nyc_output",
+    "**/report",
+    "**/node_modules"
+  ],
+
+  // Diagnostics & Telemetry
+  "diagnostics": { "include_warnings": true },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+
+  // Miscellaneous
+  "auto_update": false,
+  "auto_install_extensions": { "html": false },
+  "features": { "edit_prediction_provider": "zed" },
+  "active_pane_modifiers": { "inactive_opacity": 0.7 },
+  "scrollbar": { "show": "always" }
+}
