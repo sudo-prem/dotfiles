@@ -24,7 +24,7 @@
     "context": "Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting && !menu",
     "bindings": {
       "space h p": "editor::ToggleSelectedDiffHunks",
-      "space h r": "editor::RevertSelectedHunks",
+      "space h r": "git::Restore",
       "space t h": "editor::ToggleInlayHints",
       "space t z": "workspace::ToggleCenteredLayout",
       "space t w": "editor::ToggleSoftWrap",

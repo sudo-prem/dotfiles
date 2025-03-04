@@ -3,3 +3,5 @@ colima/.config/colima/*
 !colima/.config/colima/default/colima.yaml
 nvim/.config/nvim/lazy-lock.json
 nvim/.config/nvim/lazyvim.json
+zed/.config/zed/prompts/*
+zed/.config/zed/conversations/*
