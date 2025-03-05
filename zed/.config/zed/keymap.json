@@ -136,12 +136,6 @@
     }
   },
   {
-    "context": "Workspace",
-    "bindings": {
-      "\\": "pane::RevealInProjectPanel"
-    }
-  },
-  {
     "context": "ChatPanel",
     "bindings": {
       "\\": "workspace::ToggleRightDock"
@@ -152,7 +146,7 @@
     "bindings": {
       "space space": "file_finder::Toggle",
       "space f p": "projects::OpenRecent",
-      "\\": "pane::RevealInProjectPanel"
+      "\\": "workspace::ToggleRightDock"
     }
   },
   {
