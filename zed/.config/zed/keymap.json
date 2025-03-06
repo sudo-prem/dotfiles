@@ -42,8 +42,8 @@
   {
     "context": "Editor && vim_mode == normal && !VimWaiting && !menu",
     "bindings": {
-      "H": "editor::MoveToBeginningOfLine",
-      "L": "editor::MoveToEndOfLine",
+      "H": ["workspace::SendKeystrokes", "0"],
+      "L": ["workspace::SendKeystrokes", "$"],
       "ctrl-h": "workspace::ActivatePaneLeft",
       "ctrl-l": "workspace::ActivatePaneRight",
       "ctrl-k": "workspace::ActivatePaneUp",
@@ -148,7 +148,11 @@
     "bindings": {
       "space space": "file_finder::Toggle",
       "space f p": "projects::OpenRecent",
-      "\\": "workspace::ToggleRightDock"
+      "\\": "workspace::ToggleRightDock",
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-l": "workspace::ActivatePaneRight",
+      "ctrl-k": "workspace::ActivatePaneUp",
+      "ctrl-j": "workspace::ActivatePaneDown"
     }
   },
   {
