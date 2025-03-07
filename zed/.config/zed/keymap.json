@@ -72,8 +72,8 @@
       "space f s": "workspace::Save",
       "space space": "file_finder::Toggle",
       "space /": "pane::DeploySearch",
-      "shift-j": ["workspace::SendKeystrokes", "1 0 j"],
-      "shift-k": ["workspace::SendKeystrokes", "1 0 k"]
+      "cmd-j": ["workspace::SendKeystrokes", "1 0 j"],
+      "cmd-k": ["workspace::SendKeystrokes", "1 0 k"]
     }
   },
   {
