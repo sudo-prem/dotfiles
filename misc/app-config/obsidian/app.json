@@ -1,0 +1,22 @@
+{
+  "alwaysUpdateLinks": true,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "99 - Miscellaneous",
+  "attachmentFolderPath": "00 - Utilities/Attachments",
+  "vimMode": true,
+  "readableLineLength": true,
+  "showLineNumber": false,
+  "propertiesInDocument": "hidden",
+  "defaultViewMode": "preview",
+  "livePreview": false,
+  "newLinkFormat": "shortest",
+  "showInlineTitle": false,
+  "pdfExportSettings": {
+    "includeName": false,
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  },
+  "promptDelete": false
+}

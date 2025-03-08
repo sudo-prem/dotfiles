@@ -1,0 +1,18 @@
+{
+  "accentColor": "",
+  "cssTheme": "Prism",
+  "theme": "obsidian",
+  "interfaceFontFamily": "JetBrainsMono Nerd Font Propo",
+  "textFontFamily": "JetBrainsMonoNL Nerd Font Propo",
+  "monospaceFontFamily": "JetBrainsMonoNL Nerd Font Propo",
+  "baseFontSize": 14,
+  "baseFontSizeAction": false,
+  "translucency": false,
+  "enabledCssSnippets": [
+    "folderColors",
+    "removeWorkspaceRibbon",
+    "resizeImages",
+    "justifyContent"
+  ],
+  "nativeMenus": false
+}

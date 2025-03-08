@@ -1,0 +1,260 @@
+{
+  "main": {
+    "id": "05727304d06d1d5b",
+    "type": "split",
+    "children": [
+      {
+        "id": "c649064c23edd6fe",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "00fe62a83d87af1f",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a2a64a49268d3a7f",
+    "type": "split",
+    "children": [
+      {
+        "id": "6b6649b5d1ec947f",
+        "type": "tabs",
+        "dimension": 73.29136690647482,
+        "children": [
+          {
+            "id": "f1d57ab5b3de87c3",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "c065c4f405c92bb5",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          }
+        ]
+      },
+      {
+        "id": "44fb3d7a1a25137c",
+        "type": "tabs",
+        "dimension": 26.70863309352518,
+        "children": [
+          {
+            "id": "e35533f801a2d09b",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 328.5
+  },
+  "right": {
+    "id": "df2e6975bf3d56c1",
+    "type": "split",
+    "children": [
+      {
+        "id": "d359662d6698dfe4",
+        "type": "tabs",
+        "dimension": 71,
+        "children": [
+          {
+            "id": "85311e2e9d7ce8ae",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          },
+          {
+            "id": "762e3ce745e73291",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "ce696f8a7624595d",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "424aab6785a3bc69",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
+            }
+          }
+        ]
+      },
+      {
+        "id": "474a8a2f9dd80661",
+        "type": "tabs",
+        "dimension": 29,
+        "children": [
+          {
+            "id": "714230a26944e37f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "a6d72f5db6472530",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "04 - Workstation/Technology/Supabase/Supabase Commands.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": false
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Supabase Commands"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "templater-obsidian:Templater": false,
+      "switcher:Open quick switcher": true,
+      "graph:Open graph view": true,
+      "canvas:Create new canvas": true,
+      "daily-notes:Open today's daily note": true,
+      "command-palette:Open command palette": true,
+      "workspaces:Manage workspace layouts": true,
+      "darlal-switcher-plus:Open in Headings Mode": false,
+      "darlal-switcher-plus:Open Symbols for the active editor": false,
+      "callout-manager:Insert Callout": false,
+      "omnisearch:Omnisearch": false,
+      "periodic-notes:Open today": false
+    }
+  },
+  "active": "f1d57ab5b3de87c3",
+  "lastOpenFiles": [
+    "99 - Miscellaneous/Untitled.md",
+    "99 - Miscellaneous/Today.md",
+    "04 - Workstation/Academic/Masters/Reasons for Masters.md",
+    "04 - Workstation/Academic/Masters/University Scholarships.md",
+    "04 - Workstation/Academic/Masters/Application Checklist.md",
+    "99 - Miscellaneous/Shortlist for Fall.md",
+    "99 - Miscellaneous/Temp.md",
+    "99 - Miscellaneous/temp.md",
+    "99 - Miscellaneous/Personal To-Dos.md",
+    "04 - Workstation/Work/Coral/Class Approach.md",
+    "04 - Workstation/Work/Coral/Zoom session migration.md",
+    "04 - Workstation/Work/SplitShare",
+    "04 - Workstation/Work/Coral/Enrollments.md",
+    "04 - Workstation/Work/Coral/Enrollment Flow.md",
+    "04 - Workstation/Work/Coral/Webhook events.md",
+    "04 - Workstation/Work/Coral/Temporal.md",
+    "99 - Miscellaneous/TODO.md",
+    "99 - Miscellaneous/Untitled 3.md",
+    "99 - Miscellaneous/Work To-Dos.md",
+    "99 - Miscellaneous/Untitled 2.md",
+    "04 - Workstation/Tech/00 - Project Ideas.md",
+    "CleanShot 2025-03-04 at 15.38.58.png",
+    "CleanShot 2025-03-04 at 14.26.29.png",
+    "Agora.md",
+    "2025-01-19.md",
+    "04 - Workstation/Tech/FastAPI/Setup Structure.md",
+    "05 - Journal/2024/01 - Daily/2024-10-26.md",
+    "04 - Workstation/Tech/Supabase/Supabase Commands.md",
+    "04 - Workstation/Tech/Parse Platform/Parse Platform.md",
+    "04 - Workstation/Tech/Parse Platform",
+    "00 - Utilities/Attachments/CleanShot 2024-09-19 at 23.42.20.png",
+    "00 - Utilities/Attachments/Screenshot 2024-08-17 at 10.26.23 AM.png",
+    "00 - Utilities/Attachments/Screenshot 2024-08-17 at 10.25.57 AM.png",
+    "00 - Utilities/Attachments/Screenshot 2024-08-17 at 10.24.42 AM.png",
+    "04 - Workstation/Technology/Devops",
+    "00 - Utilities/Attachments/verbal.png",
+    "00 - Utilities/Attachments/quant.png",
+    "00 - Utilities/Attachments/skip_1.png",
+    "04 - Workstation/Work",
+    "00 - Utilities/Attachments/1.png",
+    "04 - Workstation/Work/Coral",
+    "04 - Workstation/Tech/99 - Miscellaneous",
+    "00 - Utilities/Attachments/Group 17.pdf",
+    "00 - Utilities/Attachments/Group 16.pdf",
+    "00 - Utilities/Attachments/Official Quantitative Reasoning.pdf",
+    "00 - Utilities/Attachments/Group 13.pdf"
+  ]
+}

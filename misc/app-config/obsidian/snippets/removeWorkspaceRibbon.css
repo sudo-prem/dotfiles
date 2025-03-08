@@ -1,0 +1,8 @@
+.workspace-ribbon {
+    display: none;
+}
+
+.mod-macos {
+    --frame-left-space: 80px;
+    --frame-right-space: 0px;
+}

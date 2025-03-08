@@ -1,0 +1,45 @@
+{
+  "command_timeout": 5,
+  "templates_folder": "00 - Utilities/Templates",
+  "templates_pairs": [
+    [
+      "",
+      ""
+    ]
+  ],
+  "trigger_on_file_creation": true,
+  "auto_jump_to_cursor": false,
+  "enable_system_commands": false,
+  "shell_path": "",
+  "user_scripts_folder": "",
+  "enable_folder_templates": true,
+  "folder_templates": [
+    {
+      "folder": "05 - Journal/2024/01 - Daily",
+      "template": "00 - Utilities/Templates/Daily Template.md"
+    },
+    {
+      "folder": "05 - Journal/2024/02 - Weekly",
+      "template": "00 - Utilities/Templates/Weekly Template.md"
+    },
+    {
+      "folder": "05 - Journal/2024/03 - Monthly",
+      "template": "00 - Utilities/Templates/Monthly Template.md"
+    },
+    {
+      "folder": "05 - Journal/2024",
+      "template": "00 - Utilities/Templates/Yearly Template.md"
+    },
+    {
+      "folder": "/",
+      "template": "00 - Utilities/Templates/New Note Template.md"
+    }
+  ],
+  "syntax_highlighting": true,
+  "syntax_highlighting_mobile": false,
+  "enabled_templates_hotkeys": [],
+  "startup_templates": [
+    ""
+  ],
+  "enable_ribbon_icon": false
+}
