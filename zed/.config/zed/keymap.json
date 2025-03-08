@@ -2,7 +2,7 @@
   {
     "bindings": {
       "ctrl-j": "menu::SelectNext",
-      "ctrl-k": "menu::SelectPrev"
+      "ctrl-k": "menu::SelectPrevious"
     }
   },
   {
@@ -17,12 +17,14 @@
     "context": "Editor && (showing_code_actions || showing_completions)",
     "bindings": {
       "ctrl-j": "editor::ContextMenuNext",
-      "ctrl-k": "editor::ContextMenuPrev"
+      "ctrl-k": "editor::ContextMenuPrevious"
     }
   },
   {
     "context": "Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting && !menu",
     "bindings": {
+      "H": ["workspace::SendKeystrokes", "0"],
+      "L": ["workspace::SendKeystrokes", "$"],
       "space h p": "editor::ToggleSelectedDiffHunks",
       "space h r": "git::Restore",
       "space t h": "editor::ToggleInlayHints",
@@ -42,8 +44,6 @@
   {
     "context": "Editor && vim_mode == normal && !VimWaiting && !menu",
     "bindings": {
-      "H": ["workspace::SendKeystrokes", "0"],
-      "L": ["workspace::SendKeystrokes", "$"],
       "ctrl-h": "workspace::ActivatePaneLeft",
       "ctrl-l": "workspace::ActivatePaneRight",
       "ctrl-k": "workspace::ActivatePaneUp",
@@ -59,12 +59,12 @@
       "g r": "editor::FindAllReferences",
       "space d": "diagnostics::Deploy",
       "] d": "editor::GoToDiagnostic",
-      "[ d": "editor::GoToPrevDiagnostic",
+      "[ d": "editor::GoToPreviousDiagnostic",
       "f s": "outline::Toggle",
       "f S": "project_symbols::Toggle",
       "] h": "editor::GoToHunk",
-      "[ h": "editor::GoToPrevHunk",
-      "left": "pane::ActivatePrevItem",
+      "[ h": "editor::GoToPreviousHunk",
+      "left": "pane::ActivatePreviousItem",
       "right": "pane::ActivateNextItem",
       "shift-q": "pane::CloseActiveItem",
       "space q": "pane::CloseInactiveItems",
