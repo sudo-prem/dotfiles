@@ -15,8 +15,6 @@
 	</dict>
 	<key>ignoreRemoteClipboard</key>
 	<true/>
-	<key>snippetKeywordEnabled</key>
-	<false/>
 	<key>snippetMatchFields</key>
 	<integer>1</integer>
 	<key>snippetMatchWordBased</key>
