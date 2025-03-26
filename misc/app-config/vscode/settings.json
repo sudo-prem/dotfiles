@@ -1,39 +1,56 @@
 {
-  // UI & Appearance
+  // Window
+  "window.zoomLevel": 0,
+  "window.customTitleBarVisibility": "never",
+  "window.titleBarStyle": "native",
+  "window.commandCenter": false,
+
+  // Workbench
   "workbench.sideBar.location": "right",
   "workbench.editor.empty.hint": "hidden",
   "workbench.colorTheme": "Tokyo Night",
   "workbench.iconTheme": "material-icon-theme",
+  "workbench.layoutControl.enabled": false,
+  "workbench.statusBar.visible": false,
   "workbench.settings.editor": "json",
-  "zenMode.hideLineNumbers": false,
-  "window.zoomLevel": 1,
+  "workbench.activityBar.location": "hidden",
+  "workbench.editor.showTabs": "single",
+  "workbench.activityBar.orientation": "vertical",
+  "workbench.tips.enabled": false,
+  "workbench.tree.enableStickyScroll": false,
+  "workbench.tree.renderIndentGuides": "none",
+  "workbench.tree.indent": 8,
 
-  // Explorer Settings
-  "explorer.confirmDragAndDrop": false,
-  "explorer.confirmDelete": false,
-  "files.exclude": {
-    "**/node_modules": true
-  },
-
-  // Editor Settings
+  // Editor
   "editor.fontFamily": "JetBrains Mono",
   "editor.fontSize": 14,
   "editor.fontWeight": "normal",
   "editor.fontLigatures": true,
+  "editor.lineHeight": 1.4,
   "editor.lineNumbers": "relative",
   "editor.tabSize": 2,
-  "editor.cursorBlinking": "expand",
-  "editor.cursorSmoothCaretAnimation": "on",
-  "editor.cursorSurroundingLines": 5,
-  "editor.multiCursorModifier": "ctrlCmd",
   "editor.wordWrap": "on",
   "editor.minimap.enabled": false,
   "editor.smoothScrolling": true,
   "editor.stickyScroll.enabled": true,
   "editor.accessibilitySupport": "off",
   "editor.linkedEditing": true,
-
-  // Suggest & Formatting
+  "editor.cursorBlinking": "solid",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorSurroundingLines": 5,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.colorDecorators": false,
+  "editor.codeLens": false,
+  "editor.links": false,
+  "editor.matchBrackets": "never",
+  "editor.lightbulb.enabled": "off",
+  "editor.detectIndentation": false,
+  "editor.showFoldingControls": "never",
+  "editor.guides.indentation": false,
+  "editor.renderWhitespace": "none",
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.vertical": "hidden",
+  "editor.overviewRulerBorder": false,
   "editor.suggestSelection": "first",
   "editor.inlineSuggest.enabled": true,
   "editor.suggest.insertMode": "replace",
@@ -49,22 +66,65 @@
     "source.organizeImports": "explicit"
   },
 
-  // Terminal Settings
+  // Files
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.exclude": {
+    "**/node_modules": true
+  },
+
+  // Explorer
+  "explorer.compactFolders": false,
+  "explorer.decorations.badges": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+
+  // UI
+  "breadcrumbs.enabled": false,
+  "zenMode.hideLineNumbers": false,
+  "material-icon-theme.hidesExplorerArrows": true,
+  "custom-ui-style.electron": {
+    "titleBarStyle": "hidden"
+  },
+  "custom-ui-style.font.sansSerif": "JetBrains Mono",
+  "custom-ui-style.stylesheet": {
+    ".notification-toast": "box-shadow: none !important",
+    ".quick-input-widget.show-file-icons": "box-shadow: none !important",
+    ".quick-input-widget": "top: 25vh !important",
+    ".quick-input-list .scrollbar": "display: none",
+    ".monaco-action-bar.quick-input-inline-action-bar": "display: none",
+    ".editor-widget.find-widget": "box-shadow: none; border-radius: 4px",
+    ".quick-input-titlebar": "background: #100B15 !important",
+    ".monaco-workbench .part.editor > .content .editor-group-container > .title.title-border-bottom:after": "display: none",
+    ".monaco-scrollable-element > .shadow.top": "display: none",
+    ".sidebar .title-label": "padding: 0 !important",
+    ".sidebar": "border: none !important",
+    ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "outline: none !important",
+    ".monaco-list-row.focused": "outline: none !important",
+    ".monaco-editor .scroll-decoration": "display: none",
+    ".title-actions": "display: none !important",
+    ".title.show-file-icons .label-container .monaco-icon-label.file-icon": "justify-content: center; padding: 0 !important",
+    ".title .monaco-icon-label:after": "margin-right: 0",
+    ".monaco-workbench .part.editor > .content .editor-group-container > .title > .label-container > .title-label": "padding-left: 6em",
+    ".title .monaco-icon-label.file-icon": "margin: 0 6em",
+    ".monaco-workbench .part > .composite.title": "padding-left: 6em"
+  },
+
+  // Terminal
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.lineHeight": 0.8,
 
-  // Language Specific Settings
+  // Language Specific
   "html.suggest.html5": true,
   "html.autoClosingTags": false,
   "typescript.preferences.importModuleSpecifier": "relative",
   "typescript.updateImportsOnFileMove.enabled": "always",
 
-  // Git & SCM Settings
+  // Git
   "git.openRepositoryInParentFolders": "always",
-  "projectManager.git.baseFolders": ["$home/workspace"],
-  "projectManager.sortList": "Recent",
+  "git.decorations.enabled": false,
 
-  // Vim Settings
+  // Vim
   "vim.vimrc.enable": true,
   "vim.leader": "<space>",
   "vim.foldfix": true,
@@ -88,6 +148,10 @@
     {
       "before": ["]", "h"],
       "commands": ["workbench.action.editor.nextChange"]
+    },
+    {
+      "before": ["<leader>", "h", "r"],
+      "commands": ["git.revertChange"]
     }
   ],
   "vim.visualModeKeyBindings": [
@@ -105,14 +169,12 @@
     }
   ],
 
-  // Extensions & Updates
-  "extensions.ignoreRecommendations": true,
-  "extensions.autoUpdate": "onlyEnabledExtensions",
-  "update.mode": "manual",
-  "update.showReleaseNotes": false,
-
-  // Security Settings
+  // Misc
   "security.workspace.trust.enabled": false,
-  "workbench.layoutControl.enabled": false,
-  "window.commandCenter": false
+  "extensions.ignoreRecommendations": true,
+  "extensions.autoUpdate": false,
+  "update.mode": "none",
+  "update.showReleaseNotes": false,
+  "cursor.cpp.enablePartialAccepts": true
 }
+
