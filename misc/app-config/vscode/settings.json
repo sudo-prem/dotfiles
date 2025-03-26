@@ -125,21 +125,56 @@
   "git.decorations.enabled": false,
 
   // Vim
-  "vim.vimrc.enable": true,
+  "vim.vimrc.enable": false,
   "vim.leader": "<space>",
   "vim.foldfix": true,
   "vim.highlightedyank.enable": true,
   "vim.highlightedyank.textColor": "white",
-  "vim.hlsearch": true,
+  "vim.hlsearch": false,
+  "vim.incsearch": true,
   "vim.useSystemClipboard": true,
-  "vim.normalModeKeyBindingsNonRecursive": [
+  "vim.insertModeKeyBindings": [
     {
-      "before": ["[", "d"],
-      "commands": ["editor.action.marker.prev"]
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    },
+    {
+      "before": ["<Up>"],
+      "after": [""]
+    },
+    {
+      "before": ["<Down>"],
+      "after": [""]
+    },
+    {
+      "before": ["<Left>"],
+      "after": [""]
+    },
+    {
+      "before": ["<Right>"],
+      "after": [""]
+    }
+  ],
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["L"],
+      "after": ["$"]
+    },
+    {
+      "before": ["H"],
+      "after": ["^"]
+    },
+    {
+      "before": [":"],
+      "commands": ["workbench.action.showCommands"]
     },
     {
       "before": ["]", "d"],
       "commands": ["editor.action.marker.next"]
+    },
+    {
+      "before": ["[", "d"],
+      "commands": ["editor.action.marker.prev"]
     },
     {
       "before": ["[", "h"],
@@ -148,13 +183,51 @@
     {
       "before": ["]", "h"],
       "commands": ["workbench.action.editor.nextChange"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["p"],
+      "after": ["p", "\"", "_", "d", "P"]
     },
     {
-      "before": ["<leader>", "h", "r"],
-      "commands": ["git.revertChange"]
+      "before": ["y"],
+      "after": ["\"", "*", "y"]
+    },
+    {
+      "before": ["d"],
+      "after": ["\"", "_", "d"]
+    },
+    {
+      "before": ["D"],
+      "after": ["\"", "_", "D"]
+    },
+    {
+      "before": ["c"],
+      "after": ["\"", "_", "c"]
+    },
+    {
+      "before": ["C"],
+      "after": ["\"", "_", "C"]
+    },
+    {
+      "before": ["s"],
+      "after": ["\"", "_", "s"]
+    },
+    {
+      "before": ["S"],
+      "after": ["\"", "_", "S"]
     }
   ],
   "vim.visualModeKeyBindings": [
+    {
+      "before": ["L"],
+      "after": ["$"]
+    },
+    {
+      "before": ["H"],
+      "after": ["^"]
+    },
     {
       "before": ["<leader>", "h", "r"],
       "commands": ["git.revertSelectedRanges"]
@@ -166,6 +239,40 @@
     {
       "before": ["<"],
       "commands": ["editor.action.outdentLines"]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["p"],
+      "after": ["p", "\"", "_", "d", "P"]
+    },
+    {
+      "before": ["y"],
+      "after": ["\"", "*", "y"]
+    },
+    {
+      "before": ["d"],
+      "after": ["\"", "_", "d"]
+    },
+    {
+      "before": ["D"],
+      "after": ["\"", "_", "D"]
+    },
+    {
+      "before": ["c"],
+      "after": ["\"", "_", "c"]
+    },
+    {
+      "before": ["C"],
+      "after": ["\"", "_", "C"]
+    },
+    {
+      "before": ["s"],
+      "after": ["\"", "_", "s"]
+    },
+    {
+      "before": ["S"],
+      "after": ["\"", "_", "S"]
     }
   ],
 

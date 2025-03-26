@@ -302,6 +302,18 @@
   {
     "command": "turboConsoleLog.displayLogMessage",
     "key": "cmd+l"
+  },
+
+  // Bookmarks
+  {
+    "command": "bookmarks.toggle",
+    "key": "space m",
+    "when": "vim.mode == 'Normal' && editorTextFocus"
+  },
+  {
+    "command": "bookmarks.listFromAllFiles",
+    "key": "space b",
+    "when": "vim.mode == 'Normal' && editorTextFocus"
   }
 ]
 
