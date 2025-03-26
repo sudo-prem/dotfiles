@@ -282,6 +282,7 @@
   "extensions.autoUpdate": false,
   "update.mode": "none",
   "update.showReleaseNotes": false,
-  "cursor.cpp.enablePartialAccepts": true
+  "cursor.cpp.enablePartialAccepts": true,
+  "material-icon-theme.folders.theme": "classic"
 }
 
