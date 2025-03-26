@@ -34,6 +34,26 @@
     "key": "ctrl+k",
     "when": "inSearchEditor && inputBoxFocus || inputBoxFocus && searchViewletVisible && !searchInputBoxFocus"
   },
+  {
+    "key": "alt+j",
+    "command": "cursorMove",
+    "args": {
+      "to": "down",
+      "by": "line",
+      "value": 10
+    },
+    "when": "textInputFocus"
+  },
+  {
+    "key": "alt+k",
+    "command": "cursorMove",
+    "args": {
+      "to": "up",
+      "by": "line",
+      "value": 10
+    },
+    "when": "textInputFocus"
+  },
 
   // Editor Folding
   {
