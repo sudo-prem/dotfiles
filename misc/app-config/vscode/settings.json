@@ -79,10 +79,9 @@
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
 
-  // UI
-  "breadcrumbs.enabled": false,
-  "zenMode.hideLineNumbers": false,
+  // Custom UI
   "material-icon-theme.hidesExplorerArrows": true,
+  "material-icon-theme.folders.theme": "classic",
   "custom-ui-style.electron": {
     "titleBarStyle": "hidden"
   },
@@ -277,12 +276,13 @@
   ],
 
   // Misc
-  "security.workspace.trust.enabled": false,
   "extensions.ignoreRecommendations": true,
   "extensions.autoUpdate": false,
   "update.mode": "none",
   "update.showReleaseNotes": false,
-  "cursor.cpp.enablePartialAccepts": true,
-  "material-icon-theme.folders.theme": "classic"
+  "security.workspace.trust.enabled": false,
+  "breadcrumbs.enabled": false,
+  "zenMode.hideLineNumbers": false,
+  "cursor.cpp.enablePartialAccepts": true
 }
 
