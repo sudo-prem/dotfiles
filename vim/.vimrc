@@ -156,7 +156,10 @@ vnoremap <A-S-Up> :t '<-1<CR>gv
 vnoremap <A-S-Down> :t '>+1<CR>gv
 
 " FZF file search
-nnoremap <silent> <Leader>f :Files<CR>
+nnoremap <silent> <leader><leader> :Files<CR>
+
+" FZF file search
+nnoremap <silent> <leader>fs :%!astyle --style=google -p<CR>:w<CR>
 
 " Toggle Netrw (File Explorer)
 function! ToggleNetrw()
