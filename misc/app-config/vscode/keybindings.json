@@ -1,4 +1,16 @@
 [
+  // Code Actions Navigation
+  {
+    "command": "selectNextCodeAction",
+    "key": "ctrl+j",
+    "when": "codeActionMenuVisible"
+  },
+  {
+    "command": "selectPrevCodeAction",
+    "key": "ctrl+k",
+    "when": "codeActionMenuVisible"
+  },
+
   // Suggestions Navigation
   {
     "command": "selectNextSuggestion",
@@ -103,12 +115,12 @@
   {
     "command": "workbench.action.navigateUp",
     "key": "ctrl+k",
-    "when": "!suggestWidgetVisible && editorFocus"
+    "when": "!suggestWidgetVisible && !codeActionMenuVisible && editorFocus"
   },
   {
     "command": "workbench.action.navigateDown",
     "key": "ctrl+j",
-    "when": "!suggestWidgetVisible && editorFocus"
+    "when": "!suggestWidgetVisible && !codeActionMenuVisible && editorFocus"
   },
   {
     "command": "workbench.action.navigateLeft",
@@ -252,14 +264,8 @@
     "when": "vim.mode == 'Normal' && editorTextFocus"
   },
   {
-    "command": "aichat.newchataction",
     "key": "ctrl+\\",
-    "when": "vim.mode != 'Insert' && editorTextFocus"
-  },
-  {
-    "command": "workbench.action.toggleAuxiliaryBar",
-    "key": "ctrl+\\",
-    "when": "!editorTextFocus"
+    "command": "composerMode.agent"
   },
 
   // Editor Splitting
