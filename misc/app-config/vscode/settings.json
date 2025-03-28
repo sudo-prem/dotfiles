@@ -182,6 +182,14 @@
     {
       "before": ["]", "h"],
       "commands": ["workbench.action.editor.nextChange"]
+    },
+    {
+      "before": ["[", "b"],
+      "commands": ["bookmarks.jumpToPrevious"]
+    },
+    {
+      "before": ["]", "b"],
+      "commands": ["bookmarks.jumpToNext"]
     }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
