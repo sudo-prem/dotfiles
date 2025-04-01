@@ -252,22 +252,6 @@
     "when": "vim.mode == 'Normal' && editorTextFocus"
   },
 
-  // Sidebar and Window Management
-  {
-    "command": "workbench.action.toggleSidebarVisibility",
-    "key": "\\",
-    "when": "sideBarFocus"
-  },
-  {
-    "command": "workbench.files.action.focusFilesExplorer",
-    "key": "\\",
-    "when": "vim.mode == 'Normal' && editorTextFocus"
-  },
-  {
-    "key": "ctrl+\\",
-    "command": "composerMode.agent"
-  },
-
   // Editor Splitting
   {
     "command": "workbench.action.splitEditorRight",
