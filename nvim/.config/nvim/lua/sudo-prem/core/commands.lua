@@ -1,4 +1,4 @@
-local sudo_group = vim.api.nvim_create_augroup("SudoGroup", {})
+local buffer_write_group = vim.api.nvim_create_augroup("BufferWriteGroup", {})
 local yank_group = vim.api.nvim_create_augroup("YankGroup", {})
 
 vim.api.nvim_create_autocmd("TextYankPost", {
@@ -7,13 +7,13 @@ vim.api.nvim_create_autocmd("TextYankPost", {
     callback = function()
         vim.highlight.on_yank({
             higroup = "IncSearch",
-            timeout = 40,
+            timeout = 50,
         })
     end,
 })
 
 vim.api.nvim_create_autocmd({ "BufWritePre" }, {
-    group = sudo_group,
+    group = buffer_write_group,
     pattern = "*",
     command = [[%s/\s\+$//e]],
 })
@@ -23,7 +23,6 @@ cnoreabbrev W w
 cnoreabbrev Q q
 cnoreabbrev Wq wq
 cnoreabbrev WQ wq
-cnoreabbrev wQ wq
-inoreabbrev dont don't
-inoreabbrev youre you're
+cnoreabbrev Qa qa
+cnoreabbrev QA qa
 ]])
