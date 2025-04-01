@@ -184,7 +184,7 @@
 				<key>hotkey</key>
 				<integer>11</integer>
 				<key>hotmod</key>
-				<integer>262144</integer>
+				<integer>393216</integer>
 				<key>hotstring</key>
 				<string>B</string>
 				<key>leftcursor</key>

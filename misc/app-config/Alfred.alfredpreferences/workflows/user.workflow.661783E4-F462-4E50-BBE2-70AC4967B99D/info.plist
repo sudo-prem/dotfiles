@@ -215,7 +215,7 @@ const outdatedCacheBIDs = cacheBIDs.filter(bid =&gt; !installedBIDs.includes(bid
 const joinedBIDs = outdatedDataBIDs.concat(outdatedCacheBIDs)
 const outdatedNumber = Array.from(new Set(joinedBIDs)).length
 
-const outdatedDataDirs =   outdatedDataBIDs.map(p =&gt; `${dataDir}/${p}`)
+const outdatedDataDirs = outdatedDataBIDs.map(p =&gt; `${dataDir}/${p}`)
 const outdatedCacheDirs = outdatedCacheBIDs.map(p =&gt; `${cacheDir}/${p}`)
 const deletableDirs = outdatedDataDirs.concat(outdatedCacheDirs)
 
@@ -549,7 +549,7 @@ Find data and cache folders from uninstalled workflows via the `delold` keyword.
 		</dict>
 	</array>
 	<key>version</key>
-	<string>2025.1</string>
+	<string>2025.2</string>
 	<key>webaddress</key>
 	<string>https://github.com/alfredapp/clean-workflow-data-workflow/</string>
 </dict>
