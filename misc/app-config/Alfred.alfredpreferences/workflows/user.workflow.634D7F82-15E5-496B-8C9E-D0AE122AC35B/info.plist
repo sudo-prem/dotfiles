@@ -21,19 +21,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>831C449E-97B8-488E-AB60-CBD3842BB487</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>B0C35CAF-841A-4F23-8192-F4888C603092</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 	</dict>
 	<key>createdby</key>
 	<string>Vítor Galvão</string>
@@ -111,29 +98,6 @@ while (true) {
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>{var:clear_keyword}</string>
-				<key>skipuniversalaction</key>
-				<true/>
-				<key>subtext</key>
-				<string>Close notification banners</string>
-				<key>text</key>
-				<string>{const:alfred_workflow_name}</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>831C449E-97B8-488E-AB60-CBD3842BB487</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -143,11 +107,11 @@ while (true) {
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>hotkey</key>
-				<integer>0</integer>
+				<integer>51</integer>
 				<key>hotmod</key>
-				<integer>0</integer>
+				<integer>1966080</integer>
 				<key>hotstring</key>
-				<string></string>
+				<string>⌫</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -178,21 +142,14 @@ Configure the [Hotkey](https://www.alfredapp.com/help/workflows/triggers/hotkey/
 			<key>xpos</key>
 			<real>45</real>
 			<key>ypos</key>
-			<real>180</real>
-		</dict>
-		<key>831C449E-97B8-488E-AB60-CBD3842BB487</key>
-		<dict>
-			<key>xpos</key>
-			<real>45</real>
-			<key>ypos</key>
-			<real>45</real>
+			<real>50</real>
 		</dict>
 		<key>B0C35CAF-841A-4F23-8192-F4888C603092</key>
 		<dict>
 			<key>xpos</key>
-			<real>270</real>
+			<real>275</real>
 			<key>ypos</key>
-			<real>45</real>
+			<real>50</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
