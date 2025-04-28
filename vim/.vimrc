@@ -18,6 +18,7 @@ Plug 'terryma/vim-multiple-cursors'             " Multiple cursors
 Plug 'octol/vim-cpp-enhanced-highlight'         " C++ syntax highlighting
 Plug 'junegunn/fzf.vim'                         " FZF integration with Vim
 Plug 'vim-autoformat/vim-autoformat'			" Autoformat source code
+Plug 'justinmk/vim-sneak'						" Jump motions
 call plug#end()
 
 " General Settings
@@ -159,6 +160,10 @@ nnoremap <silent> <leader><leader> :Files<CR>
 
 " Format source code
 noremap <F3> :Autoformat<CR>
+
+" Jump with f/F
+noremap f <Plug>Sneak_s
+noremap F <Plug>Sneak_S
 
 " Toggle Netrw (File Explorer)
 function! ToggleNetrw()
