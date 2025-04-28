@@ -1,8 +1,8 @@
 " Install VimPlug if not installed
 let data_dir = '~/.vim'
 if empty(glob(data_dir . '/autoload/plug.vim'))
-  silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+	silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+	autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
 " VimPlug Plugins
@@ -17,6 +17,7 @@ Plug 'tpope/vim-surround'                       " Surrounding modifiers
 Plug 'terryma/vim-multiple-cursors'             " Multiple cursors
 Plug 'octol/vim-cpp-enhanced-highlight'         " C++ syntax highlighting
 Plug 'junegunn/fzf.vim'                         " FZF integration with Vim
+Plug 'vim-autoformat/vim-autoformat'			" Autoformat source code
 call plug#end()
 
 " General Settings
@@ -73,10 +74,10 @@ let g:multi_cursor_exit_from_insert_mode = 1
 
 " Use jk to escape insert mode
 inoremap jk <Esc>
-inoremap kj <Esc>
 
 " Close the current buffer
-nnoremap <Leader>x :bd<CR>
+nnoremap <leader>x :bd<CR>
+nnoremap <leader>q :q<CR>
 
 " Window splits
 nnoremap <silent> <C-w>\ :vsplit<CR>
@@ -120,8 +121,10 @@ vnoremap <silent> S "_S
 " Disable arrow keys in normal mode
 nnoremap <silent> <Up> <Nop>
 nnoremap <silent> <Down> <Nop>
-nnoremap <silent> <Left> <Nop>
-nnoremap <silent> <Right> <Nop>
+
+" Navigate buffers
+nnoremap <silent> <Right> :bnext<CR>
+nnoremap <silent> <Left> :bprevious<CR>
 
 " Indent in visual mode and keep selection
 xnoremap <silent> < <gv
@@ -132,10 +135,6 @@ nnoremap <silent> <C-d> <C-d>zz
 nnoremap <silent> <C-u> <C-u>zz
 nnoremap <silent> n nzzzv
 nnoremap <silent> N Nzzzv
-
-" Navigate buffers
-nnoremap <silent> <Right> :bnext<CR>
-nnoremap <silent> <Left> :bprevious<CR>
 
 " Split line at cursor position and re-indent
 nnoremap <silent> X :keeppatterns substitute/\s*\%#\s*/\r/e <bar> normal! ==^<CR>
@@ -158,8 +157,8 @@ vnoremap <A-S-Down> :t '>+1<CR>gv
 " FZF file search
 nnoremap <silent> <leader><leader> :Files<CR>
 
-" FZF file search
-nnoremap <silent> <leader>fs :%!astyle --style=google -p<CR>:w<CR>
+" Format source code
+noremap <F3> :Autoformat<CR>
 
 " Toggle Netrw (File Explorer)
 function! ToggleNetrw()
@@ -171,7 +170,7 @@ function! ToggleNetrw()
 		let t:netrw_is_open = 1
 	endif
 endfunction
-nnoremap <Leader>e :call ToggleNetrw()<CR>
+nnoremap <leader>e :call ToggleNetrw()<CR>
 
 " Use W, Q, Wq in command mode
 cnoreabbrev W w
