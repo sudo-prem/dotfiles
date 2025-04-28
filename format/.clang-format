@@ -1,5 +1,7 @@
 BasedOnStyle: Google
+---
+Language: Cpp
 AccessModifierOffset: -4
 IndentWidth: 4
 Cpp11BracedListStyle: false
-
+---
