@@ -123,7 +123,7 @@
 				<key>modifiersubtext</key>
 				<string></string>
 				<key>vitoclose</key>
-				<false/>
+				<true/>
 			</dict>
 			<dict>
 				<key>destinationuid</key>
@@ -133,7 +133,7 @@
 				<key>modifiersubtext</key>
 				<string></string>
 				<key>vitoclose</key>
-				<false/>
+				<true/>
 			</dict>
 		</array>
 		<key>C31D15AD-8829-40BF-961F-AF7B601E2F0D</key>
@@ -284,7 +284,7 @@
 				<key>spellchecking</key>
 				<integer>0</integer>
 				<key>stackview</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.userinterface.text</string>
@@ -789,6 +789,25 @@ Autocomplete</string>
 			<key>config</key>
 			<dict>
 				<key>default</key>
+				<false/>
+				<key>required</key>
+				<false/>
+				<key>text</key>
+				<string>Hide Privacy Services</string>
+			</dict>
+			<key>description</key>
+			<string>Omit summarized contact data for domains using known WHOIS Privacy Services</string>
+			<key>label</key>
+			<string></string>
+			<key>type</key>
+			<string>checkbox</string>
+			<key>variable</key>
+			<string>hideBlacklist</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
 				<true/>
 				<key>required</key>
 				<false/>
@@ -827,7 +846,7 @@ Autocomplete</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>2025.3.2</string>
+	<string>2025.5</string>
 	<key>webaddress</key>
 	<string>https://github.com/FireFingers21/alfred-whois-lookup</string>
 </dict>
