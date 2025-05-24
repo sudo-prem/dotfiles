@@ -35,3 +35,6 @@ source $HOME/.fzf.zsh
 # sudo defaults write -g InitialKeyRepeat -int 10
 # sudo defaults write -g KeyRepeat -int 1
 # sudo defaults write -g ApplePressAndHoldEnabled -bool false
+
+# Disable press and hold global default
+# defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
