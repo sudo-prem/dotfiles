@@ -175,12 +175,12 @@
   {
     "command": "editor.action.codeAction",
     "key": "space c a",
-    "when": "vim.mode == 'Normal' && editorTextFocus"
+    "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
   },
   {
     "command": "editor.action.rename",
     "key": "space r n",
-    "when": "vim.mode == 'Normal' && editorTextFocus"
+    "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
   },
   {
     "command": "editor.action.moveLinesUpAction",
@@ -249,19 +249,19 @@
   {
     "command": "editor.debug.action.toggleBreakpoint",
     "key": "space d b",
-    "when": "vim.mode == 'Normal' && editorTextFocus"
+    "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
   },
 
   // Editor Splitting
   {
     "command": "workbench.action.splitEditorRight",
     "key": "space s v",
-    "when": "vim.mode == 'Normal'"
+    "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
   },
   {
     "command": "workbench.action.splitEditorDown",
     "key": "space s h",
-    "when": "vim.mode == 'Normal'"
+    "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
   },
 
   // Editor Navigation
@@ -298,12 +298,12 @@
   {
     "command": "bookmarks.toggle",
     "key": "space m",
-    "when": "vim.mode == 'Normal' && editorTextFocus"
+    "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
   },
   {
     "command": "bookmarks.listFromAllFiles",
     "key": "space b",
-    "when": "vim.mode == 'Normal' && editorTextFocus"
+    "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
   }
 ]
 
