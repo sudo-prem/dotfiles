@@ -1,46 +1,46 @@
 [user]
-  name = Premnaath
-  email = premnaathvaradharajan@gmail.com
+	name = sudo-prem
+	email = premnaathvaradharajan@gmail.com
 
 [core]
-  excludesfile = /Users/premnaath/.gitignore_global
-  pager = delta
-  editor = nvim
+	excludesfile = /Users/premnaath/.gitignore_global
+	pager = delta
+	editor = nvim
 
 [interactive]
-  diffFilter = delta --color-only
+	diffFilter = delta --color-only
 
 [merge]
-  tool = nvim
-  conflictstyle = diff3
+	tool = nvim
+	conflictstyle = diff3
 
 [mergetool "nvim"]
-  cmd = nvim -c "DiffviewOpen"
+	cmd = nvim -c "DiffviewOpen"
 
 [mergetool]
-  keepBackup = false
-  prompt = false
+	keepBackup = false
+	prompt = false
 
 [diff]
-  tool = nvim
-  colorMoved = default
+	tool = nvim
+	colorMoved = default
 
 [filter "lfs"]
-  required = true
-  clean = git-lfs clean -- %f
-  smudge = git-lfs smudge -- %f
-  process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
 
 [pull]
-  rebase = true
+	rebase = true
 
 [credential]
-  helper = cache
+	helper = cache
 
 [delta]
-  navigate = true
-  light = false
-  side-by-side = true
+	navigate = true
+	light = false
+	side-by-side = true
 
 [init]
-  defaultBranch = main
+	defaultBranch = main
