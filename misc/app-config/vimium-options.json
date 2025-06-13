@@ -1,5 +1,5 @@
 {
-  "keyMappings": "unmap <a-p>\nunmap r\nunmap x\n\nmap I LinkHints.activateModeToOpenIncognito\nmap gp togglePinTab",
+  "keyMappings": "unmap <a-p>\nunmap r\nunmap x\n\nmap I LinkHints.activateModeToOpenIncognito\nmap gp togglePinTab\n\nmap < moveTabLeft\nmap > moveTabRight",
   "scrollStepSize": 77,
   "grabBackFocus": true,
   "searchEngines": "w: https://www.wikipedia.org/w/index.php?title=Special:Search&search=%s Wikipedia\ny: https://www.youtube.com/results?search_query=%s Youtube\ngm: https://www.google.com/maps?q=%s Google maps\ngi: https://www.google.com/images?q=%s Google images\na: https://www.amazon.com/s/?field-keywords=%s Amazon\nr: http://www.reddit.com/search?q=%s Reddit",
