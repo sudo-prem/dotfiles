@@ -1,5 +1,6 @@
 BasedOnStyle: GNU
 Standard: Cpp11
+AccessModifierOffset: -4
 AlignAfterOpenBracket: Align
 AllowAllParametersOfDeclarationOnNextLine: false
 AllowShortBlocksOnASingleLine: true
@@ -10,9 +11,9 @@ AllowShortLoopsOnASingleLine: true
 AlwaysBreakAfterDefinitionReturnType: None
 AlwaysBreakAfterReturnType: None
 BreakBeforeBraces: Custom
-IndentWidth: 4
 ContinuationIndentWidth: 4
-Cpp11BracedListStyle: false
+Cpp11BracedListStyle: true
+IndentWidth: 4
 Language: Cpp
 NamespaceIndentation: All
 PenaltyExcessCharacter: 100
@@ -21,4 +22,3 @@ PointerAlignment: Right
 SortIncludes: false
 SpaceBeforeParens: Never
 SpacesInContainerLiterals: false
-AccessModifierOffset: -4
