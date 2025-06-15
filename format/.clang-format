@@ -11,8 +11,9 @@ AllowShortLoopsOnASingleLine: true
 AlwaysBreakAfterDefinitionReturnType: None
 AlwaysBreakAfterReturnType: None
 BreakBeforeBraces: Custom
+ColumnLimit: 120
 ContinuationIndentWidth: 4
-Cpp11BracedListStyle: true
+Cpp11BracedListStyle: false
 IndentWidth: 4
 Language: Cpp
 NamespaceIndentation: All
