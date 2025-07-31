@@ -25,7 +25,6 @@ vim.keymap.set({ "n", "v" }, "C", '"_C', opts)
 vim.keymap.set({ "n", "v" }, "s", '"_s', opts)
 vim.keymap.set({ "n", "v" }, "S", '"_S', opts)
 
-vim.keymap.set("n", "<Leader>x", "<Cmd>bdelete<CR>", opts)
 vim.keymap.set("n", "<Right>", "<Cmd>bnext<CR>", opts)
 vim.keymap.set("n", "<Left>", "<Cmd>bprevious<CR>", opts)
 

@@ -16,6 +16,7 @@ vim.opt.swapfile = false
 
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
+vim.opt.inccommand = "split"
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
@@ -35,6 +36,7 @@ vim.opt.signcolumn = "yes"
 vim.opt.termguicolors = true
 vim.opt.showmode = false
 vim.opt.cursorline = true
+vim.opt.mousescroll = "ver:0,hor:0"
 
 vim.opt.wrap = false
 vim.opt.whichwrap = "bs<>[]hl"
@@ -48,6 +50,8 @@ vim.opt.pumheight = 7
 vim.opt.conceallevel = 0
 vim.opt.cmdheight = 1
 vim.opt.laststatus = 2
+vim.opt.splitright = true
+vim.opt.splitbelow = true
 
 vim.opt.shortmess:append("catI")
 vim.opt.iskeyword:append("-")
