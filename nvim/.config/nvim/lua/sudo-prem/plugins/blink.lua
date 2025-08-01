@@ -12,15 +12,22 @@ return {
 				end
 				return "make install_jsregexp"
 			end)(),
-			dependencies = {
-				{
-					"rafamadriz/friendly-snippets",
-					config = function()
-						require("luasnip.loaders.from_vscode").lazy_load()
-					end,
-				},
-			},
+			-- dependencies = {
+			-- 	{
+			-- 		"rafamadriz/friendly-snippets",
+			-- 		config = function()
+			-- 			require("luasnip.loaders.from_vscode").lazy_load()
+			-- 		end,
+			-- 	},
+			-- },
 			opts = {},
+			config = function()
+				require("luasnip.loaders.from_lua").load({
+					paths = {
+						"~/dotfiles/nvim/.config/nvim/snippets",
+					},
+				})
+			end,
 		},
 		"folke/lazydev.nvim",
 	},
@@ -40,7 +47,13 @@ return {
 			documentation = { auto_show = false, auto_show_delay_ms = 500 },
 		},
 		sources = {
-			default = { "lsp", "path", "snippets", "lazydev" },
+			default = function()
+				if vim.bo.filetype == "cpp" then
+					return { "snippets" }
+				else
+					return { "lsp", "path", "snippets", "buffer" }
+				end
+			end,
 			providers = {
 				lazydev = { module = "lazydev.integrations.blink", score_offset = 100 },
 			},

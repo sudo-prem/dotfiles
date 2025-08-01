@@ -1,0 +1,36 @@
+return {
+	s("cppcp", {
+		t({
+			"#include <bits/stdc++.h>",
+			"using namespace std;",
+			'#define deb(x) cout << #x << ": " << x << "\\n"',
+			"#define ll long long",
+			"",
+			"void solve() {",
+			"\t",
+		}),
+		i(0),
+		t({
+			"",
+			"}",
+			"",
+			"int main() {",
+			"\tios_base::sync_with_stdio(0), cin.tie(0);",
+			"#ifdef ONPC",
+			'\tfreopen("input.txt", "r", stdin);',
+			"#endif",
+			"\tint t{ 1",
+		}),
+		i(1),
+		t({
+			" };",
+			"\t/* int i {1}; cin >> t; */",
+			"\twhile(t--) {",
+			'\t\t/* cout << "Case #" << i++ << ": "; */',
+			"\t\tsolve();",
+			"\t}",
+			"\treturn 0;",
+			"}",
+		}),
+	}),
+}
