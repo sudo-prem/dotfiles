@@ -1,5 +1,5 @@
 return {
-	s("cppcp", {
+	s("#T", {
 		t({
 			"#include <bits/stdc++.h>",
 			"using namespace std;",
