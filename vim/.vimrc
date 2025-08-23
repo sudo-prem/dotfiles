@@ -11,7 +11,6 @@ Plug 'vim-airline/vim-airline'                  " Statusline
 Plug 'ghifarit53/tokyonight-vim'                " Colorscheme
 Plug 'ryanoasis/vim-devicons'                   " File icons
 Plug 'tpope/vim-commentary'                     " Easy commenting
-Plug 'sirver/ultisnips'                         " Snippet support
 Plug 'jiangmiao/auto-pairs'                     " Auto-pair brackets, quotes
 Plug 'tpope/vim-surround'                       " Surrounding modifiers
 Plug 'terryma/vim-multiple-cursors'             " Multiple cursors
