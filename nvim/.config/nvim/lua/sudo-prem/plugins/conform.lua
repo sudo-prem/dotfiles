@@ -34,6 +34,7 @@ return {
 			python = { "black" },
 			javascript = { "prettier" },
 			json = { "prettier" },
+			jsonc = { "prettier" },
 			typescript = { "prettier" },
 		},
 	},

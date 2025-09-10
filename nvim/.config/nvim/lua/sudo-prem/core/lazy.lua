@@ -15,8 +15,8 @@ require("lazy").setup({
 	-- ui
 	require("sudo-prem.plugins.tokyonight"),
 	require("sudo-prem.plugins.lualine"),
-	-- require("sudo-prem.plugins.bufferline"),
 	-- util
+	require("sudo-prem.plugins.vim-sleuth"),
 	require("sudo-prem.plugins.gitsigns"),
 	require("sudo-prem.plugins.leap"),
 	require("sudo-prem.plugins.grug-far"),
