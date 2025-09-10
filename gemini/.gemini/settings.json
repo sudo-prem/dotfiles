@@ -1,4 +1,8 @@
 {
   "selectedAuthType": "oauth-personal",
-  "disableAutoUpdate": true
+  "preferredEditor": "neovim",
+  "vimMode": true,
+  "disableAutoUpdate": true,
+  "disableUpdateNag": true
 }
+
