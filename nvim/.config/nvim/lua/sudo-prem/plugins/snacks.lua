@@ -8,6 +8,26 @@ return {
 					layout = { layout = { position = "right" } },
 				},
 			},
+			win = {
+				input = {
+					keys = {
+						["<c-h>"] = { "preview_scroll_left", mode = { "i", "n" } },
+						["<c-l>"] = { "preview_scroll_right", mode = { "i", "n" } },
+					},
+				},
+				list = {
+					keys = {
+						["<c-h>"] = "preview_scroll_left",
+						["<c-l>"] = "preview_scroll_right",
+					},
+				},
+				preview = {
+					keys = {
+						["<c-h>"] = "preview_scroll_left",
+						["<c-l>"] = "preview_scroll_right",
+					},
+				},
+			},
 		},
 		bufdelete = {},
 		indent = {},

@@ -4,6 +4,7 @@ vim.keymap.set("i", "jk", "<Esc>", opts)
 vim.keymap.set("n", "<Esc>", "<Cmd>nohlsearch<CR>", opts)
 vim.keymap.set("n", "<C-p>", "<Cmd>echo expand('%:p')<CR>", opts)
 vim.keymap.set("n", "<Leader>s", "<Cmd>noautocmd w <CR>", opts)
+vim.keymap.set("n", "sd", "<Cmd>lua vim.diagnostic.open_float()<CR>", opts)
 
 vim.keymap.set({ "n", "v" }, "H", "^", opts)
 vim.keymap.set("v", "<S-j>", ":m '>+1<CR>gv=gv", opts)
