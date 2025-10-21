@@ -22,6 +22,11 @@ return {
 			-- },
 			opts = {},
 			config = function()
+				require("luasnip.loaders.from_snipmate").load({
+					paths = {
+						"~/dotfiles/nvim/.config/nvim/snippets",
+					},
+				})
 				require("luasnip.loaders.from_lua").load({
 					paths = {
 						"~/dotfiles/nvim/.config/nvim/snippets",
