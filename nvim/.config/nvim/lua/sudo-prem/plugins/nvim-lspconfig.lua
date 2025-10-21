@@ -120,6 +120,7 @@ return {
 			-- Linters
 			"pylint",
 			"eslint_d",
+			"swiftlint",
 			-- Formatters
 			"prettier",
 			"stylua",
@@ -128,6 +129,11 @@ return {
 
 		require("mason-tool-installer").setup({
 			ensure_installed = ensure_installed,
+		})
+
+		require("lspconfig").sourcekit.setup({
+			cmd = { "/usr/bin/sourcekit-lsp" },
+			capabilities = capabilities,
 		})
 
 		require("mason-lspconfig").setup({
