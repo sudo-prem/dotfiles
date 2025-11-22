@@ -21,6 +21,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>831C449E-97B8-488E-AB60-CBD3842BB487</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B0C35CAF-841A-4F23-8192-F4888C603092</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 	</dict>
 	<key>createdby</key>
 	<string>Vítor Galvão</string>
@@ -98,6 +111,29 @@ while (true) {
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>{var:clear_keyword}</string>
+				<key>skipuniversalaction</key>
+				<true/>
+				<key>subtext</key>
+				<string>Close notification banners</string>
+				<key>text</key>
+				<string>{const:alfred_workflow_name}</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>831C449E-97B8-488E-AB60-CBD3842BB487</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -115,7 +151,7 @@ while (true) {
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
-				<integer>0</integer>
+				<integer>2</integer>
 				<key>relatedAppsMode</key>
 				<integer>0</integer>
 			</dict>
@@ -142,14 +178,21 @@ Configure the [Hotkey](https://www.alfredapp.com/help/workflows/triggers/hotkey/
 			<key>xpos</key>
 			<real>45</real>
 			<key>ypos</key>
-			<real>50</real>
+			<real>180</real>
+		</dict>
+		<key>831C449E-97B8-488E-AB60-CBD3842BB487</key>
+		<dict>
+			<key>xpos</key>
+			<real>45</real>
+			<key>ypos</key>
+			<real>45</real>
 		</dict>
 		<key>B0C35CAF-841A-4F23-8192-F4888C603092</key>
 		<dict>
 			<key>xpos</key>
-			<real>275</real>
+			<real>270</real>
 			<key>ypos</key>
-			<real>50</real>
+			<real>45</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
@@ -177,7 +220,7 @@ Configure the [Hotkey](https://www.alfredapp.com/help/workflows/triggers/hotkey/
 		</dict>
 	</array>
 	<key>version</key>
-	<string>2025.1</string>
+	<string>25.1</string>
 	<key>webaddress</key>
 	<string>https://github.com/alfredapp/banner-be-gone-workflow/</string>
 </dict>
