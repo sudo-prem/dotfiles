@@ -33,11 +33,9 @@
       "space m p": "markdown::OpenPreview",
       "space m P": "markdown::OpenPreviewToTheSide",
       "space f p": "projects::OpenRecent",
-      "space f w": "pane::DeploySearch",
-      "space a c": "assistant::ToggleFocus",
-      "g f": "editor::OpenExcerpts",
-      "s": ["vim::PushSneak", {}],
-      "S": ["vim::PushSneakBackward", {}],
+      "space a c": "agent::ToggleFocus",
+      "f": ["vim::PushSneak", {}],
+      "F": ["vim::PushSneakBackward", {}],
       "\\": "workspace::ToggleRightDock"
     }
   },
@@ -60,27 +58,19 @@
       "space d": "diagnostics::Deploy",
       "] d": "editor::GoToDiagnostic",
       "[ d": "editor::GoToPreviousDiagnostic",
-      "f s": "outline::Toggle",
-      "f S": "project_symbols::Toggle",
       "] h": "editor::GoToHunk",
       "[ h": "editor::GoToPreviousHunk",
-      "left": "pane::ActivatePreviousItem",
-      "right": "pane::ActivateNextItem",
       "shift-q": "pane::CloseActiveItem",
-      "space q": "pane::CloseInactiveItems",
+      "space q": "pane::CloseOtherItems",
       "space s": "workspace::SaveWithoutFormat",
-      "space f s": "workspace::Save",
       "space space": "file_finder::Toggle",
-      "space /": "pane::DeploySearch",
-      "cmd-j": ["workspace::SendKeystrokes", "1 0 j"],
-      "cmd-k": ["workspace::SendKeystrokes", "1 0 k"]
+      "space /": "pane::DeploySearch"
     }
   },
   {
     "context": "Editor && vim_mode == visual && !VimWaiting && !menu",
     "bindings": {
-      "g c": "editor::ToggleComments",
-      "shift-s": ["vim::PushAddSurrounds", {}],
+      "shift-s": "vim::PushAddSurrounds",
       "shift-j": "editor::MoveLineDown",
       "shift-k": "editor::MoveLineUp"
     }
@@ -88,8 +78,7 @@
   {
     "context": "Editor && vim_mode == insert",
     "bindings": {
-      "j k": ["workspace::SendKeystrokes", "escape"],
-      "k j": ["workspace::SendKeystrokes", "escape"]
+      "j k": ["workspace::SendKeystrokes", "escape"]
     }
   },
   {
