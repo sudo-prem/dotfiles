@@ -1,4 +1,5 @@
 {
+	"disable_ai": true,
 	"theme": "Tokyo Night",
 	"icon_theme": "Catppuccin Frappé",
 	"buffer_font_family": "JetBrainsMono Nerd Font",
@@ -28,7 +29,7 @@
 		"show_onboarding_banner": false
 	},
 	"double_click_in_multibuffer": "open",
-	"relative_line_numbers": "wrapped",
+	"relative_line_numbers": "enabled",
 	"search": {
 		"button": false
 	},
@@ -59,11 +60,7 @@
 	},
 	"agent": {
 		"button": false,
-		"play_sound_when_agent_done": true,
-		"default_model": {
-			"provider": "google",
-			"model": "gemini-flash-latest"
-		}
+		"dock": "right"
 	},
 	"tab_bar": {
 		"show_nav_history_buttons": false,
@@ -118,5 +115,15 @@
 	},
 	"debugger": {
 		"button": false
+	},
+	"languages": {
+		"C++": {
+			"show_edit_predictions": false,
+			"show_completions_on_input": false,
+			"completions": {
+				"lsp": false,
+				"words": "disabled"
+			}
+		}
 	}
 }
