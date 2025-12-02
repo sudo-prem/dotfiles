@@ -72,11 +72,41 @@ end)
 
 config.leader = { key = "a", mods = "CTRL", timeout_milliseconds = 777 }
 config.keys = {
-	{ key = "c", mods = "LEADER", action = act.ActivateCopyMode },
+	{ key = "c",          mods = "LEADER", action = act.ActivateCopyMode },
 	{ key = "phys:Space", mods = "LEADER", action = act.ActivateCommandPalette },
 
-	{ key = "-", mods = "LEADER", action = act.SplitVertical({ domain = "CurrentPaneDomain" }) },
-	{ key = "\\", mods = "LEADER", action = act.SplitHorizontal({ domain = "CurrentPaneDomain" }) },
+	{
+		key = 'h',
+		mods = 'ALT',
+		action = act.SplitPane {
+			direction = 'Left',
+			size = { Percent = 50 },
+		},
+	},
+	{
+		key = 'j',
+		mods = 'ALT',
+		action = act.SplitPane {
+			direction = 'Down',
+			size = { Percent = 50 },
+		},
+	},
+	{
+		key = 'k',
+		mods = 'ALT',
+		action = act.SplitPane {
+			direction = 'Up',
+			size = { Percent = 50 },
+		},
+	},
+	{
+		key = 'l',
+		mods = 'ALT',
+		action = act.SplitPane {
+			direction = 'Right',
+			size = { Percent = 50 },
+		},
+	},
 	{ key = "h", mods = "LEADER", action = act.ActivatePaneDirection("Left") },
 	{ key = "j", mods = "LEADER", action = act.ActivatePaneDirection("Down") },
 	{ key = "k", mods = "LEADER", action = act.ActivatePaneDirection("Up") },
@@ -108,20 +138,20 @@ config.keys = {
 
 config.key_tables = {
 	resize_pane = {
-		{ key = "h", action = act.AdjustPaneSize({ "Left", 1 }) },
-		{ key = "j", action = act.AdjustPaneSize({ "Down", 1 }) },
-		{ key = "k", action = act.AdjustPaneSize({ "Up", 1 }) },
-		{ key = "l", action = act.AdjustPaneSize({ "Right", 1 }) },
+		{ key = "h",      action = act.AdjustPaneSize({ "Left", 1 }) },
+		{ key = "j",      action = act.AdjustPaneSize({ "Down", 1 }) },
+		{ key = "k",      action = act.AdjustPaneSize({ "Up", 1 }) },
+		{ key = "l",      action = act.AdjustPaneSize({ "Right", 1 }) },
 		{ key = "Escape", action = "PopKeyTable" },
-		{ key = "Enter", action = "PopKeyTable" },
+		{ key = "Enter",  action = "PopKeyTable" },
 	},
 	move_tab = {
-		{ key = "h", action = act.MoveTabRelative(-1) },
-		{ key = "j", action = act.MoveTabRelative(-1) },
-		{ key = "k", action = act.MoveTabRelative(1) },
-		{ key = "l", action = act.MoveTabRelative(1) },
+		{ key = "h",      action = act.MoveTabRelative(-1) },
+		{ key = "j",      action = act.MoveTabRelative(-1) },
+		{ key = "k",      action = act.MoveTabRelative(1) },
+		{ key = "l",      action = act.MoveTabRelative(1) },
 		{ key = "Escape", action = "PopKeyTable" },
-		{ key = "Enter", action = "PopKeyTable" },
+		{ key = "Enter",  action = "PopKeyTable" },
 	},
 }
 
