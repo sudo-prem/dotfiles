@@ -51,6 +51,7 @@ vim.opt.pumheight = 7
 vim.opt.conceallevel = 0
 vim.opt.cmdheight = 1
 vim.opt.laststatus = 2
+vim.opt.foldenable = false
 vim.opt.splitright = true
 vim.opt.splitbelow = true
 
