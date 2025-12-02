@@ -141,5 +141,11 @@
       "alt-j": "pane::SplitDown",
       "alt-k": "pane::SplitUp"
     }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "alt-e": "workspace::ToggleRightDock"
+    }
   }
 ]

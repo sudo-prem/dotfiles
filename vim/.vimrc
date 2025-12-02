@@ -151,7 +151,7 @@ vnoremap <A-S-Down> :t '>+1<CR>gv
 nnoremap <silent> <leader><leader> :Files<CR>
 
 " Format source code
-noremap <F3> :Autoformat<CR>
+noremap <Esc>f :Autoformat<CR>
 
 " Jump with f/F
 noremap f <Plug>Sneak_s
@@ -167,7 +167,7 @@ function! ToggleNetrw()
 		let t:netrw_is_open = 1
 	endif
 endfunction
-nnoremap <leader>e :call ToggleNetrw()<CR>
+nnoremap <Esc>e :call ToggleNetrw()<CR>
 
 " Use W, Q, Wq in command mode
 cnoreabbrev W w
