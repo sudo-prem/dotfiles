@@ -63,11 +63,6 @@ autocmd VimEnter * call system('printf "\e[2 q" > $TTY')
 let &t_SI = "\e[6 q"
 let &t_EI = "\e[2 q"
 
-" Snippets trigger for UltiSnips
-let g:UltiSnipsExpandTrigger = '<tab>'
-let g:UltiSnipsJumpForwardTrigger = '<tab>'
-let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
-
 " Multiple cursor exit modes
 let g:multi_cursor_exit_from_visual_mode = 1
 let g:multi_cursor_exit_from_insert_mode = 1
@@ -75,15 +70,13 @@ let g:multi_cursor_exit_from_insert_mode = 1
 " Use jk to escape insert mode
 inoremap jk <Esc>
 
-" Close the current buffer
-nnoremap <leader>x :bd<CR>
-nnoremap <leader>q :q<CR>
-
 " Window splits
-nnoremap <silent> <C-w>\ :vsplit<CR>
-nnoremap <silent> <C-w>- :split<CR>
+nnoremap <silent> <C-A-h> :vsplit<CR>
+nnoremap <silent> <C-A-j> :split<CR>
+nnoremap <silent> <C-A-k> :split<CR> | wincmd k
+nnoremap <silent> <C-A-l> :vsplit<CR> | wincmd l
 
-" Pane navigation with Ctrl + h/j/k/l
+" Pane navigation
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
