@@ -28,26 +28,26 @@
 	},
 	"double_click_in_multibuffer": "open",
 	"relative_line_numbers": "wrapped",
- "search": {
-    "button": false
- 	},
+	"search": {
+		"button": false
+	},
 	"project_panel": {
 		"button": false,
 		"dock": "right",
-		"git_status": true 
+		"git_status": true
 	},
-	"outline_panel": { 
+	"outline_panel": {
 		"button": false,
 		"dock": "right"
 	},
 	"indent_guides": {
-    "enabled": true,
-    "coloring": "indent_aware"
-  },
-  "collaboration_panel": { 
-  "button": false,
-  "dock": "right"
-  },
+		"enabled": true,
+		"coloring": "indent_aware"
+	},
+	"collaboration_panel": {
+		"button": false,
+		"dock": "right"
+	},
 	"git_panel": {
 		"button": false,
 		"dock": "right"
@@ -105,17 +105,17 @@
 		"restore_unsaved_buffers": false
 	},
 	"global_lsp_settings": {
-    "button": false
-  },
-  "vim": {
-    "use_system_clipboard": "on_yank"
-  },
-  "command_aliases": {
-    "W": "w",
-    "Wq": "wq",
-    "Q": "q"
-  },
-  "debugger": {
-    "button": false
-  }
+		"button": false
+	},
+	"vim": {
+		"use_system_clipboard": "on_yank"
+	},
+	"command_aliases": {
+		"W": "w",
+		"Wq": "wq",
+		"Q": "q"
+	},
+	"debugger": {
+		"button": false
+	}
 }
