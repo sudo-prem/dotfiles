@@ -1,5 +1,6 @@
 {
 	"theme": "Tokyo Night",
+	"icon_theme": "Catppuccin Frappé",
 	"buffer_font_family": "JetBrainsMono Nerd Font",
 	"buffer_font_features": {
 		"calt": false
