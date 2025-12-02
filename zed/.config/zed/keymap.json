@@ -45,6 +45,10 @@
       "ctrl-l": "workspace::ActivatePaneRight",
       "ctrl-k": "workspace::ActivatePaneUp",
       "ctrl-j": "workspace::ActivatePaneDown",
+      "ctrl-alt-h": "pane::SplitLeft",
+      "ctrl-alt-l": "pane::SplitRight",
+      "ctrl-alt-j": "pane::SplitDown",
+      "ctrl-alt-k": "pane::SplitUp",
       "space c a": "editor::ToggleCodeActions",
       "space c r": "editor::Rename",
       "g d": "editor::GoToDefinition",
@@ -59,7 +63,6 @@
       "[ d": "editor::GoToPreviousDiagnostic",
       "] h": "editor::GoToHunk",
       "[ h": "editor::GoToPreviousHunk",
-      "shift-q": "pane::CloseActiveItem",
       "space s": "workspace::SaveWithoutFormat",
       "space space": "file_finder::Toggle",
       "space /": "pane::DeploySearch"
@@ -136,10 +139,10 @@
   {
     "context": "Pane",
     "bindings": {
-      "alt-h": "pane::SplitLeft",
-      "alt-l": "pane::SplitRight",
-      "alt-j": "pane::SplitDown",
-      "alt-k": "pane::SplitUp"
+      "ctrl-alt-h": "pane::SplitLeft",
+      "ctrl-alt-l": "pane::SplitRight",
+      "ctrl-alt-j": "pane::SplitDown",
+      "ctrl-alt-k": "pane::SplitUp"
     }
   },
   {
