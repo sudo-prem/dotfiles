@@ -38,11 +38,12 @@ vim.opt.showmode = false
 vim.opt.cursorline = true
 vim.opt.mousescroll = "ver:0,hor:0"
 
-vim.opt.wrap = false
+vim.opt.wrap = true
 vim.opt.whichwrap = "bs<>[]hl"
 vim.opt.clipboard = "unnamedplus"
 vim.opt.backspace = "indent,eol,start"
 vim.opt.linebreak = true
+vim.opt.showbreak = "↪ "
 
 vim.opt.scrolloff = 7
 vim.opt.sidescrolloff = 7
