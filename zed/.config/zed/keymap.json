@@ -35,8 +35,7 @@
       "space f p": "projects::OpenRecent",
       "space a c": "agent::ToggleFocus",
       "f": ["vim::PushSneak", {}],
-      "F": ["vim::PushSneakBackward", {}],
-      "\\": "workspace::ToggleRightDock"
+      "F": ["vim::PushSneakBackward", {}]
     }
   },
   {
@@ -61,7 +60,6 @@
       "] h": "editor::GoToHunk",
       "[ h": "editor::GoToPreviousHunk",
       "shift-q": "pane::CloseActiveItem",
-      "space q": "pane::CloseOtherItems",
       "space s": "workspace::SaveWithoutFormat",
       "space space": "file_finder::Toggle",
       "space /": "pane::DeploySearch"
@@ -99,7 +97,6 @@
       "x": "project_panel::Cut",
       "c": "project_panel::Copy",
       "p": "project_panel::Paste",
-      "\\": "workspace::ToggleRightDock",
       "ctrl-h": "workspace::ActivatePaneLeft",
       "ctrl-l": "workspace::ActivatePaneRight",
       "ctrl-k": "workspace::ActivatePaneUp",
@@ -122,14 +119,7 @@
       "ctrl-h": "workspace::ActivatePaneLeft",
       "ctrl-l": "workspace::ActivatePaneRight",
       "ctrl-k": "workspace::ActivatePaneUp",
-      "ctrl-j": "workspace::ActivatePaneDown",
-      "\\": "workspace::ToggleRightDock"
-    }
-  },
-  {
-    "context": "ChatPanel",
-    "bindings": {
-      "\\": "workspace::ToggleRightDock"
+      "ctrl-j": "workspace::ActivatePaneDown"
     }
   },
   {
@@ -137,7 +127,6 @@
     "bindings": {
       "space space": "file_finder::Toggle",
       "space f p": "projects::OpenRecent",
-      "\\": "workspace::ToggleRightDock",
       "ctrl-h": "workspace::ActivatePaneLeft",
       "ctrl-l": "workspace::ActivatePaneRight",
       "ctrl-k": "workspace::ActivatePaneUp",
