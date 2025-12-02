@@ -1,6 +1,6 @@
 {
   "Paste Competitive Programming Template": {
-    "prefix": "cppcp",
+    "prefix": "#t",
     "body": [
       "#include <bits/stdc++.h>",
       "using namespace std;",
