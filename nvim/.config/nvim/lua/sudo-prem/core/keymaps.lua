@@ -29,8 +29,10 @@ vim.keymap.set({ "n", "v" }, "S", '"_S', opts)
 vim.keymap.set("n", "<Right>", "<Cmd>bnext<CR>", opts)
 vim.keymap.set("n", "<Left>", "<Cmd>bprevious<CR>", opts)
 
-vim.keymap.set({ "n", "v" }, "<Leader>\\", "<C-w>v", opts)
-vim.keymap.set({ "n", "v" }, "<Leader>-", "<C-w>s", opts)
+vim.keymap.set("n", "<M-C-h>", "<Cmd>vsplit<CR><C-w>h", opts)
+vim.keymap.set("n", "<M-C-j>", "<Cmd>split<CR><C-w>j", opts)
+vim.keymap.set("n", "<M-C-k>", "<Cmd>split<CR><C-w>k", opts)
+vim.keymap.set("n", "<M-C-l>", "<Cmd>vsplit<CR><C-w>l", opts)
 
 vim.keymap.set("n", "<C-h>", "<C-w>h", opts)
 vim.keymap.set("n", "<C-j>", "<C-w>j", opts)
