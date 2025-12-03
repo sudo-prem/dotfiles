@@ -27,6 +27,7 @@ return {
 				},
 			},
 		},
+		input = {},
 		bufdelete = {},
 		indent = {},
 		scroll = {},
