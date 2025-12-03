@@ -59,5 +59,3 @@ vim.opt.shortmess:append("catI")
 vim.opt.iskeyword:append("-")
 vim.opt.isfname:append("@-@")
 vim.opt.display:append("lastline")
-
-vim.filetype.add({ extension = { tex = "none" } })

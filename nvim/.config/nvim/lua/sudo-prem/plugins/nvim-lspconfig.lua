@@ -131,10 +131,11 @@ return {
 			ensure_installed = ensure_installed,
 		})
 
-		require("lspconfig").sourcekit.setup({
+		vim.lsp.config("sourcekit", {
 			cmd = { "/usr/bin/sourcekit-lsp" },
 			capabilities = capabilities,
 		})
+		vim.lsp.enable("sourcekit")
 
 		require("mason-lspconfig").setup({
 			ensure_installed = {},
@@ -143,7 +144,8 @@ return {
 				function(server_name)
 					local server = servers[server_name] or {}
 					server.capabilities = vim.tbl_deep_extend("force", {}, capabilities, server.capabilities or {})
-					require("lspconfig")[server_name].setup(server)
+					vim.lsp.config(server_name, server)
+					vim.lsp.enable(server_name)
 				end,
 			},
 		})
