@@ -45,7 +45,7 @@ return {
 		{
 			"<leader><space>",
 			function()
-				Snacks.picker.files({ hidden = true, ignored = true })
+				Snacks.picker.files({ hidden = true, ignored = false })
 			end,
 			desc = "Find Files",
 		},
