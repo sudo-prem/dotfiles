@@ -804,6 +804,35 @@ end alfred_script</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>0</integer>
+				<key>hotmod</key>
+				<integer>0</integer>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>737209D4-4DFE-4766-9A5F-205CA96F4B0B</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>applescript</key>
 				<string>on alfred_script(q)
 	tell application "Spotify"		get spotify url of current track	end tell
@@ -880,35 +909,6 @@ echo -n "https://open.spotify.com/track/$sid"</string>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
 			<string>4D807ACE-4758-4FEF-9C44-EE0FEAA40AD1</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>0</integer>
-				<key>hotmod</key>
-				<integer>0</integer>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedAppsMode</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>737209D4-4DFE-4766-9A5F-205CA96F4B0B</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -1123,27 +1123,6 @@ end alfred_script</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>!loop</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>Toggle Loop</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>7ADF8BF5-4EE5-4177-AF8D-CA8B7F389287</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>applescript</key>
 				<string>on alfred_script(q)
   	tell application "Spotify"
@@ -1246,6 +1225,27 @@ echo -n "$sid"</string>
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
+				<string>!loop</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Toggle Loop</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>7ADF8BF5-4EE5-4177-AF8D-CA8B7F389287</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
 				<string>!song</string>
 				<key>subtext</key>
 				<string></string>
@@ -1323,7 +1323,7 @@ end alfred_script</string>
 				<key>keyword</key>
 				<string>!pl1</string>
 				<key>subtext</key>
-				<string>Tamil Hits 2000-2024</string>
+				<string>LoFi Beats</string>
 				<key>text</key>
 				<string>Play Playlist</string>
 				<key>withspace</key>
@@ -1370,7 +1370,7 @@ end alfred_script</string>
 			<dict>
 				<key>applescript</key>
 				<string>on alfred_script(q)	tell application "Spotify"
-			-- Paste IN BETWEEN quotations on the line below			play track "spotify:playlist:1J6BEsUM7AI8YkgIaXi5rx" 	end tell
+			-- Paste IN BETWEEN quotations on the line below			play track "spotify:playlist:37i9dQZF1DWWQRwui0ExPn"	end tell
 end alfred_script</string>
 				<key>cachescript</key>
 				<true/>
