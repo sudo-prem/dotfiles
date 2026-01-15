@@ -142,7 +142,9 @@
       "ctrl-alt-h": "pane::SplitLeft",
       "ctrl-alt-l": "pane::SplitRight",
       "ctrl-alt-j": "pane::SplitDown",
-      "ctrl-alt-k": "pane::SplitUp"
+      "ctrl-alt-k": "pane::SplitUp",
+      "ctrl-tab": "pane::ActivateNextItem",
+      "ctrl-shift-tab": "pane::ActivatePreviousItem"
     }
   },
   {
