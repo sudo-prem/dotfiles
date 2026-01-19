@@ -47,23 +47,23 @@
     "when": "inSearchEditor && inputBoxFocus || inputBoxFocus && searchViewletVisible && !searchInputBoxFocus"
   },
   {
-    "key": "alt+j",
-    "command": "cursorMove",
     "args": {
-      "to": "down",
       "by": "line",
+      "to": "down",
       "value": 10
     },
+    "command": "cursorMove",
+    "key": "alt+j",
     "when": "textInputFocus"
   },
   {
-    "key": "alt+k",
-    "command": "cursorMove",
     "args": {
-      "to": "up",
       "by": "line",
+      "to": "up",
       "value": 10
     },
+    "command": "cursorMove",
+    "key": "alt+k",
     "when": "textInputFocus"
   },
 
@@ -86,16 +86,6 @@
   {
     "command": "editor.unfoldAll",
     "key": "cmd+]",
-    "when": "editorTextFocus && foldingEnabled"
-  },
-  {
-    "command": "editor.foldRecursively",
-    "key": "ctrl+shift+[",
-    "when": "editorTextFocus && foldingEnabled"
-  },
-  {
-    "command": "editor.unfoldRecursively",
-    "key": "ctrl+shift+]",
     "when": "editorTextFocus && foldingEnabled"
   },
 
@@ -158,11 +148,6 @@
 
   // Vim Mode Keybindings
   {
-    "command": "workbench.action.showAllEditors",
-    "key": "space f b",
-    "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
-  },
-  {
     "command": "workbench.action.quickOpen",
     "key": "space space",
     "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
@@ -198,7 +183,7 @@
     "when": "vim.mode == 'Normal' && editorTextFocus"
   },
   {
-    "command": "leap.find",
+    "command": "leap.search",
     "key": "f",
     "when": "vim.mode == 'Normal' && editorTextFocus"
   },
@@ -263,47 +248,4 @@
     "key": "space s h",
     "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
   },
-
-  // Editor Navigation
-  {
-    "command": "workbench.action.nextEditor",
-    "key": "right",
-    "when": "vim.mode == 'Normal'"
-  },
-  {
-    "command": "workbench.action.previousEditor",
-    "key": "left",
-    "when": "vim.mode == 'Normal'"
-  },
-
-  // Text Expansion
-  {
-    "command": "expand_region",
-    "key": "ctrl+space",
-    "when": "editorTextFocus"
-  },
-  {
-    "command": "undo_expand_region",
-    "key": "ctrl+shift+space",
-    "when": "editorTextFocus && editorHasSelection"
-  },
-
-  // Console Logging
-  {
-    "command": "turboConsoleLog.displayLogMessage",
-    "key": "cmd+l"
-  },
-
-  // Bookmarks
-  {
-    "command": "bookmarks.toggle",
-    "key": "space m",
-    "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
-  },
-  {
-    "command": "bookmarks.listFromAllFiles",
-    "key": "space b",
-    "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
-  }
 ]
-
