@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "cdecf9f186e604bf",
+        "id": "d27a46c05d128a60",
         "type": "tabs",
         "children": [
           {
-            "id": "9ff6072e0cb18cde",
+            "id": "9247727fa21db76f",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -130,20 +130,20 @@
       "command-palette:Open command palette": true
     }
   },
-  "active": "9ff6072e0cb18cde",
+  "active": "938ec68d24bc0a8d",
   "lastOpenFiles": [
-    "04 - Workstation/Academic/Masters/Coursework/CSCI - 544/01 - Papers/01 - Implementing Remote Procedure Calls.md",
+    "99 - Miscellaneous/Untitled 1.md",
+    "99 - Miscellaneous/Untitled.md",
+    "04 - Workstation/Academic/Masters/Coursework/CSCI - 546/01 - Papers/01 - Implementing Remote Procedure Calls.md",
     "04 - Workstation/Academic/Masters/Coursework",
     "99 - Miscellaneous/Google.md",
     "99 - Miscellaneous/Resume Prompt.md",
-    "99 - Miscellaneous/Untitled.md",
-    "04 - Workstation/Academic/Masters/Coursework/CSCI - 544/01 - Papers/02 - Linearizability at Scale.md",
+    "04 - Workstation/Academic/Masters/Coursework/CSCI - 546/01 - Papers/02 - Linearizability at Scale.md",
     "04 - Workstation/Academic/Masters/Machine Learning/01 - Linear Algebra.md",
     "99 - Miscellaneous/Untitled 4.md",
     "99 - Miscellaneous/Untitled 3.md",
     "99 - Miscellaneous/Untitled 2.md",
-    "99 - Miscellaneous/Untitled 1.md",
-    "04 - Workstation/Academic/Masters/Coursework/CSCI - 544/02 - Labs/01 - Lab 0a.md",
+    "04 - Workstation/Academic/Masters/Coursework/CSCI - 546/02 - Labs/01 - Lab 0a.md",
     "05 - Journal/2024/02 - Weekly/2024-W37.md",
     "01 - Lifestyle/Mind & Body/Recipes.md",
     "00 - Utilities/Attachments/CleanShot 2026-01-16 at 19.41.44.png",
@@ -152,8 +152,8 @@
     "00 - Utilities/Attachments/CleanShot 2026-01-16 at 19.35.52.png",
     "CSCI - 544/01 - Papers/01 - Implementing RPC.md",
     "99 - Miscellaneous/ML.md",
-    "04 - Workstation/Academic/Masters/Coursework/CSCI - 544/02 - Labs",
-    "04 - Workstation/Academic/Masters/Coursework/CSCI - 544/01 - Papers",
+    "04 - Workstation/Academic/Masters/Coursework/CSCI - 546/02 - Labs",
+    "04 - Workstation/Academic/Masters/Coursework/CSCI - 546/01 - Papers",
     "00 - Utilities/Attachments/CleanShot 2026-01-14 at 22.53.19.png",
     "04 - Workstation/Academic/Masters/Coursework/CSCI - 544",
     "04 - Workstation/Academic/Masters/Coursework/CSCI - 546",

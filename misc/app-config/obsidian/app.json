@@ -21,5 +21,5 @@
   "promptDelete": false,
   "tabSize": 5,
   "focusNewTab": true,
-  "openBehavior": "new"
+  "openBehavior": "file:"
 }
