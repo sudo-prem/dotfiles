@@ -1,18 +1,18 @@
 {
-  "accentColor": "",
+  "accentColor": "#191970",
   "cssTheme": "Prism",
   "theme": "obsidian",
-  "interfaceFontFamily": "JetBrainsMono Nerd Font Propo",
-  "textFontFamily": "JetBrainsMonoNL Nerd Font Propo",
-  "monospaceFontFamily": "JetBrainsMonoNL Nerd Font Propo",
+  "interfaceFontFamily": "JetBrainsMono Nerd Font Mono",
+  "textFontFamily": "JetBrainsMono Nerd Font Mono",
+  "monospaceFontFamily": "JetBrainsMono Nerd Font Mono",
   "baseFontSize": 14,
   "baseFontSizeAction": false,
   "translucency": false,
   "enabledCssSnippets": [
-    "folderColors",
     "removeWorkspaceRibbon",
-    "resizeImages",
-    "justifyContent"
+    "resizeImages"
   ],
-  "nativeMenus": false
+  "nativeMenus": false,
+  "showViewHeader": false,
+  "showRibbon": false
 }

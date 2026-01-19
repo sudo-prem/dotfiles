@@ -157,5 +157,14 @@
       ],
       "key": "P"
     }
+  ],
+  "properties:open": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "3"
+    }
   ]
 }

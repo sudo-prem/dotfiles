@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "c649064c23edd6fe",
+        "id": "cdecf9f186e604bf",
         "type": "tabs",
         "children": [
           {
-            "id": "00fe62a83d87af1f",
+            "id": "9ff6072e0cb18cde",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -29,10 +29,9 @@
       {
         "id": "6b6649b5d1ec947f",
         "type": "tabs",
-        "dimension": 73.29136690647482,
         "children": [
           {
-            "id": "f1d57ab5b3de87c3",
+            "id": "938ec68d24bc0a8d",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -62,27 +61,10 @@
             }
           }
         ]
-      },
-      {
-        "id": "44fb3d7a1a25137c",
-        "type": "tabs",
-        "dimension": 26.70863309352518,
-        "children": [
-          {
-            "id": "e35533f801a2d09b",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
-            }
-          }
-        ]
       }
     ],
     "direction": "horizontal",
-    "width": 328.5
+    "width": 301.5
   },
   "right": {
     "id": "df2e6975bf3d56c1",
@@ -91,7 +73,6 @@
       {
         "id": "d359662d6698dfe4",
         "type": "tabs",
-        "dimension": 71,
         "children": [
           {
             "id": "85311e2e9d7ce8ae",
@@ -123,7 +104,7 @@
             }
           },
           {
-            "id": "ce696f8a7624595d",
+            "id": "10a708210cc6e0c8",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -135,55 +116,6 @@
               "icon": "lucide-archive",
               "title": "All properties"
             }
-          },
-          {
-            "id": "424aab6785a3bc69",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {},
-              "icon": "spreadsheet",
-              "title": "Advanced Tables"
-            }
-          }
-        ]
-      },
-      {
-        "id": "474a8a2f9dd80661",
-        "type": "tabs",
-        "dimension": 29,
-        "children": [
-          {
-            "id": "714230a26944e37f",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": false
-              },
-              "icon": "links-coming-in",
-              "title": "Backlinks"
-            }
-          },
-          {
-            "id": "a6d72f5db6472530",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "04 - Workstation/Technology/Supabase/Supabase Commands.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": false
-              },
-              "icon": "links-going-out",
-              "title": "Outgoing links from Supabase Commands"
-            }
           }
         ]
       }
@@ -194,67 +126,56 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "templater-obsidian:Templater": false,
       "switcher:Open quick switcher": true,
-      "graph:Open graph view": true,
-      "canvas:Create new canvas": true,
-      "daily-notes:Open today's daily note": true,
-      "command-palette:Open command palette": true,
-      "workspaces:Manage workspace layouts": true,
-      "darlal-switcher-plus:Open in Headings Mode": false,
-      "darlal-switcher-plus:Open Symbols for the active editor": false,
-      "callout-manager:Insert Callout": false,
-      "omnisearch:Omnisearch": false,
-      "periodic-notes:Open today": false
+      "command-palette:Open command palette": true
     }
   },
-  "active": "f1d57ab5b3de87c3",
+  "active": "9ff6072e0cb18cde",
   "lastOpenFiles": [
+    "04 - Workstation/Academic/Masters/Coursework/CSCI - 544/01 - Papers/01 - Implementing Remote Procedure Calls.md",
+    "04 - Workstation/Academic/Masters/Coursework",
+    "99 - Miscellaneous/Google.md",
+    "99 - Miscellaneous/Resume Prompt.md",
     "99 - Miscellaneous/Untitled.md",
-    "99 - Miscellaneous/Today.md",
-    "04 - Workstation/Academic/Masters/Reasons for Masters.md",
-    "04 - Workstation/Academic/Masters/University Scholarships.md",
-    "04 - Workstation/Academic/Masters/Application Checklist.md",
-    "99 - Miscellaneous/Shortlist for Fall.md",
-    "99 - Miscellaneous/Temp.md",
-    "99 - Miscellaneous/temp.md",
-    "99 - Miscellaneous/Personal To-Dos.md",
-    "04 - Workstation/Work/Coral/Class Approach.md",
-    "04 - Workstation/Work/Coral/Zoom session migration.md",
-    "04 - Workstation/Work/SplitShare",
-    "04 - Workstation/Work/Coral/Enrollments.md",
-    "04 - Workstation/Work/Coral/Enrollment Flow.md",
-    "04 - Workstation/Work/Coral/Webhook events.md",
-    "04 - Workstation/Work/Coral/Temporal.md",
-    "99 - Miscellaneous/TODO.md",
+    "04 - Workstation/Academic/Masters/Coursework/CSCI - 544/01 - Papers/02 - Linearizability at Scale.md",
+    "04 - Workstation/Academic/Masters/Machine Learning/01 - Linear Algebra.md",
+    "99 - Miscellaneous/Untitled 4.md",
     "99 - Miscellaneous/Untitled 3.md",
-    "99 - Miscellaneous/Work To-Dos.md",
     "99 - Miscellaneous/Untitled 2.md",
-    "04 - Workstation/Tech/00 - Project Ideas.md",
-    "CleanShot 2025-03-04 at 15.38.58.png",
-    "CleanShot 2025-03-04 at 14.26.29.png",
-    "Agora.md",
-    "2025-01-19.md",
-    "04 - Workstation/Tech/FastAPI/Setup Structure.md",
-    "05 - Journal/2024/01 - Daily/2024-10-26.md",
-    "04 - Workstation/Tech/Supabase/Supabase Commands.md",
-    "04 - Workstation/Tech/Parse Platform/Parse Platform.md",
-    "04 - Workstation/Tech/Parse Platform",
-    "00 - Utilities/Attachments/CleanShot 2024-09-19 at 23.42.20.png",
-    "00 - Utilities/Attachments/Screenshot 2024-08-17 at 10.26.23 AM.png",
-    "00 - Utilities/Attachments/Screenshot 2024-08-17 at 10.25.57 AM.png",
-    "00 - Utilities/Attachments/Screenshot 2024-08-17 at 10.24.42 AM.png",
-    "04 - Workstation/Technology/Devops",
-    "00 - Utilities/Attachments/verbal.png",
-    "00 - Utilities/Attachments/quant.png",
-    "00 - Utilities/Attachments/skip_1.png",
-    "04 - Workstation/Work",
-    "00 - Utilities/Attachments/1.png",
-    "04 - Workstation/Work/Coral",
-    "04 - Workstation/Tech/99 - Miscellaneous",
-    "00 - Utilities/Attachments/Group 17.pdf",
-    "00 - Utilities/Attachments/Group 16.pdf",
-    "00 - Utilities/Attachments/Official Quantitative Reasoning.pdf",
-    "00 - Utilities/Attachments/Group 13.pdf"
+    "99 - Miscellaneous/Untitled 1.md",
+    "04 - Workstation/Academic/Masters/Coursework/CSCI - 544/02 - Labs/01 - Lab 0a.md",
+    "05 - Journal/2024/02 - Weekly/2024-W37.md",
+    "01 - Lifestyle/Mind & Body/Recipes.md",
+    "00 - Utilities/Attachments/CleanShot 2026-01-16 at 19.41.44.png",
+    "00 - Utilities/Attachments/CleanShot 2026-01-16 at 19.41.18.png",
+    "00 - Utilities/Attachments/CleanShot 2026-01-16 at 19.36.37.png",
+    "00 - Utilities/Attachments/CleanShot 2026-01-16 at 19.35.52.png",
+    "CSCI - 544/01 - Papers/01 - Implementing RPC.md",
+    "99 - Miscellaneous/ML.md",
+    "04 - Workstation/Academic/Masters/Coursework/CSCI - 544/02 - Labs",
+    "04 - Workstation/Academic/Masters/Coursework/CSCI - 544/01 - Papers",
+    "00 - Utilities/Attachments/CleanShot 2026-01-14 at 22.53.19.png",
+    "04 - Workstation/Academic/Masters/Coursework/CSCI - 544",
+    "04 - Workstation/Academic/Masters/Coursework/CSCI - 546",
+    "99 - Miscellaneous/System Design Questions.md",
+    "99 - Miscellaneous/Ory Process.md",
+    "99 - Miscellaneous/Immich with Tailscale.md",
+    "99 - Miscellaneous/DSML MT - 2.md",
+    "99 - Miscellaneous/TEMP - Loan disbursement mail.md",
+    "04 - Workstation/Techstack/iOS/Swift for CP.md",
+    "00 - Utilities/Attachments/Pasted image 20251113232940.png",
+    "00 - Utilities/Attachments/Pasted image 20251113232938.png",
+    "04 - Workstation/Academic/Masters/WWDC SSC/About.md",
+    "04 - Workstation/Techstack/iOS/QnA.md",
+    "04 - Workstation/Techstack/iOS/One Page iOS App.md",
+    "04 - Workstation/Techstack/iOS/Untitled.md",
+    "04 - Workstation/Techstack/iOS",
+    "04 - Workstation/Academic/Masters/Machine Learning",
+    "00 - Utilities/Attachments/ai.jpg",
+    "04 - Workstation/Academic/Masters/Coursework/CSCI - 570",
+    "04 - Workstation/Academic/Masters/Coursework",
+    "04 - Workstation/Academic/Masters/GSoC",
+    "00 - Utilities/Attachments/IMG_1096.jpeg",
+    "00 - Utilities/Attachments/CleanShot 2025-05-06 at 20.36.18.png"
   ]
 }
