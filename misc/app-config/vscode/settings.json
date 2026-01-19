@@ -8,6 +8,7 @@
   // Workbench
   "workbench.sideBar.location": "right",
   "workbench.editor.empty.hint": "hidden",
+  "workbench.editor.enablePreview": false,
   "workbench.colorTheme": "Tokyo Night",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.layoutControl.enabled": false,
@@ -136,22 +137,6 @@
     {
       "before": ["j", "k"],
       "after": ["<Esc>"]
-    },
-    {
-      "before": ["<Up>"],
-      "after": [""]
-    },
-    {
-      "before": ["<Down>"],
-      "after": [""]
-    },
-    {
-      "before": ["<Left>"],
-      "after": [""]
-    },
-    {
-      "before": ["<Right>"],
-      "after": [""]
     }
   ],
   "vim.normalModeKeyBindings": [
@@ -182,14 +167,6 @@
     {
       "before": ["]", "h"],
       "commands": ["workbench.action.editor.nextChange"]
-    },
-    {
-      "before": ["[", "b"],
-      "commands": ["bookmarks.jumpToPrevious"]
-    },
-    {
-      "before": ["]", "b"],
-      "commands": ["bookmarks.jumpToNext"]
     }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
@@ -283,14 +260,18 @@
     }
   ],
 
-  // Misc
+  // Extensions
   "extensions.ignoreRecommendations": true,
   "extensions.autoUpdate": false,
+
+  // Misc
   "update.mode": "none",
   "update.showReleaseNotes": false,
   "security.workspace.trust.enabled": false,
   "breadcrumbs.enabled": false,
   "zenMode.hideLineNumbers": false,
-  "cursor.cpp.enablePartialAccepts": true
+  "cursor.cpp.enablePartialAccepts": true,
+  "remote.SSH.remotePlatform": {
+    "instance-1": "linux"
+  }
 }
-
