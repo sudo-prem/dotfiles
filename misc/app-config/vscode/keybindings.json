@@ -233,6 +233,13 @@
   {
     "key": "alt+l",
     "command": "workbench.action.splitEditorRight"
-  }
+  },
+
+  // Terminal Splitting
+  {
+    "key": "alt+l",
+    "command": "workbench.action.terminal.split",
+    "when": "terminalFocus"
+  },
 ]
 
