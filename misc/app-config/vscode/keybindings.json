@@ -46,26 +46,6 @@
     "key": "ctrl+k",
     "when": "inSearchEditor && inputBoxFocus || inputBoxFocus && searchViewletVisible && !searchInputBoxFocus"
   },
-  {
-    "args": {
-      "by": "line",
-      "to": "down",
-      "value": 10
-    },
-    "command": "cursorMove",
-    "key": "alt+j",
-    "when": "textInputFocus"
-  },
-  {
-    "args": {
-      "by": "line",
-      "to": "up",
-      "value": 10
-    },
-    "command": "cursorMove",
-    "key": "alt+k",
-    "when": "textInputFocus"
-  },
 
   // Editor Folding
   {
@@ -183,7 +163,7 @@
     "when": "vim.mode == 'Normal' && editorTextFocus"
   },
   {
-    "command": "leap.search",
+    "command": "leap.find",
     "key": "f",
     "when": "vim.mode == 'Normal' && editorTextFocus"
   },
@@ -239,13 +219,20 @@
 
   // Editor Splitting
   {
-    "command": "workbench.action.splitEditorRight",
-    "key": "space s v",
-    "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
+    "key": "alt+h",
+    "command": "workbench.action.splitEditorLeft"
   },
   {
-    "command": "workbench.action.splitEditorDown",
-    "key": "space s h",
-    "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
+    "key": "alt+j",
+    "command": "workbench.action.splitEditorDown"
   },
+  {
+    "key": "alt+k",
+    "command": "workbench.action.splitEditorUp"
+  },
+  {
+    "key": "alt+l",
+    "command": "workbench.action.splitEditorRight"
+  }
 ]
+

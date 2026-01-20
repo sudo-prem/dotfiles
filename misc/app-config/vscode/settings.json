@@ -4,9 +4,6 @@
   "window.customTitleBarVisibility": "never",
   "window.titleBarStyle": "native",
   "window.commandCenter": false,
-
-  // Workbench
-  "workbench.sideBar.location": "right",
   "workbench.editor.empty.hint": "hidden",
   "workbench.editor.enablePreview": false,
   "workbench.colorTheme": "Tokyo Night",
@@ -15,14 +12,13 @@
   "workbench.settings.editor": "json",
   "workbench.activityBar.location": "hidden",
   "workbench.editor.showTabs": "single",
-  "workbench.activityBar.orientation": "vertical",
   "workbench.tips.enabled": false,
   "workbench.tree.enableStickyScroll": false,
   "workbench.tree.renderIndentGuides": "none",
   "workbench.tree.indent": 8,
 
   // Editor
-  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontFamily": "JetbrainsMono Nerd Font",
   "editor.fontSize": 14,
   "editor.fontWeight": "normal",
   "editor.fontLigatures": true,
@@ -63,14 +59,14 @@
   "editor.bracketPairColorization.enabled": true,
   "editor.codeActionsOnSave": {
     "source.addMissingImports": "explicit",
-    "source.organizeImports": "explicit"
+    "source.organizeImports": "explicit",
   },
 
   // Files
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
   "files.exclude": {
-    "**/node_modules": true
+    "**/node_modules": true,
   },
 
   // Explorer
@@ -80,12 +76,11 @@
   "explorer.confirmDelete": false,
 
   // Custom UI
-  "material-icon-theme.hidesExplorerArrows": true,
-  "material-icon-theme.folders.theme": "classic",
   "custom-ui-style.electron": {
-    "titleBarStyle": "hidden"
+    "titleBarStyle": "hidden",
+    "frame": false,
   },
-  "custom-ui-style.font.sansSerif": "JetBrains Mono",
+  "custom-ui-style.font.sansSerif": "JetbrainsMono Nerd Font",
   "custom-ui-style.stylesheet": {
     ".notification-toast": "box-shadow: none !important",
     ".quick-input-widget.show-file-icons": "box-shadow: none !important",
@@ -106,7 +101,7 @@
     ".title .monaco-icon-label:after": "margin-right: 0",
     ".monaco-workbench .part.editor > .content .editor-group-container > .title > .label-container > .title-label": "padding-left: 6em",
     ".title .monaco-icon-label.file-icon": "margin: 0 6em",
-    ".monaco-workbench .part > .composite.title": "padding-left: 6em"
+    ".monaco-workbench .part > .composite.title": "padding-left: 6em",
   },
 
   // Terminal
@@ -135,128 +130,128 @@
   "vim.insertModeKeyBindings": [
     {
       "before": ["j", "k"],
-      "after": ["<Esc>"]
-    }
+      "after": ["<Esc>"],
+    },
   ],
   "vim.normalModeKeyBindings": [
     {
       "before": ["L"],
-      "after": ["$"]
+      "after": ["$"],
     },
     {
       "before": ["H"],
-      "after": ["^"]
+      "after": ["^"],
     },
     {
       "before": [":"],
-      "commands": ["workbench.action.showCommands"]
+      "commands": ["workbench.action.showCommands"],
     },
     {
       "before": ["]", "d"],
-      "commands": ["editor.action.marker.next"]
+      "commands": ["editor.action.marker.next"],
     },
     {
       "before": ["[", "d"],
-      "commands": ["editor.action.marker.prev"]
+      "commands": ["editor.action.marker.prev"],
     },
     {
       "before": ["[", "h"],
-      "commands": ["workbench.action.editor.previousChange"]
+      "commands": ["workbench.action.editor.previousChange"],
     },
     {
       "before": ["]", "h"],
-      "commands": ["workbench.action.editor.nextChange"]
-    }
+      "commands": ["workbench.action.editor.nextChange"],
+    },
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": ["p"],
-      "after": ["p", "\"", "_", "d", "P"]
+      "after": ["p", "\"", "_", "d", "P"],
     },
     {
       "before": ["y"],
-      "after": ["\"", "*", "y"]
+      "after": ["\"", "*", "y"],
     },
     {
       "before": ["d"],
-      "after": ["\"", "_", "d"]
+      "after": ["\"", "_", "d"],
     },
     {
       "before": ["D"],
-      "after": ["\"", "_", "D"]
+      "after": ["\"", "_", "D"],
     },
     {
       "before": ["c"],
-      "after": ["\"", "_", "c"]
+      "after": ["\"", "_", "c"],
     },
     {
       "before": ["C"],
-      "after": ["\"", "_", "C"]
+      "after": ["\"", "_", "C"],
     },
     {
       "before": ["s"],
-      "after": ["\"", "_", "s"]
+      "after": ["\"", "_", "s"],
     },
     {
       "before": ["S"],
-      "after": ["\"", "_", "S"]
-    }
+      "after": ["\"", "_", "S"],
+    },
   ],
   "vim.visualModeKeyBindings": [
     {
       "before": ["L"],
-      "after": ["$"]
+      "after": ["$"],
     },
     {
       "before": ["H"],
-      "after": ["^"]
+      "after": ["^"],
     },
     {
       "before": ["<leader>", "h", "r"],
-      "commands": ["git.revertSelectedRanges"]
+      "commands": ["git.revertSelectedRanges"],
     },
     {
       "before": [">"],
-      "commands": ["editor.action.indentLines"]
+      "commands": ["editor.action.indentLines"],
     },
     {
       "before": ["<"],
-      "commands": ["editor.action.outdentLines"]
-    }
+      "commands": ["editor.action.outdentLines"],
+    },
   ],
   "vim.visualModeKeyBindingsNonRecursive": [
     {
       "before": ["p"],
-      "after": ["p", "\"", "_", "d", "P"]
+      "after": ["p", "\"", "_", "d", "P"],
     },
     {
       "before": ["y"],
-      "after": ["\"", "*", "y"]
+      "after": ["\"", "*", "y"],
     },
     {
       "before": ["d"],
-      "after": ["\"", "_", "d"]
+      "after": ["\"", "_", "d"],
     },
     {
       "before": ["D"],
-      "after": ["\"", "_", "D"]
+      "after": ["\"", "_", "D"],
     },
     {
       "before": ["c"],
-      "after": ["\"", "_", "c"]
+      "after": ["\"", "_", "c"],
     },
     {
       "before": ["C"],
-      "after": ["\"", "_", "C"]
+      "after": ["\"", "_", "C"],
     },
     {
       "before": ["s"],
-      "after": ["\"", "_", "s"]
+      "after": ["\"", "_", "s"],
     },
     {
       "before": ["S"],
-      "after": ["\"", "_", "S"]
-    }
+      "after": ["\"", "_", "S"],
+    },
   ],
 
   // Extensions
@@ -271,6 +266,9 @@
   "zenMode.hideLineNumbers": false,
   "cursor.cpp.enablePartialAccepts": true,
   "remote.SSH.remotePlatform": {
-    "instance-1": "linux"
-  }
+    "instance-1": "linux",
+  },
+  "workbench.sideBar.location": "right",
+  "workbench.startupEditor": "none",
 }
+
