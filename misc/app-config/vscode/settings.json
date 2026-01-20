@@ -10,7 +10,6 @@
   "workbench.editor.empty.hint": "hidden",
   "workbench.editor.enablePreview": false,
   "workbench.colorTheme": "Tokyo Night",
-  "workbench.iconTheme": "material-icon-theme",
   "workbench.layoutControl.enabled": false,
   "workbench.statusBar.visible": false,
   "workbench.settings.editor": "json",
