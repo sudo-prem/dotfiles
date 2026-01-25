@@ -5,17 +5,20 @@
 			"args": [],
 			"projects": [
 				{
-					"paths": ["/home/ubuntu/labs"],
+					"paths": ["/home/ubuntu/labs"]
 				},
-			],
-		},
+				{
+					"paths": ["/home/ubuntu/labs/lab0a-sudo-prem"]
+				}
+			]
+		}
 	],
 	"disable_ai": true,
 	"theme": "Tokyo Night",
 	"icon_theme": "Catppuccin Frappé",
 	"buffer_font_family": "JetBrainsMono Nerd Font",
 	"buffer_font_features": {
-		"calt": false,
+		"calt": false
 	},
 	"buffer_font_size": 14.0,
 	"buffer_font_weight": 300,
@@ -33,98 +36,98 @@
 		"breadcrumbs": false,
 		"quick_actions": false,
 		"selections_menu": false,
-		"agent_review": false,
+		"agent_review": false
 	},
 	"title_bar": {
 		"show_branch_icon": true,
-		"show_onboarding_banner": false,
+		"show_onboarding_banner": false
 	},
 	"double_click_in_multibuffer": "open",
 	"relative_line_numbers": "enabled",
 	"search": {
-		"button": false,
+		"button": false
 	},
 	"project_panel": {
 		"button": false,
 		"dock": "right",
-		"git_status": true,
+		"git_status": true
 	},
 	"outline_panel": {
 		"button": false,
-		"dock": "right",
+		"dock": "right"
 	},
 	"indent_guides": {
 		"enabled": true,
-		"coloring": "indent_aware",
+		"coloring": "indent_aware"
 	},
 	"collaboration_panel": {
 		"button": false,
-		"dock": "right",
+		"dock": "right"
 	},
 	"git_panel": {
 		"button": false,
-		"dock": "right",
+		"dock": "right"
 	},
 	"notification_panel": {
 		"button": false,
-		"dock": "right",
+		"dock": "right"
 	},
 	"agent": {
 		"button": false,
-		"dock": "right",
+		"dock": "right"
 	},
 	"tab_bar": {
 		"show_nav_history_buttons": false,
-		"show_tab_bar_buttons": false,
+		"show_tab_bar_buttons": false
 	},
 	"tabs": {
 		"git_status": true,
 		"file_icons": true,
-		"show_close_button": "hidden",
+		"show_close_button": "hidden"
 	},
 	"remove_trailing_whitespace_on_save": false,
 	"format_on_save": "off",
 	"telemetry": {
 		"diagnostics": false,
-		"metrics": false,
+		"metrics": false
 	},
 	"hard_tabs": true,
 	"auto_update": false,
 	"diagnostics": {
-		"button": false,
+		"button": false
 	},
 	"git": {
 		"inline_blame": {
-			"enabled": false,
-		},
+			"enabled": false
+		}
 	},
 	"status_bar": {
 		"experimental.show": false,
 		"active_language_button": false,
-		"cursor_position_button": false,
+		"cursor_position_button": false
 	},
 	"terminal": {
-		"button": false,
+		"button": false
 	},
 	"auto_install_extensions": {
 		"html": true,
-		"proto": true,
+		"proto": true
 	},
 	"session": {
-		"restore_unsaved_buffers": false,
+		"restore_unsaved_buffers": false
 	},
 	"global_lsp_settings": {
-		"button": false,
+		"button": false
 	},
 	"vim": {
-		"use_system_clipboard": "on_yank",
+		"use_system_clipboard": "on_yank"
 	},
 	"command_aliases": {
 		"W": "w",
 		"Wq": "wq",
-		"Q": "q",
+		"Q": "q"
 	},
 	"debugger": {
-		"button": false,
-	},
+		"button": false
+	}
 }
