@@ -11,7 +11,8 @@ return {
 					lsp_format = "fallback",
 				})
 			end,
-			mode = "",
+			mode = { "n", "i", "v" },
+			desc = "Format buffer",
 		},
 	},
 	opts = {

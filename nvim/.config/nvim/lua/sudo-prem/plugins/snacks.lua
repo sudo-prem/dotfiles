@@ -82,6 +82,7 @@ return {
 			function()
 				Snacks.explorer()
 			end,
+			mode = { "n", "i" },
 			desc = "File Explorer",
 		},
 		-- find
