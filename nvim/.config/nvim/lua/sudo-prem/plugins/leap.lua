@@ -1,5 +1,5 @@
 return {
-	"ggandor/leap.nvim",
+	url = "https://codeberg.org/andyg/leap.nvim",
 	config = function()
 		vim.keymap.set("n", "f", "<Plug>(leap)")
 		vim.keymap.set("n", "F", "<Plug>(leap-from-window)")
