@@ -8,10 +8,7 @@
 					"paths": ["/home/ubuntu/labs"],
 				},
 				{
-					"paths": ["/home/ubuntu/labs/lab0a-sudo-prem"],
-				},
-				{
-					"paths": ["/home/ubuntu/labs/lab0b-sudo-prem"],
+					"paths": ["/home/ubuntu/labs/lab1-beluga"],
 				},
 			],
 		},
