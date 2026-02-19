@@ -19,7 +19,6 @@ require("lazy").setup({
 	require("sudo-prem.plugins.vim-sleuth"),
 	require("sudo-prem.plugins.gitsigns"),
 	require("sudo-prem.plugins.leap"),
-	require("sudo-prem.plugins.grug-far"),
 	require("sudo-prem.plugins.mini"),
 	require("sudo-prem.plugins.snacks"),
 	-- LSP
@@ -28,8 +27,6 @@ require("lazy").setup({
 	require("sudo-prem.plugins.blink"),
 	require("sudo-prem.plugins.treesitter"),
 	require("sudo-prem.plugins.lazydev"),
-	-- AI
-	require("sudo-prem.plugins.opencode"),
 })
 
 vim.keymap.set("n", "<leader>l", ":Lazy<CR>", { noremap = true, silent = true })
