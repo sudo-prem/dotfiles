@@ -1,4 +1,4 @@
-export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:"
+export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/opt/homebrew/opt/openjdk@21/bin:"
 export XDG_CONFIG_HOME="$HOME/.config"
 export DOTFILES="$HOME/dotfiles"
 export HOMEBREW_NO_ENV_HINTS=TRUE
