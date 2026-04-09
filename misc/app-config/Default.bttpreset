@@ -163,7 +163,7 @@
     "BTTNotchBarMiniItemsOnTop" : false,
     "BSTSnapAreaDefaultPictoDistanceFromBottom" : 0.10000000149011612
   },
-  "BTTPresetUUID" : "EE982BCC-BE8B-4D10-8C7B-568060763CA9",
+  "BTTPresetUUID" : "DEA14D1E-F16A-4D87-A494-9EF0FD7E013E",
   "BTTPresetContent" : [
     {
       "BTTAppBundleIdentifier" : "BT.G",
@@ -1175,7 +1175,7 @@
           }
         },
         {
-          "BTTLastUpdatedAt" : 1775696070.916029,
+          "BTTLastUpdatedAt" : 1775714122.625479,
           "BTTTriggerType" : 0,
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
           "BTTUUID" : "7500BE00-0835-4501-8694-1805463EB0E0",
@@ -1183,7 +1183,6 @@
           "BTTShortcutKeyboardType" : 1973232312,
           "BTTTriggerOnDown" : 1,
           "BTTLayoutIndependentChar" : "i",
-          "BTTEnabled" : 0,
           "BTTShortcutKeyCode" : 34,
           "BTTShortcutAdvancedModifierKeys" : "0",
           "BTTShortcutModifierKeys" : 1966080,
@@ -1191,7 +1190,7 @@
           "BTTAutoAdaptToKeyboardLayout" : 0,
           "BTTActionsToExecute" : [
             {
-              "BTTLastUpdatedAt" : 1775696082.404917,
+              "BTTLastUpdatedAt" : 1775698853.6430769,
               "BTTTriggerParentUUID" : "7500BE00-0835-4501-8694-1805463EB0E0",
               "BTTIsPureAction" : true,
               "BTTUUID" : "6A9C99E6-06A4-4868-9A92-9678D0833494",
@@ -1514,7 +1513,7 @@
           ]
         },
         {
-          "BTTLastUpdatedAt" : 1775696065.0024672,
+          "BTTLastUpdatedAt" : 1775714120.2684851,
           "BTTTriggerType" : 0,
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
           "BTTUUID" : "A4CD4166-0BE5-4154-A20B-28B5E61B3D0E",
@@ -1522,7 +1521,6 @@
           "BTTShortcutKeyboardType" : 1973232312,
           "BTTTriggerOnDown" : 1,
           "BTTLayoutIndependentChar" : "p",
-          "BTTEnabled" : 0,
           "BTTShortcutKeyCode" : 35,
           "BTTShortcutAdvancedModifierKeys" : "0",
           "BTTShortcutModifierKeys" : 1966080,
