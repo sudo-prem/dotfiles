@@ -157,6 +157,12 @@ noremap <Esc>f :Autoformat<CR>
 noremap f <Plug>Sneak_s
 noremap F <Plug>Sneak_S
 
+" vim-surround aliases
+nmap sa <Plug>Ysurround
+xmap sa <Plug>VSurround
+nmap sr <Plug>Csurround
+nmap sd <Plug>Dsurround
+
 " Toggle Netrw (File Explorer)
 function! ToggleNetrw()
 	if exists("t:netrw_is_open") && t:netrw_is_open
