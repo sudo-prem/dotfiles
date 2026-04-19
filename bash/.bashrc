@@ -99,3 +99,5 @@ alias ll='ls -alF'
 alias lt='tree -L 2'
 alias lta='tree -a -L 2'
 
+# Git helpers.
+alias lg='lazygit'
