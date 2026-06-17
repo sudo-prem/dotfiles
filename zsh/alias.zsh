@@ -8,9 +8,7 @@ alias lta='lsd -alF --git --tree --depth 2'
 alias ..='cd ..'
 alias cp-dir='pwd|pbcopy'
 alias cp-file='pbcopy <'
-alias cpp='f() { g++-15 $1 -DONPC && ./a.out }; f'
 alias count='ls -1 | wc -l'
-alias bak='f() { mv "$1" "$1.bak" }; f'
 alias C='clear'
 alias Q='exit'
 
@@ -36,6 +34,5 @@ alias brew-cleanup='brew cleanup --prune=all'
 
 alias pip-freeze='rm -rf $HOME/dotfiles/misc/python/requirements.txt; pip freeze > $HOME/dotfiles/misc/python/requirements.txt'
 
-alias check-port='function _check-port(){ lsof -i :$1 }; _check-port'
 alias kill-port='sudo kill -9'
 

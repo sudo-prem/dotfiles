@@ -21,6 +21,7 @@ source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 source $DOTFILES/zsh/options.zsh
 source $DOTFILES/zsh/bindkey.zsh
 source $DOTFILES/zsh/alias.zsh
+source $DOTFILES/zsh/functions.zsh
 source $HOME/.fzf.zsh
 
 # Enable biometrics for terminal/keychain
