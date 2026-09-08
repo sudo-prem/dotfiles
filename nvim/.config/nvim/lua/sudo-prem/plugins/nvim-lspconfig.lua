@@ -108,21 +108,21 @@ require("mason-tool-installer").setup({
 	-- lspconfig names work here because mason-tool-installer's default
 	-- 'mason-lspconfig' integration translates them to Mason package names.
 	ensure_installed = {
-		-- Servers
-		"html",
-		"cssls",
-		"clangd",
-		"pyright",
-		"ts_ls",
-		"lua_ls",
-		-- Linters
-		"pylint",
-		"eslint_d",
-		"swiftlint",
-		-- Formatters
-		"prettier",
-		"stylua",
-		"black",
+		-- -- Servers
+		-- "html",
+		-- "cssls",
+		-- "clangd",
+		-- "pyright",
+		-- "ts_ls",
+		-- "lua_ls",
+		-- -- Linters
+		-- "pylint",
+		-- "eslint_d",
+		-- "swiftlint",
+		-- -- Formatters
+		-- "prettier",
+		-- "stylua",
+		-- "black",
 	},
 })
 
