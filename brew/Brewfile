@@ -1,3 +1,4 @@
+tap "sudo-prem/dotfiles", "https://github.com/sudo-prem/dotfiles.git", trusted: true
 tap "supabase/tap"
 # Improved shell history for zsh, bash, fish and nushell
 brew "atuin"
@@ -80,7 +81,7 @@ cask "appcleaner"
 # Display management tool
 cask "betterdisplay"
 # Utility improving 3rd party mouse performance and functionalities
-cask "bettermouse"
+cask "sudo-prem/dotfiles/sudo-prem-bettermouse@1.6.8812"
 # Tool to customise input devices and automate computer systems
 cask "bettertouchtool"
 # Desktop password and login vault
@@ -88,7 +89,7 @@ cask "bitwarden"
 # Web browser focusing on privacy
 cask "brave-browser"
 # Screen capturing tool
-cask "cleanshot"
+cask "sudo-prem/dotfiles/sudo-prem-cleanshot@4.8.10"
 # Clean keyboard and trackpad
 cask "cleanupbuddy"
 # Tool to show live information about the batteries in various devices
@@ -131,7 +132,7 @@ cask "openmtp"
 # Playstation 2 Emulator
 cask "pcsx2"
 # Converts and edits video, audio or image files
-cask "permute"
+cask "sudo-prem/dotfiles/sudo-prem-permute@3.14.8"
 # Collaboration platform for API development
 cask "postman"
 # HTTP debugging proxy
