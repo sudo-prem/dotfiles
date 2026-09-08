@@ -1,4 +1,4 @@
-cask "sudo-prem-bettermouse@1.6.8812" do
+cask "bettermouse@1.6.8812" do
   version "1.6,8812"
   sha256 "2accad170889f362da8f9383efb4738e5fab88d8f5345f4e356ed52c47372de6"
 

@@ -13,9 +13,9 @@ if [ ! -f "$SCRIPT_DIR/Brewfile" ]; then
 fi
 
 PINNED_CASKS=(
-  "sudo-prem-bettermouse@1.6.8812"
-  "sudo-prem-cleanshot@4.8.10"
-  "sudo-prem-permute@3.14.8"
+  "bettermouse@1.6.8812"
+  "cleanshot@4.8.10"
+  "permute@3.14.8"
 )
 
 brew bundle install --file="$SCRIPT_DIR/Brewfile" || return 1 2>/dev/null || exit 1

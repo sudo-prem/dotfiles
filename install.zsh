@@ -9,7 +9,10 @@ for folder in ${(s/,/)DOT_FOLDERS}; do
   if [ -f "$folder/install.zsh" ]; then
     chmod 777 $folder/install.zsh
     echo "[+] Running install.zsh in $folder"
-    source "$folder/install.zsh"
+    if ! source "$folder/install.zsh"; then
+      echo "[-] Install failed :: $folder"
+      exit 1
+    fi
 
 	if [ "$folder" = "brew" ]; then
       echo "[+] Reloading shell after brew install..."
@@ -25,4 +28,3 @@ done
 
 echo "[+] Reloading shell..."
 exec $SHELL -l
-

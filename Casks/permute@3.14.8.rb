@@ -1,4 +1,4 @@
-cask "sudo-prem-permute@3.14.8" do
+cask "permute@3.14.8" do
   version "3.14.8,4018"
   sha256 "eacd8883163f43d9b48ae42e0900096a0f7b323488aaf9276ce49dad017f6649"
 
