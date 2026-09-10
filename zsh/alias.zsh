@@ -23,6 +23,7 @@ alias jl-delete='jupyter kernelspec uninstall venv'
 alias github='open "https://github.com/sudo-prem"'
 alias lg='lazygit'
 alias ld='lazydocker'
+alias oc='opencode --port'
 
 alias mv='mv -i'
 alias rm='rm -i'
@@ -35,4 +36,3 @@ alias brew-cleanup='brew cleanup --prune=all'
 alias pip-freeze='rm -rf $HOME/dotfiles/misc/python/requirements.txt; pip freeze > $HOME/dotfiles/misc/python/requirements.txt'
 
 alias kill-port='sudo kill -9'
-
