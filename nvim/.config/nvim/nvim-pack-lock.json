@@ -63,6 +63,11 @@
       "rev": "dfbfaa967a6f7ec50789bead7ef87e336c1fa63c",
       "src": "https://github.com/nvim-tree/nvim-web-devicons"
     },
+    "opencode.nvim": {
+      "rev": "4576b372034495b8868e6cbe878e85c717998867",
+      "src": "https://github.com/nickjvandyke/opencode.nvim",
+      "version": ">=0.0.0"
+    },
     "snacks.nvim": {
       "rev": "882c996cf28183f4d63640de0b4c02ec886d01f2",
       "src": "https://github.com/folke/snacks.nvim"

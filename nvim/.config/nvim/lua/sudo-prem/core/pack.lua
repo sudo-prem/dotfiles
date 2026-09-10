@@ -13,6 +13,7 @@ vim.pack.add({
 	{ src = "https://codeberg.org/andyg/leap.nvim" },
 	{ src = gh("echasnovski/mini.nvim") },
 	{ src = gh("folke/snacks.nvim") },
+	{ src = gh("nickjvandyke/opencode.nvim"), version = vim.version.range("*") },
 	-- LSP / completion / treesitter
 	{ src = gh("neovim/nvim-lspconfig") },
 	{ src = gh("mason-org/mason.nvim") },
@@ -36,6 +37,7 @@ require("sudo-prem.plugins.conform")
 require("sudo-prem.plugins.gitsigns")
 require("sudo-prem.plugins.lualine")
 require("sudo-prem.plugins.snacks")
+require("sudo-prem.plugins.opencode")
 require("sudo-prem.plugins.mini")
 require("sudo-prem.plugins.leap")
 
