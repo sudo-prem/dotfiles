@@ -80,6 +80,8 @@ cask "alfred"
 cask "appcleaner"
 # Display management tool
 cask "betterdisplay"
+# Utility improving third-party mouse performance and functionality
+cask "sudo-prem/dotfiles/bettermouse@1.6.8812"
 # Tool to customise input devices and automate computer systems
 cask "bettertouchtool"
 # Desktop password and login vault
@@ -88,6 +90,8 @@ cask "bitwarden"
 cask "brave-browser"
 # OpenAI's official ChatGPT desktop app
 cask "chatgpt"
+# Screen capturing tool
+cask "sudo-prem/dotfiles/cleanshot@4.8.10"
 # Clean keyboard and trackpad
 cask "cleanupbuddy"
 # Tool to show live information about the batteries in various devices
@@ -127,6 +131,8 @@ cask "obsidian"
 cask "openmtp"
 # Playstation 2 Emulator
 cask "pcsx2"
+# Converts and edits video, audio or image files
+cask "sudo-prem/dotfiles/permute@3.14.8"
 # Collaboration platform for API development
 cask "postman"
 # HTTP debugging proxy
@@ -137,12 +143,6 @@ cask "rectangle"
 cask "slack"
 # Music streaming service
 cask "spotify"
-# Utility improving third-party mouse performance and functionality
-cask "sudo-prem/dotfiles/bettermouse@1.6.8812"
-# Screen capturing tool
-cask "sudo-prem/dotfiles/cleanshot@4.8.10"
-# Converts and edits video, audio or image files
-cask "sudo-prem/dotfiles/permute@3.14.8"
 # Mesh VPN based on WireGuard
 cask "tailscale-app"
 # Messaging app with a focus on speed and security
