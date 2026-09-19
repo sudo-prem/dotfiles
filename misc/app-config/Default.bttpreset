@@ -45,7 +45,7 @@
     "BTTSavedMousePosition" : "{1281, 715}",
     "BSTDontShowSnapAreasWhileModMoving" : 0,
     "BTTDrawingAreaHeight" : 626,
-    "BTTNumberOfStarts" : 168,
+    "BTTNumberOfStarts" : 173,
     "BTTTouchBarHapticFeedback" : 0,
     "BTTStageManagerLeftSnappingAreaIncreasePercentage" : 0.125,
     "showKeyboardTab" : true,
@@ -90,7 +90,7 @@
     "twoFingerDoubleTapDelay" : 0.5,
     "BSTMoveTreshold" : 2,
     "BTTStageManagerIncreaseEvenIfHiding" : true,
-    "BTTLastClamshellState" : true,
+    "BTTLastClamshellState" : false,
     "BTTTwoFingerTipTapMinSpread" : 0.029999999999999999,
     "showTouchBarTab" : true,
     "BTTNotchBarNotchWidgetModeHideLeftScrollable" : false,
@@ -142,7 +142,7 @@
     "BTTDrawingsRestoreMousePosition" : true,
     "singleFingerTapRight" : 0.05000000074505806,
     "singleFingerTapLeft" : 0.44999998807907104,
-    "BTTDidRegisterForUpdateStats" : "6.820",
+    "BTTDidRegisterForUpdateStats" : "6.829",
     "BTTHandleThumbsRestingOnTopEdgeAndCorners" : true,
     "BSTBrokenAPICheckEnabled" : false,
     "BTTDrawingsHighlightStartPoint" : true,
@@ -163,7 +163,7 @@
     "BTTNotchBarMiniItemsOnTop" : false,
     "BSTSnapAreaDefaultPictoDistanceFromBottom" : 0.10000000149011612
   },
-  "BTTPresetUUID" : "76BF56C5-C1A0-4F89-A939-88DEBA74296D",
+  "BTTPresetUUID" : "38021EB9-4FA5-4E9D-909E-89503D08EC57",
   "BTTPresetContent" : [
     {
       "BTTAppBundleIdentifier" : "BT.G",
@@ -173,105 +173,6 @@
         "BTTDisableGlobalTriggers" : false
       },
       "BTTTriggers" : [
-        {
-          "BTTLastUpdatedAt" : 1780766693.2843051,
-          "BTTTriggerType" : 202,
-          "BTTTriggerTypeDescriptionReadOnly" : "",
-          "BTTTriggerTypeDescription" : "Default Items:",
-          "BTTTriggerClass" : "BTTTriggerTypeNotchBar",
-          "BTTUUID" : "779EC922-74EB-4F7D-9514-7239772E9775",
-          "BTTGenericActionConfig2" : "127.553696, 119.355743, 119.263702, 179.131959",
-          "BTTSeparatorFontColor" : "255.000000, 255.000000, 255.000000, 255.000000",
-          "BTTSeparatorBackgroundColorDark" : "127.553696, 119.355743, 119.263702, 179.131959",
-          "BTTSeparatorFontColorDark" : "255.000000, 255.000000, 255.000000, 255.000000",
-          "BTTSeparatorBackgroundColor" : "127.553696, 119.355743, 119.263702, 179.131959",
-          "BTTOrder" : -6,
-          "BTTMergeIntoTouchBarGroups" : 0,
-          "BTTTouchBarButtonName" : "Default Items:"
-        },
-        {
-          "BTTLastUpdatedAt" : 1780766693.284441,
-          "BTTTriggerType" : 741,
-          "BTTTriggerTypeDescriptionReadOnly" : "Standard Menu Bar Items Widget",
-          "BTTTriggerClass" : "BTTTriggerTypeNotchBar",
-          "BTTUUID" : "6609714A-7FAD-46BF-BFD4-B213B3B12C4C",
-          "BTTNotes" : "This shows the standard menubar elements like File, Edit...",
-          "BTTOrder" : -5,
-          "BTTMergeIntoTouchBarGroups" : 0,
-          "BTTTriggerConfig" : {
-            "BTTNotchBarVisibilityStandardScreen" : 2,
-            "BTTTouchBarItemPlacement" : 1,
-            "BTTNotchBarVisibilityNotchScreen" : 2
-          }
-        },
-        {
-          "BTTLastUpdatedAt" : 1780766693.2843339,
-          "BTTTriggerType" : 742,
-          "BTTTriggerTypeDescriptionReadOnly" : "Mini Menu Bar Items Widget",
-          "BTTTriggerClass" : "BTTTriggerTypeNotchBar",
-          "BTTUUID" : "09976950-BD6A-4A70-ADFC-46AB054F4C89",
-          "BTTOrder" : -4,
-          "BTTMergeIntoTouchBarGroups" : 0,
-          "BTTTriggerConfig" : {
-            "BTTNotchBarVisibilityStandardScreen" : -1,
-            "BTTTouchBarItemPlacement" : 4,
-            "BTTNotchBarVisibilityNotchScreen" : 1
-          }
-        },
-        {
-          "BTTLastUpdatedAt" : 1780766693.2845631,
-          "BTTTriggerType" : 699,
-          "BTTTriggerTypeDescriptionReadOnly" : "Notch Bar Status Items Widget",
-          "BTTTriggerClass" : "BTTTriggerTypeNotchBar",
-          "BTTUUID" : "A51A6C86-D0D3-4304-87C1-F319B33E9443",
-          "BTTNotesInsteadOfDescription" : 1,
-          "BTTNotes" : "Mini version of the menubar status icons.",
-          "BTTOrder" : -3,
-          "BTTMergeIntoTouchBarGroups" : 0,
-          "BTTTriggerConfig" : {
-            "BTTNotchBarVisibilityNotchScreen" : 1,
-            "BTTTouchBarItemPlacement" : 5,
-            "BTTNotchBarVisibilityStandardScreen" : -1,
-            "BTTNotchBarWidgetVisibleStatusItems" : {
-              "showAll" : 0
-            }
-          }
-        },
-        {
-          "BTTLastUpdatedAt" : 1780766693.2844369,
-          "BTTTriggerType" : 743,
-          "BTTTriggerTypeDescriptionReadOnly" : "Mimic System Status Icons",
-          "BTTTriggerClass" : "BTTTriggerTypeNotchBar",
-          "BTTUUID" : "B10D2D3C-50F6-4928-9C51-ADF556DF20A6",
-          "BTTNotes" : "This tries to look like the original status icons",
-          "BTTOrder" : -2,
-          "BTTMergeIntoTouchBarGroups" : 0,
-          "BTTTriggerConfig" : {
-            "BTTNotchBarVisibilityNotchScreen" : 2,
-            "BTTTouchBarItemPlacement" : 2,
-            "BTTNotchBarVisibilityStandardScreen" : 2,
-            "BTTNotchBarWidgetVisibleStatusItems" : {
-              "showAll" : 0
-            },
-            "BTTNotchBarCSSClass" : "system-status-icons"
-          }
-        },
-        {
-          "BTTLastUpdatedAt" : 1780766693.2844229,
-          "BTTTriggerType" : 202,
-          "BTTTriggerTypeDescriptionReadOnly" : "",
-          "BTTTriggerTypeDescription" : "User Defined Items:",
-          "BTTTriggerClass" : "BTTTriggerTypeNotchBar",
-          "BTTUUID" : "3DD15206-624B-40D9-B858-8300EA70DA14",
-          "BTTGenericActionConfig2" : "127.553696, 119.355743, 119.263702, 179.131959",
-          "BTTSeparatorFontColor" : "255.000000, 255.000000, 255.000000, 255.000000",
-          "BTTSeparatorBackgroundColorDark" : "127.553696, 119.355743, 119.263702, 179.131959",
-          "BTTSeparatorFontColorDark" : "255.000000, 255.000000, 255.000000, 255.000000",
-          "BTTSeparatorBackgroundColor" : "127.553696, 119.355743, 119.263702, 179.131959",
-          "BTTOrder" : -1,
-          "BTTMergeIntoTouchBarGroups" : 0,
-          "BTTTouchBarButtonName" : "User Defined Items:"
-        },
         {
           "BTTLastUpdatedAt" : 1789490009.783931,
           "BTTTriggerType" : 1324,
@@ -2151,30 +2052,6 @@
               "BTTOrder" : 41
             }
           ]
-        },
-        {
-          "BTTLastUpdatedAt" : 1780766693.2844338,
-          "BTTTriggerType" : 696,
-          "BTTTriggerTypeDescriptionReadOnly" : "Notch Bar Button",
-          "BTTTriggerTypeDescription" : "Widget Mode Test - Scroll Up/Down to switch modes. Right click bar for more options.",
-          "BTTTriggerClass" : "BTTTriggerTypeNotchBar",
-          "BTTUUID" : "0835C0CD-3DF8-4AB2-B83C-F10E7EB07433",
-          "BTTPredefinedActionType" : 5,
-          "BTTPredefinedActionName" : "Mission Control",
-          "BTTNotes" : "You can delete this button, it's just an example.",
-          "BTTOrder" : 100,
-          "BTTMergeIntoTouchBarGroups" : 0,
-          "BTTTouchBarButtonName" : "Widget Mode Test - Scroll Up/Down to switch modes. Right click bar for more options.",
-          "BTTTriggerConfig" : {
-            "BTTNotchBarVisibilityNotchScreen" : 1,
-            "BTTTouchBarItemSFSymbolDefaultIcon" : "scribble.variable",
-            "BTTTouchBarIconInvert" : 1,
-            "BTTTouchBarItemPlacement" : 1,
-            "BTTTouchBarItemIconType" : 2,
-            "BTTNotchBarVisibilityStandardScreen" : 1,
-            "BTTTouchBarItemIconWidth" : 15,
-            "BTTTouchBarItemIconHeight" : 15
-          }
         }
       ]
     },
