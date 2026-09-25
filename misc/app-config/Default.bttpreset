@@ -45,7 +45,7 @@
     "BTTSavedMousePosition" : "{1281, 715}",
     "BSTDontShowSnapAreasWhileModMoving" : 0,
     "BTTDrawingAreaHeight" : 626,
-    "BTTNumberOfStarts" : 173,
+    "BTTNumberOfStarts" : 180,
     "BTTTouchBarHapticFeedback" : 0,
     "BTTStageManagerLeftSnappingAreaIncreasePercentage" : 0.125,
     "showKeyboardTab" : true,
@@ -90,7 +90,7 @@
     "twoFingerDoubleTapDelay" : 0.5,
     "BSTMoveTreshold" : 2,
     "BTTStageManagerIncreaseEvenIfHiding" : true,
-    "BTTLastClamshellState" : false,
+    "BTTLastClamshellState" : true,
     "BTTTwoFingerTipTapMinSpread" : 0.029999999999999999,
     "showTouchBarTab" : true,
     "BTTNotchBarNotchWidgetModeHideLeftScrollable" : false,
@@ -142,7 +142,7 @@
     "BTTDrawingsRestoreMousePosition" : true,
     "singleFingerTapRight" : 0.05000000074505806,
     "singleFingerTapLeft" : 0.44999998807907104,
-    "BTTDidRegisterForUpdateStats" : "6.829",
+    "BTTDidRegisterForUpdateStats" : "6.848",
     "BTTHandleThumbsRestingOnTopEdgeAndCorners" : true,
     "BSTBrokenAPICheckEnabled" : false,
     "BTTDrawingsHighlightStartPoint" : true,
@@ -163,7 +163,7 @@
     "BTTNotchBarMiniItemsOnTop" : false,
     "BSTSnapAreaDefaultPictoDistanceFromBottom" : 0.10000000149011612
   },
-  "BTTPresetUUID" : "38021EB9-4FA5-4E9D-909E-89503D08EC57",
+  "BTTPresetUUID" : "245A2FD0-599F-41BA-A384-BD81870E73E8",
   "BTTPresetContent" : [
     {
       "BTTAppBundleIdentifier" : "BT.G",
@@ -340,7 +340,7 @@
           }
         },
         {
-          "BTTLastUpdatedAt" : 1780766693.284282,
+          "BTTLastUpdatedAt" : 1790293590.695137,
           "BTTTriggerType" : 0,
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
           "BTTUUID" : "AD6551BF-F753-4F5D-BB61-7B1E871CB4BE",
@@ -377,7 +377,7 @@
           ]
         },
         {
-          "BTTLastUpdatedAt" : 1780766693.284524,
+          "BTTLastUpdatedAt" : 1790293590.695101,
           "BTTTriggerType" : 624,
           "BTTTriggerTypeDescriptionReadOnly" : "Please Select a Trigger ",
           "BTTTriggerClass" : "BTTTriggerTypeKeySequence",
@@ -1366,7 +1366,7 @@
           ]
         },
         {
-          "BTTLastUpdatedAt" : 1789487012.5006518,
+          "BTTLastUpdatedAt" : 1790293590.6951141,
           "BTTTriggerType" : 1006,
           "BTTTriggerTypeDescriptionReadOnly" : "Button 6",
           "BTTTriggerClass" : "BTTTriggerTypeNormalMouse",
@@ -1534,7 +1534,7 @@
           ]
         },
         {
-          "BTTLastUpdatedAt" : 1789487012.5006762,
+          "BTTLastUpdatedAt" : 1790293590.6950378,
           "BTTTriggerType" : 998,
           "BTTTriggerTypeDescriptionReadOnly" : "Scroll Left",
           "BTTTriggerClass" : "BTTTriggerTypeNormalMouse",
@@ -1894,7 +1894,7 @@
           ]
         },
         {
-          "BTTLastUpdatedAt" : 1780766693.284395,
+          "BTTLastUpdatedAt" : 1790222757.067179,
           "BTTTriggerType" : 0,
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
           "BTTUUID" : "349A593C-D503-46AE-95FA-49914E051126",
@@ -1948,7 +1948,7 @@
           ]
         },
         {
-          "BTTLastUpdatedAt" : 1789232335.7897592,
+          "BTTLastUpdatedAt" : 1790293590.6950889,
           "BTTTriggerType" : 0,
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
           "BTTUUID" : "98152A53-0FB9-453A-B728-DECBC8B43FF9",
