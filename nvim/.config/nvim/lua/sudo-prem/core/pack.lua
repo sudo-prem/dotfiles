@@ -24,7 +24,7 @@ vim.pack.add({
 	{ src = gh("saghen/blink.cmp"), version = vim.version.range("1") },
 	{ src = gh("L3MON4D3/LuaSnip"), version = vim.version.range("2") },
 	{ src = gh("folke/lazydev.nvim") },
-	{ src = gh("nvim-treesitter/nvim-treesitter"), version = "master" },
+	{ src = gh("nvim-treesitter/nvim-treesitter"), version = "main" },
 })
 
 -- order matters
