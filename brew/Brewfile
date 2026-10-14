@@ -1,3 +1,4 @@
+tap "saffsanity/sill"
 tap "sudo-prem/dotfiles", "https://github.com/sudo-prem/dotfiles.git", trusted: true
 # Improved shell history for zsh, bash, fish and nushell
 brew "atuin"
@@ -136,6 +137,8 @@ cask "postman"
 cask "proxyman"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
+# Streams windows to an iPhone or iPad with touch, Pencil and keyboard control
+cask "saffsanity/sill/sill", trusted: true
 # Team communication and collaboration software
 cask "slack"
 # Music streaming service
