@@ -1,0 +1,83 @@
+config-version = 2
+after-login-command = []
+
+start-at-login = true
+auto-reload-config = true
+
+enable-normalization-flatten-containers = true
+enable-normalization-opposite-orientation-for-nested-containers = true
+
+accordion-padding = 30
+
+default-root-container-layout = 'tiles'
+
+default-root-container-orientation = 'auto'
+
+key-mapping.preset = 'qwerty'
+
+on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
+
+persistent-workspaces = [
+    "1",
+    "2",
+    "3"
+]
+
+[gaps]
+inner.horizontal = 10
+inner.vertical =   10
+outer.left =       10
+outer.bottom =     10
+outer.right =      10
+outer.top =        10
+
+
+[mode.main.binding]
+ctrl-minus = 'layout tiles horizontal vertical'
+ctrl-equal = 'layout accordion horizontal vertical'
+
+ctrl-h = 'focus --wrap-around left'
+ctrl-j = 'focus --wrap-around down'
+ctrl-k = 'focus --wrap-around up'
+ctrl-l = 'focus --wrap-around right'
+
+ctrl-shift-h = 'move left'
+ctrl-shift-j = 'move down'
+ctrl-shift-k = 'move up'
+ctrl-shift-l = 'move right'
+ctrl-enter = 'fullscreen on'
+ctrl-shift-enter = 'fullscreen off'
+
+ctrl-1 = 'workspace 1'
+ctrl-2 = 'workspace 2'
+ctrl-3 = 'workspace 3'
+
+ctrl-shift-1 = 'move-node-to-workspace 1'
+ctrl-shift-2 = 'move-node-to-workspace 2'
+ctrl-shift-3 = 'move-node-to-workspace 3'
+
+ctrl-shift-semicolon = 'mode service'
+ctrl-shift-r = 'mode resize'
+
+[mode.resize.binding]
+h = 'resize width +35'
+j = 'resize height +35'
+k = 'resize height -35'
+l = 'resize width -35'
+b = 'balance-sizes'
+
+ctrl-shift-minus = 'resize smart -50'
+ctrl-shift-equal = 'resize smart +50'
+
+enter = 'mode main'
+esc = 'mode main'
+
+[mode.service.binding]
+esc = ['reload-config', 'mode main']
+r = ['flatten-workspace-tree', 'mode main']
+f = ['layout floating tiling', 'mode main']
+
+ctrl-shift-h = ['join-with left', 'mode main']
+ctrl-shift-j = ['join-with down', 'mode main']
+ctrl-shift-k = ['join-with up', 'mode main']
+ctrl-shift-l = ['join-with right', 'mode main']
