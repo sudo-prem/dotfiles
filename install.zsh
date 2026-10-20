@@ -1,6 +1,7 @@
 #!/bin/zsh
 
 SCRIPT_DIR=$( cd -- "$( dirname -- "${(%):-%x}" )" && pwd )
+cd "$SCRIPT_DIR" || exit 1
 DOT_FOLDERS="brew,stow,wezterm,bat,colima,fzf,zsh,bash,lsd,git,lazygit,lazydocker,vim,nvim,zed,htop,format,gemini,atuin,opencode,tmux,aerospace"
 
 for folder in ${(s/,/)DOT_FOLDERS}; do
@@ -12,11 +13,6 @@ for folder in ${(s/,/)DOT_FOLDERS}; do
     if ! source "$folder/install.zsh"; then
       echo "[-] Install failed :: $folder"
       exit 1
-    fi
-
-	if [ "$folder" = "brew" ]; then
-      echo "[+] Reloading shell after brew install..."
-      exec $SHELL -l
     fi
 
   else
