@@ -1,0 +1,33 @@
+theme = TokyoNight
+font-family = JetBrainsMono Nerd Font
+font-style = Regular
+font-size = 14
+background-opacity = 0.90
+background-blur = 14
+macos-titlebar-style = hidden
+macos-non-native-fullscreen = false
+confirm-close-surface = always
+
+window-padding-x = 2
+window-padding-y = 0
+scrollback-limit = 10000000
+window-vsync = true
+
+macos-option-as-alt = left
+clipboard-write = allow
+
+keybind = clear
+keybind = super+c=copy_to_clipboard
+keybind = super+v=paste_from_clipboard
+keybind = super+equal=increase_font_size:1
+keybind = super+minus=decrease_font_size:1
+keybind = super+zero=reset_font_size
+keybind = super+f=start_search
+keybind = chain=search_selection
+keybind = alt+enter=toggle_fullscreen
+keybind = super+n=new_window
+
+keybind = super+t=text:\x01t
+keybind = super+w=text:\x01w
+keybind = ctrl+tab=text:\x01\t
+keybind = ctrl+shift+tab=text:\x01\x1b[Z
