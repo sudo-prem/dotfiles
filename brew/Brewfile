@@ -139,8 +139,6 @@ cask "sudo-prem/dotfiles/permute@3.14.8"
 cask "postman"
 # HTTP debugging proxy
 cask "proxyman"
-# Move and resize windows using keyboard shortcuts or snap areas
-cask "rectangle"
 # Team communication and collaboration software
 cask "slack"
 # Music streaming service
