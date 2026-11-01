@@ -50,6 +50,8 @@ brew "pyenv"
 brew "qemu"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
+# 7-Zip is a file archiver with a high compression ratio
+brew "sevenzip"
 # Organize software neatly under a single directory tree (e.g. /usr/local)
 brew "stow"
 # Postgres development platform
@@ -131,8 +133,6 @@ cask "macs-fan-control"
 cask "obsidian"
 # Android file transfer
 cask "openmtp"
-# Playstation 2 Emulator
-cask "pcsx2"
 # Converts and edits video, audio or image files
 cask "sudo-prem/dotfiles/permute@3.14.8"
 # Collaboration platform for API development
