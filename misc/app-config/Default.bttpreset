@@ -45,7 +45,7 @@
     "BTTSavedMousePosition" : "{1281, 715}",
     "BSTDontShowSnapAreasWhileModMoving" : 0,
     "BTTDrawingAreaHeight" : 626,
-    "BTTNumberOfStarts" : 180,
+    "BTTNumberOfStarts" : 203,
     "BTTTouchBarHapticFeedback" : 0,
     "BTTStageManagerLeftSnappingAreaIncreasePercentage" : 0.125,
     "showKeyboardTab" : true,
@@ -90,7 +90,7 @@
     "twoFingerDoubleTapDelay" : 0.5,
     "BSTMoveTreshold" : 2,
     "BTTStageManagerIncreaseEvenIfHiding" : true,
-    "BTTLastClamshellState" : true,
+    "BTTLastClamshellState" : false,
     "BTTTwoFingerTipTapMinSpread" : 0.029999999999999999,
     "showTouchBarTab" : true,
     "BTTNotchBarNotchWidgetModeHideLeftScrollable" : false,
@@ -101,6 +101,7 @@
     "BTTForceNormalClickPressure3F" : 150,
     "BTTNotchBarStandardWidgetModeHideRightFixed" : false,
     "BTTTouchBarSupportEnabled" : true,
+    "BTTURLCleanerAutoClean" : true,
     "BTTForceForceClickPressure2F" : 700,
     "useAppleRemotePlugin" : false,
     "BTRMouseSpeed" : "1.000000",
@@ -136,13 +137,13 @@
     "BTTNotchBarStandardMenubarModeShowOriginalStatusIcons" : true,
     "BTTTouchBarUseMonoSpacedFont" : true,
     "BTTNotchBarNotchWidgetModeHideRightScrollable" : false,
-    "BTTStageManagerLeftSnappingAreaIncrease" : 222,
     "showOtherTriggersTab" : true,
+    "BTTStageManagerLeftSnappingAreaIncrease" : 222,
     "BSTPreventTopMissionControl" : true,
     "BTTDrawingsRestoreMousePosition" : true,
     "singleFingerTapRight" : 0.05000000074505806,
     "singleFingerTapLeft" : 0.44999998807907104,
-    "BTTDidRegisterForUpdateStats" : "6.848",
+    "BTTDidRegisterForUpdateStats" : "6.1139",
     "BTTHandleThumbsRestingOnTopEdgeAndCorners" : true,
     "BSTBrokenAPICheckEnabled" : false,
     "BTTDrawingsHighlightStartPoint" : true,
@@ -163,7 +164,7 @@
     "BTTNotchBarMiniItemsOnTop" : false,
     "BSTSnapAreaDefaultPictoDistanceFromBottom" : 0.10000000149011612
   },
-  "BTTPresetUUID" : "245A2FD0-599F-41BA-A384-BD81870E73E8",
+  "BTTPresetUUID" : "69C2F62B-9251-43A8-ABD0-FB064C37BB7B",
   "BTTPresetContent" : [
     {
       "BTTAppBundleIdentifier" : "BT.G",
@@ -520,32 +521,6 @@
           }
         },
         {
-          "BTTLastUpdatedAt" : 1789232335.777391,
-          "BTTTriggerType" : 0,
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTUUID" : "6FBDD4A1-C50A-4EE0-BDF4-61ED594043FE",
-          "BTTAdditionalConfiguration" : "262145",
-          "BTTShortcutKeyboardType" : 2414,
-          "BTTTriggerOnDown" : 1,
-          "BTTLayoutIndependentChar" : "1",
-          "BTTShortcutKeyCode" : 18,
-          "BTTShortcutAdvancedModifierKeys" : "262145",
-          "BTTShortcutModifierKeys" : 262144,
-          "BTTOrder" : 1,
-          "BTTAutoAdaptToKeyboardLayout" : 0,
-          "BTTActionsToExecute" : [
-            {
-              "BTTLastUpdatedAt" : 1780766693.284482,
-              "BTTTriggerParentUUID" : "6FBDD4A1-C50A-4EE0-BDF4-61ED594043FE",
-              "BTTIsPureAction" : true,
-              "BTTUUID" : "FFC4FD87-8A8D-476E-A719-8E12C0E3E8C0",
-              "BTTPredefinedActionType" : 207,
-              "BTTPredefinedActionName" : "Switch To Desktop 1",
-              "BTTOrder" : 8
-            }
-          ]
-        },
-        {
           "BTTLastUpdatedAt" : 1789487012.5006981,
           "BTTTriggerType" : 1341,
           "BTTTriggerTypeDescriptionReadOnly" : "Scroll Modifier: Zoom In / Out (like Trackpad)",
@@ -733,58 +708,6 @@
               }
             ]
           }
-        },
-        {
-          "BTTLastUpdatedAt" : 1789232335.777519,
-          "BTTTriggerType" : 0,
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTUUID" : "F7FC9649-D099-49C9-BB60-A72B008B1AE6",
-          "BTTAdditionalConfiguration" : "262145",
-          "BTTShortcutKeyboardType" : 2414,
-          "BTTTriggerOnDown" : 1,
-          "BTTLayoutIndependentChar" : "2",
-          "BTTShortcutKeyCode" : 19,
-          "BTTShortcutAdvancedModifierKeys" : "262145",
-          "BTTShortcutModifierKeys" : 262144,
-          "BTTOrder" : 2,
-          "BTTAutoAdaptToKeyboardLayout" : 0,
-          "BTTActionsToExecute" : [
-            {
-              "BTTLastUpdatedAt" : 1780766693.2844791,
-              "BTTTriggerParentUUID" : "F7FC9649-D099-49C9-BB60-A72B008B1AE6",
-              "BTTIsPureAction" : true,
-              "BTTUUID" : "198D6D7C-5576-44C4-9CF1-5284D0DF9D07",
-              "BTTPredefinedActionType" : 208,
-              "BTTPredefinedActionName" : "Switch To Desktop 2",
-              "BTTOrder" : 0
-            }
-          ]
-        },
-        {
-          "BTTLastUpdatedAt" : 1789232335.777442,
-          "BTTTriggerType" : 0,
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTUUID" : "0A244401-C2F6-4CD6-AD7B-12AC6E22317C",
-          "BTTAdditionalConfiguration" : "262145",
-          "BTTShortcutKeyboardType" : 2414,
-          "BTTTriggerOnDown" : 1,
-          "BTTLayoutIndependentChar" : "3",
-          "BTTShortcutKeyCode" : 20,
-          "BTTShortcutAdvancedModifierKeys" : "262145",
-          "BTTShortcutModifierKeys" : 262144,
-          "BTTOrder" : 3,
-          "BTTAutoAdaptToKeyboardLayout" : 0,
-          "BTTActionsToExecute" : [
-            {
-              "BTTLastUpdatedAt" : 1780766693.284384,
-              "BTTTriggerParentUUID" : "0A244401-C2F6-4CD6-AD7B-12AC6E22317C",
-              "BTTIsPureAction" : true,
-              "BTTUUID" : "73FCF5EF-59A1-4B7F-B9C8-8D5D92977580",
-              "BTTPredefinedActionType" : 209,
-              "BTTPredefinedActionName" : "Switch To Desktop 3",
-              "BTTOrder" : 0
-            }
-          ]
         },
         {
           "BTTLastUpdatedAt" : 1780766693.284399,
@@ -1117,62 +1040,6 @@
           }
         },
         {
-          "BTTLastUpdatedAt" : 1789232335.7775011,
-          "BTTTriggerType" : 0,
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTUUID" : "E16F11B4-F10E-4EE8-B09B-73CA82916C42",
-          "BTTAdditionalConfiguration" : "0",
-          "BTTShortcutScope" : 0,
-          "BTTShortcutKeyboardType" : 2414,
-          "BTTTriggerOnDown" : 1,
-          "BTTLayoutIndependentChar" : "1",
-          "BTTShortcutKeyCode" : 18,
-          "BTTShortcutAdvancedModifierKeys" : "0",
-          "BTTShortcutModifierKeys" : 1966080,
-          "BTTOrder" : 4,
-          "BTTAutoAdaptToKeyboardLayout" : 0,
-          "BTTActionsToExecute" : [
-            {
-              "BTTLastUpdatedAt" : 1780766693.2845869,
-              "BTTTriggerParentUUID" : "E16F11B4-F10E-4EE8-B09B-73CA82916C42",
-              "BTTIsPureAction" : true,
-              "BTTUUID" : "EDFF7A6A-71D8-41FD-B283-B05B184ED1EC",
-              "BTTPredefinedActionType" : 216,
-              "BTTPredefinedActionName" : "Move Window To Desktop 1",
-              "BTTOrder" : 5
-            }
-          ],
-          "BTTTriggerConfig" : {
-            "BTTHUDText" : "1"
-          }
-        },
-        {
-          "BTTLastUpdatedAt" : 1780766693.284517,
-          "BTTTriggerType" : 0,
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTUUID" : "7F814C2A-F620-4257-AF0F-6946B6F51756",
-          "BTTAdditionalConfiguration" : "0",
-          "BTTShortcutKeyboardType" : 2414,
-          "BTTTriggerOnDown" : 1,
-          "BTTLayoutIndependentChar" : "2",
-          "BTTShortcutKeyCode" : 19,
-          "BTTShortcutAdvancedModifierKeys" : "0",
-          "BTTShortcutModifierKeys" : 1966080,
-          "BTTOrder" : 5,
-          "BTTAutoAdaptToKeyboardLayout" : 0,
-          "BTTActionsToExecute" : [
-            {
-              "BTTLastUpdatedAt" : 1780766693.2844949,
-              "BTTTriggerParentUUID" : "7F814C2A-F620-4257-AF0F-6946B6F51756",
-              "BTTIsPureAction" : true,
-              "BTTUUID" : "F793391B-4F3E-41B8-8450-F05358CFEDA8",
-              "BTTPredefinedActionType" : 217,
-              "BTTPredefinedActionName" : "Move Window To Desktop 2",
-              "BTTOrder" : 6
-            }
-          ]
-        },
-        {
           "BTTLastUpdatedAt" : 1780766693.284466,
           "BTTTriggerType" : 624,
           "BTTTriggerTypeDescriptionReadOnly" : "Please Select a Trigger ",
@@ -1340,51 +1207,6 @@
           ]
         },
         {
-          "BTTLastUpdatedAt" : 1789232335.777571,
-          "BTTTriggerType" : 0,
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTUUID" : "0730C9B9-AAC8-4D49-92EE-BAC91499EAA7",
-          "BTTAdditionalConfiguration" : "0",
-          "BTTShortcutKeyboardType" : 2414,
-          "BTTTriggerOnDown" : 1,
-          "BTTLayoutIndependentChar" : "3",
-          "BTTShortcutKeyCode" : 20,
-          "BTTShortcutAdvancedModifierKeys" : "0",
-          "BTTShortcutModifierKeys" : 1966080,
-          "BTTOrder" : 6,
-          "BTTAutoAdaptToKeyboardLayout" : 0,
-          "BTTActionsToExecute" : [
-            {
-              "BTTLastUpdatedAt" : 1780766693.2845211,
-              "BTTTriggerParentUUID" : "0730C9B9-AAC8-4D49-92EE-BAC91499EAA7",
-              "BTTIsPureAction" : true,
-              "BTTUUID" : "A2B451F8-D357-4EBD-BC8C-F2F040A3C3C7",
-              "BTTPredefinedActionType" : 218,
-              "BTTPredefinedActionName" : "Move Window To Desktop 3",
-              "BTTOrder" : 7
-            }
-          ]
-        },
-        {
-          "BTTLastUpdatedAt" : 1790293590.6951141,
-          "BTTTriggerType" : 1006,
-          "BTTTriggerTypeDescriptionReadOnly" : "Button 6",
-          "BTTTriggerClass" : "BTTTriggerTypeNormalMouse",
-          "BTTUUID" : "3B4E744C-87C6-4BEF-9440-F1CA15A499F8",
-          "BTTOrder" : 6,
-          "BTTActionsToExecute" : [
-            {
-              "BTTLastUpdatedAt" : 1789486955.718797,
-              "BTTTriggerParentUUID" : "3B4E744C-87C6-4BEF-9440-F1CA15A499F8",
-              "BTTIsPureAction" : true,
-              "BTTUUID" : "6FB0401E-489D-4C0C-B511-B86E7056E14E",
-              "BTTPredefinedActionType" : 5,
-              "BTTPredefinedActionName" : "Mission Control",
-              "BTTOrder" : 61
-            }
-          ]
-        },
-        {
           "BTTLastUpdatedAt" : 1780766693.2844691,
           "BTTTriggerType" : 624,
           "BTTTriggerTypeDescriptionReadOnly" : "Please Select a Trigger ",
@@ -1482,58 +1304,6 @@
           ]
         },
         {
-          "BTTLastUpdatedAt" : 1789232335.7775378,
-          "BTTTriggerType" : 0,
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTUUID" : "D008A077-24E8-47AE-BE2A-29C3A1982AA1",
-          "BTTAdditionalConfiguration" : "0",
-          "BTTShortcutKeyboardType" : 1973232312,
-          "BTTTriggerOnDown" : 1,
-          "BTTLayoutIndependentChar" : "h",
-          "BTTShortcutKeyCode" : 4,
-          "BTTShortcutAdvancedModifierKeys" : "0",
-          "BTTShortcutModifierKeys" : 1966080,
-          "BTTOrder" : 7,
-          "BTTAutoAdaptToKeyboardLayout" : 0,
-          "BTTActionsToExecute" : [
-            {
-              "BTTLastUpdatedAt" : 1780766693.284502,
-              "BTTTriggerParentUUID" : "D008A077-24E8-47AE-BE2A-29C3A1982AA1",
-              "BTTIsPureAction" : true,
-              "BTTUUID" : "07CB4D18-64D9-4207-8C87-563CE631754B",
-              "BTTPredefinedActionType" : 113,
-              "BTTPredefinedActionName" : "Move Left a Space",
-              "BTTOrder" : 9
-            }
-          ]
-        },
-        {
-          "BTTLastUpdatedAt" : 1789232335.777451,
-          "BTTTriggerType" : 0,
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTUUID" : "193E82E5-9FE5-43C5-AC1F-4B61A1C4BCFD",
-          "BTTAdditionalConfiguration" : "0",
-          "BTTShortcutKeyboardType" : 1973232312,
-          "BTTTriggerOnDown" : 1,
-          "BTTLayoutIndependentChar" : "j",
-          "BTTShortcutKeyCode" : 38,
-          "BTTShortcutAdvancedModifierKeys" : "0",
-          "BTTShortcutModifierKeys" : 1966080,
-          "BTTOrder" : 8,
-          "BTTAutoAdaptToKeyboardLayout" : 0,
-          "BTTActionsToExecute" : [
-            {
-              "BTTLastUpdatedAt" : 1780766693.2845469,
-              "BTTTriggerParentUUID" : "193E82E5-9FE5-43C5-AC1F-4B61A1C4BCFD",
-              "BTTIsPureAction" : true,
-              "BTTUUID" : "6701D13B-3055-4A86-9E86-1D3571E9F484",
-              "BTTPredefinedActionType" : 6,
-              "BTTPredefinedActionName" : "Application Expose",
-              "BTTOrder" : 1
-            }
-          ]
-        },
-        {
           "BTTLastUpdatedAt" : 1790293590.6950378,
           "BTTTriggerType" : 998,
           "BTTTriggerTypeDescriptionReadOnly" : "Scroll Left",
@@ -1570,58 +1340,6 @@
               "BTTPredefinedActionType" : 114,
               "BTTPredefinedActionName" : "Move Right a Space",
               "BTTOrder" : 44
-            }
-          ]
-        },
-        {
-          "BTTLastUpdatedAt" : 1780766693.2845769,
-          "BTTTriggerType" : 0,
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTUUID" : "A13DE022-F5EF-4691-84E3-39B237933738",
-          "BTTAdditionalConfiguration" : "0",
-          "BTTShortcutKeyboardType" : 1973232312,
-          "BTTTriggerOnDown" : 1,
-          "BTTLayoutIndependentChar" : "k",
-          "BTTShortcutKeyCode" : 40,
-          "BTTShortcutAdvancedModifierKeys" : "0",
-          "BTTShortcutModifierKeys" : 1966080,
-          "BTTOrder" : 9,
-          "BTTAutoAdaptToKeyboardLayout" : 0,
-          "BTTActionsToExecute" : [
-            {
-              "BTTLastUpdatedAt" : 1780766693.2845941,
-              "BTTTriggerParentUUID" : "A13DE022-F5EF-4691-84E3-39B237933738",
-              "BTTIsPureAction" : true,
-              "BTTUUID" : "D5193DB9-896E-498A-A8B6-9D6F503A9CED",
-              "BTTPredefinedActionType" : 5,
-              "BTTPredefinedActionName" : "Mission Control",
-              "BTTOrder" : 2
-            }
-          ]
-        },
-        {
-          "BTTLastUpdatedAt" : 1789232335.7776089,
-          "BTTTriggerType" : 0,
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTUUID" : "BBFD6B34-EAD7-4034-B4E4-444147F5D426",
-          "BTTAdditionalConfiguration" : "0",
-          "BTTShortcutKeyboardType" : 1973232312,
-          "BTTTriggerOnDown" : 1,
-          "BTTLayoutIndependentChar" : "l",
-          "BTTShortcutKeyCode" : 37,
-          "BTTShortcutAdvancedModifierKeys" : "0",
-          "BTTShortcutModifierKeys" : 1966080,
-          "BTTOrder" : 10,
-          "BTTAutoAdaptToKeyboardLayout" : 0,
-          "BTTActionsToExecute" : [
-            {
-              "BTTLastUpdatedAt" : 1780766693.2842779,
-              "BTTTriggerParentUUID" : "BBFD6B34-EAD7-4034-B4E4-444147F5D426",
-              "BTTIsPureAction" : true,
-              "BTTUUID" : "0CEDFBEC-11DE-4D8F-B3E9-3E02487B3A62",
-              "BTTPredefinedActionType" : 114,
-              "BTTPredefinedActionName" : "Move Right a Space",
-              "BTTOrder" : 10
             }
           ]
         },
@@ -1774,13 +1492,13 @@
           "BTTAutoAdaptToKeyboardLayout" : 0,
           "BTTActionsToExecute" : [
             {
-              "BTTLastUpdatedAt" : 1780766693.2843719,
+              "BTTLastUpdatedAt" : 1793116725.892076,
               "BTTTriggerParentUUID" : "DC636C3A-E71C-41E2-81F5-99CE86B3F9E0",
               "BTTIsPureAction" : true,
               "BTTUUID" : "3C2D771A-1735-4470-94BE-A8307A4400CF",
               "BTTPredefinedActionType" : 49,
               "BTTPredefinedActionName" : "Launch Application  or  Open File  or  Start Apple Script …",
-              "BTTLaunchPath" : "/Applications/WezTerm.app",
+              "BTTLaunchPath" : "/Applications/Ghostty.app",
               "BTTOrder" : 14
             }
           ]
@@ -1840,33 +1558,6 @@
           ]
         },
         {
-          "BTTLastUpdatedAt" : 1789232335.7773418,
-          "BTTTriggerType" : 0,
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTUUID" : "812415F5-CDC7-431B-B8EE-4BE8E6A4C506",
-          "BTTAdditionalConfiguration" : "0",
-          "BTTShortcutKeyboardType" : 2414,
-          "BTTTriggerOnDown" : 1,
-          "BTTLayoutIndependentChar" : "x",
-          "BTTShortcutKeyCode" : 7,
-          "BTTShortcutAdvancedModifierKeys" : "0",
-          "BTTShortcutModifierKeys" : 1966080,
-          "BTTOrder" : 19,
-          "BTTAutoAdaptToKeyboardLayout" : 0,
-          "BTTActionsToExecute" : [
-            {
-              "BTTLastUpdatedAt" : 1780766693.284508,
-              "BTTTriggerParentUUID" : "812415F5-CDC7-431B-B8EE-4BE8E6A4C506",
-              "BTTIsPureAction" : true,
-              "BTTUUID" : "ECE8C56F-1257-4EE7-8F85-F2709B972711",
-              "BTTPredefinedActionType" : 49,
-              "BTTPredefinedActionName" : "Launch Application  or  Open File  or  Start Apple Script …",
-              "BTTLaunchPath" : "/Applications/Xcode.app",
-              "BTTOrder" : 14
-            }
-          ]
-        },
-        {
           "BTTLastUpdatedAt" : 1789232335.7774911,
           "BTTTriggerType" : 0,
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
@@ -1921,33 +1612,6 @@
           ]
         },
         {
-          "BTTLastUpdatedAt" : 1789232335.777529,
-          "BTTTriggerType" : 0,
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTUUID" : "A4CD4166-0BE5-4154-A20B-28B5E61B3D0E",
-          "BTTAdditionalConfiguration" : "0",
-          "BTTShortcutKeyboardType" : 1973232312,
-          "BTTTriggerOnDown" : 1,
-          "BTTLayoutIndependentChar" : "p",
-          "BTTShortcutKeyCode" : 35,
-          "BTTShortcutAdvancedModifierKeys" : "0",
-          "BTTShortcutModifierKeys" : 1966080,
-          "BTTOrder" : 22,
-          "BTTAutoAdaptToKeyboardLayout" : 0,
-          "BTTActionsToExecute" : [
-            {
-              "BTTLastUpdatedAt" : 1780766693.284337,
-              "BTTTriggerParentUUID" : "A4CD4166-0BE5-4154-A20B-28B5E61B3D0E",
-              "BTTIsPureAction" : true,
-              "BTTUUID" : "7AA53C47-91B7-46E9-86FE-DCFB43DB134F",
-              "BTTPredefinedActionType" : 49,
-              "BTTPredefinedActionName" : "Launch Application  or  Open File  or  Start Apple Script …",
-              "BTTLaunchPath" : "/Applications/Bitwarden.app",
-              "BTTOrder" : 14
-            }
-          ]
-        },
-        {
           "BTTLastUpdatedAt" : 1790293590.6950889,
           "BTTTriggerType" : 0,
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
@@ -1970,33 +1634,6 @@
               "BTTPredefinedActionType" : 49,
               "BTTPredefinedActionName" : "Launch Application  or  Open File  or  Start Apple Script …",
               "BTTLaunchPath" : "/Applications/Slack.app",
-              "BTTOrder" : 14
-            }
-          ]
-        },
-        {
-          "BTTLastUpdatedAt" : 1789232335.7775102,
-          "BTTTriggerType" : 0,
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTUUID" : "7500BE00-0835-4501-8694-1805463EB0E0",
-          "BTTAdditionalConfiguration" : "0",
-          "BTTShortcutKeyboardType" : 1973232312,
-          "BTTTriggerOnDown" : 1,
-          "BTTLayoutIndependentChar" : "i",
-          "BTTShortcutKeyCode" : 34,
-          "BTTShortcutAdvancedModifierKeys" : "0",
-          "BTTShortcutModifierKeys" : 1966080,
-          "BTTOrder" : 24,
-          "BTTAutoAdaptToKeyboardLayout" : 0,
-          "BTTActionsToExecute" : [
-            {
-              "BTTLastUpdatedAt" : 1780766693.2843871,
-              "BTTTriggerParentUUID" : "7500BE00-0835-4501-8694-1805463EB0E0",
-              "BTTIsPureAction" : true,
-              "BTTUUID" : "6A9C99E6-06A4-4868-9A92-9678D0833494",
-              "BTTPredefinedActionType" : 49,
-              "BTTPredefinedActionName" : "Launch Application  or  Open File  or  Start Apple Script …",
-              "BTTLaunchPath" : "/Applications/IntelliJ IDEA.app",
               "BTTOrder" : 14
             }
           ]
